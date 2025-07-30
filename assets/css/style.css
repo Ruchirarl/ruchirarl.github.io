@@ -97,9 +97,15 @@ section {
 
 .certifications-section {
   background: #000 !important;
-  padding: 5rem 2rem 4rem 2rem;
+  padding: 6rem 2rem 5rem 2rem !important;
   text-align: center;
   width: 100%;
+}
+
+.certifications-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .contact-section {
@@ -1016,9 +1022,9 @@ section {
 }
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  max-width: 1400px;
   margin: 0 auto;
   justify-items: center;
   width: 100%;
@@ -2374,12 +2380,12 @@ footer {
 /* Tools section improvements */
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
-  margin-top: 3rem;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-items: center;
+  width: 100%;
 }
 
 /* Background section improvements */
@@ -2796,22 +2802,26 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
 
 /* --- CERTIFICATION CARD BIGGER --- */
 .cert-card {
-  width: 320px;
+  background: #000 !important;
+  border: 2px solid #2563eb !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2) !important;
+  color: #fff !important;
+  width: 340px;
   min-height: 220px;
   padding: 2.5rem 2rem;
-  font-size: 1.15rem;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(44,62,80,0.10);
-  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto 2rem auto;
+  transition: transform 0.18s, box-shadow 0.18s, border 0.18s;
 }
-.cert-card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 1.2rem;
+.cert-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
+  border-color: #3b82f6;
+  background: #000;
 }
 
 
@@ -3143,4 +3153,23 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
 .education-split-row::before,
 .education-split-row::after {
   display: none !important;
+}
+
+@media (max-width: 1200px) {
+  .tools-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 900px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .tools-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.8rem;
+  }
 }
