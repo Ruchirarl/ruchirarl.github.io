@@ -834,8 +834,8 @@ section {
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
   justify-items: center;
@@ -846,15 +846,15 @@ section {
   background: #000000;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-  padding: 1.2rem 1rem 1rem 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid #2563eb;
-  min-width: 180px;
-  max-width: 240px;
+  width: 280px;
+  height: 200px;
   overflow: hidden;
   backdrop-filter: blur(4px);
   cursor: pointer;
@@ -881,6 +881,14 @@ section {
 .skill-card:hover::before {
   background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
   box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+}
+
+.skill-card:hover h3 {
+  color: #ffffff;
+}
+
+.skill-card:hover p {
+  color: #ffffff;
 }
 .skill-card h3 {
   color: #2563eb;
@@ -2715,6 +2723,7 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
 /* Reduce gap between title and subtitle in skills section */
 .skills-section .section-title {
   margin-bottom: 0.7rem;
+  color: #ffffff !important;
 }
 .skills-section .section-subtitle {
   margin-bottom: 1.2rem;
