@@ -56,10 +56,11 @@ section {
 
 .about-section {
   min-height: auto;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 6rem 2rem;
   justify-content: center;
   align-items: center;
   background: #000000 !important;
+  position: relative;
 }
 
 .skills-section {
@@ -574,10 +575,10 @@ section {
 /* Scroll arrow for About section */
 .about-scroll-arrow {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #ffffff;
   cursor: pointer;
   z-index: 10;
@@ -585,8 +586,8 @@ section {
   transition: all 0.3s ease;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -611,16 +612,17 @@ section {
 }
 .about-flex {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 3rem;
-  max-width: 1000px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   flex-wrap: wrap;
   flex: 1;
   align-self: center;
   min-height: auto;
+  padding: 2rem 0;
 }
 .about-photo {
   flex: 0 0 280px;
@@ -632,6 +634,7 @@ section {
   background: #000000;
   padding: 8px;
   border: 2px solid #2563eb;
+  margin-left: 2rem;
 }
 .about-photo img {
   width: 260px;
@@ -643,19 +646,19 @@ section {
   background: #111111;
 }
 .about-content {
-  flex: 1 1 500px;
+  flex: 1 1 600px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-width: 400px;
+  min-width: 500px;
   gap: 1rem;
   padding: 0;
-  max-width: 600px;
+  max-width: 800px;
 }
 .about-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 0.5rem;
@@ -679,9 +682,9 @@ section {
 }
 .about-content p {
   color: #ffffff;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
   font-weight: 400;
   opacity: 0.9;
   text-align: left;
@@ -733,11 +736,13 @@ section {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
+    justify-content: center;
   }
   .about-content {
     align-items: center;
     padding: 0;
     max-width: 100%;
+    min-width: auto;
   }
   .about-heading {
     text-align: center;
@@ -754,6 +759,7 @@ section {
   }
   .about-photo {
     flex: 0 0 240px;
+    margin-left: 0;
   }
   .about-photo img {
     width: 220px;
