@@ -1558,24 +1558,15 @@ footer {
 /* === Background Section: Premium Layout - DARK THEME === */
 .background-section {
   background: #000000 !important;
-  padding: 4rem 0 3.5rem 0;
-  position: relative;
-  z-index: 1;
+  padding: 5rem 2rem;
+  text-align: center;
 }
 .background-section .container {
-  position: relative;
-  z-index: 2;
-  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.background-section::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255,255,255,0.5);
-  backdrop-filter: blur(2px);
-  z-index: 1;
-  pointer-events: none;
-}
+
+
 
 .professional-card-grid {
   display: grid;
