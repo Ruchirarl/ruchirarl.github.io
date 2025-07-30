@@ -33,7 +33,7 @@ ul {
 /* Improved Section Spacing and Sizing */
 section {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,55 +55,56 @@ section {
 }
 
 .about-section {
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  min-height: 120vh;
+  padding: 6rem 2rem;
   justify-content: center;
   align-items: center;
+  background: #000000 !important;
 }
 
 .skills-section {
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  min-height: auto;
+  padding: 5rem 2rem;
   justify-content: center;
   align-items: center;
   background: #000000 !important;
 }
 
 .tools-section {
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  min-height: auto;
+  padding: 5rem 2rem;
   justify-content: center;
   align-items: center;
   background: #000000 !important;
 }
 
 .projects-section {
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  min-height: auto;
+  padding: 5rem 2rem;
   justify-content: center;
   align-items: center;
   background: #000000 !important;
 }
 
 .background-section {
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  min-height: auto;
+  padding: 5rem 2rem;
   justify-content: center;
   align-items: center;
   background: #000000 !important;
 }
 
 .certifications-section {
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  min-height: auto;
+  padding: 5rem 2rem;
   justify-content: center;
   align-items: center;
   background: #000000 !important;
 }
 
 .contact-section {
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  min-height: auto;
+  padding: 5rem 2rem;
   justify-content: center;
   align-items: center;
   background: #000000 !important;
@@ -612,17 +613,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4.5rem;
+  gap: 5rem;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   flex-wrap: wrap;
   flex: 1;
   align-self: center;
-  min-height: 60vh;
+  min-height: 80vh;
 }
 .about-photo {
-  flex: 0 0 280px;
+  flex: 0 0 320px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -633,8 +634,8 @@ section {
   border: 3px solid #2563eb;
 }
 .about-photo img {
-  width: 260px;
-  height: 260px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid #333333;
@@ -654,7 +655,7 @@ section {
 }
 .about-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 0.7rem;
@@ -666,7 +667,7 @@ section {
 }
 .about-subtitle {
   color: #ffffff;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 1.7rem;
   letter-spacing: 0.7px;
@@ -678,7 +679,7 @@ section {
 }
 .about-content p {
   color: #ffffff;
-  font-size: 1.13rem;
+  font-size: 1.2rem;
   margin-bottom: 1.1rem;
   line-height: 1.7;
   font-weight: 400;
