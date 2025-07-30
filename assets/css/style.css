@@ -3173,3 +3173,13 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
     gap: 0.8rem;
   }
 }
+
+.cert-card img {
+  max-width: 90px;
+  max-height: 90px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1.2rem auto;
+}
