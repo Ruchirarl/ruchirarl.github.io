@@ -938,11 +938,11 @@ section {
   }
   .tools-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .tool-card {
-    width: 220px;
-    height: 160px;
+    width: 180px;
+    height: 130px;
   }
 }
 @media (max-width: 900px) {
@@ -951,11 +951,11 @@ section {
   }
   .tools-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .tool-card {
-    width: 200px;
-    height: 150px;
+    width: 160px;
+    height: 120px;
   }
 }
 @media (max-width: 600px) {
@@ -965,23 +965,23 @@ section {
   }
   .tools-grid {
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .tool-card {
-    width: 180px;
-    height: 140px;
-    padding: 1rem 0.8rem;
+    width: 140px;
+    height: 110px;
+    padding: 0.8rem 0.6rem;
   }
   .tool-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
   }
   .tool-card h3 {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
   }
   .tool-card p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -1016,8 +1016,8 @@ section {
 }
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
   justify-items: center;
@@ -1028,7 +1028,7 @@ section {
   background: #000000;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-  padding: 1.5rem 1rem;
+  padding: 1.2rem 0.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1036,8 +1036,8 @@ section {
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid #2563eb;
-  width: 250px;
-  height: 180px;
+  width: 200px;
+  height: 150px;
   overflow: hidden;
   backdrop-filter: blur(4px);
   cursor: pointer;
@@ -1075,9 +1075,9 @@ section {
 }
 
 .tool-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #2563eb;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   z-index: 1;
 }
 
@@ -1087,18 +1087,18 @@ section {
 
 .tool-card h3 {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
   z-index: 1;
   font-family: 'Playfair Display', serif;
   text-align: center;
 }
 .tool-card p {
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.3;
   z-index: 1;
   text-align: center;
   opacity: 0.9;
@@ -1125,11 +1125,11 @@ section {
   }
   .tools-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .tool-card {
-    width: 220px;
-    height: 160px;
+    width: 180px;
+    height: 130px;
   }
 }
 @media (max-width: 900px) {
@@ -1138,11 +1138,11 @@ section {
   }
   .tools-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .tool-card {
-    width: 200px;
-    height: 150px;
+    width: 160px;
+    height: 120px;
   }
 }
 @media (max-width: 600px) {
@@ -1152,23 +1152,23 @@ section {
   }
   .tools-grid {
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .tool-card {
-    width: 180px;
-    height: 140px;
-    padding: 1rem 0.8rem;
+    width: 140px;
+    height: 110px;
+    padding: 0.8rem 0.6rem;
   }
   .tool-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
   }
   .tool-card h3 {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
   }
   .tool-card p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -2908,3 +2908,9 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
 .tool-card:hover:nth-child(9) .tool-icon { color: #e74c3c; }
 .tool-card:hover:nth-child(10) .tool-icon { color: #3498db; }
 .tool-card:hover:nth-child(11) .tool-icon { color: #ff6b35; }
+
+.tools-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
