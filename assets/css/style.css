@@ -277,9 +277,9 @@ ul {
 }
 
 .btn-outline {
-  background: #2563eb !important;
+  background: #000000 !important;
   color: #ffffff;
-  border: 1px solid #2563eb;
+  border: 2px solid #2563eb;
   opacity: 1 !important;
   padding: 0.9rem 2rem;
   border-radius: 25px;
@@ -292,15 +292,15 @@ ul {
   cursor: pointer;
   display: inline-block;
   margin-bottom: 0.5rem;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
   position: relative;
   overflow: hidden;
 }
 
 .btn-outline:hover {
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%) !important;
   color: #ffffff;
-  border-color: #1d4ed8;
+  border-color: #3b82f6;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
 }
