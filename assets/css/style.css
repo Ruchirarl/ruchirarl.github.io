@@ -367,7 +367,7 @@ ul {
 
 /* ABOUT SECTION - Modern Split Layout - DARK THEME */
 .about-section {
-  background: #0a0a0a !important;
+  background: #000000 !important;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -377,22 +377,34 @@ ul {
   border-top: 1px solid #333333;
 }
 
-/* Scroll arrow for About section */
-.about-scroll-arrow {
+/* Scroll arrow for Hero section */
+.hero-scroll-arrow {
   position: absolute;
-  top: 20px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
-  color: #2563eb;
+  font-size: 2.5rem;
+  color: #ffffff;
   cursor: pointer;
   z-index: 10;
   animation: bounce 2s infinite;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.about-scroll-arrow:hover {
-  color: #3b82f6;
+.hero-scroll-arrow:hover {
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.2);
+  border-color: #2563eb;
+  transform: translateX(-50%) scale(1.1);
 }
 
 @keyframes bounce {
@@ -453,6 +465,7 @@ ul {
   text-transform: none;
   text-align: left;
   line-height: 1.1;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
 .about-subtitle {
   color: #ffffff;
@@ -462,7 +475,7 @@ ul {
   letter-spacing: 0.7px;
 }
 .about-divider {
-  color: #cccccc;
+  color: #2563eb;
   margin: 0 0.5rem;
 }
 .about-content p {
@@ -471,6 +484,7 @@ ul {
   margin-bottom: 1.1rem;
   line-height: 1.7;
   font-weight: 400;
+  opacity: 0.9;
 }
 .about-buttons {
   display: flex;
