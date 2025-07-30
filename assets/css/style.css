@@ -65,7 +65,7 @@ section {
 
 .skills-section {
   min-height: auto;
-  padding: 5rem 2rem 6rem 2rem;
+  padding: 4rem 2rem 8rem 2rem;
   justify-content: center;
   align-items: center;
   background: #000000 !important;
@@ -128,6 +128,10 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.skills-section .container {
+  margin-bottom: 2rem;
 }
 
 /* Responsive improvements */
@@ -606,10 +610,10 @@ section {
 /* Scroll arrow for Skills section */
 .skills-scroll-arrow {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #ffffff;
   cursor: pointer;
   z-index: 10;
@@ -617,8 +621,8 @@ section {
   transition: all 0.3s ease;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -805,24 +809,24 @@ section {
 }
 .section-title {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #ffffff;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   letter-spacing: 1px;
 }
 .section-subtitle {
   text-align: center;
   color: #ffffff;
-  font-size: 1.15rem;
-  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
   font-weight: 500;
   letter-spacing: 0.2px;
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
   justify-items: center;
@@ -833,7 +837,7 @@ section {
   background: #000000;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  padding: 1.2rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -871,18 +875,18 @@ section {
 }
 .skill-card h3 {
   color: #2563eb;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 0.8rem;
-  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
+  margin-top: 0.6rem;
   z-index: 1;
   font-family: 'Playfair Display', serif;
 }
 .skill-card p {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.5;
   z-index: 1;
 }
 
