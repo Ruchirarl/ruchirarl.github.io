@@ -875,7 +875,7 @@ section {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
   border-color: #3b82f6;
-  background: linear-gradient(135deg, #2563eb 0%, #000000 100%);
+  background: linear-gradient(135deg, #000000 0%, #2563eb 30%, #000000 100%);
 }
 
 .skill-card:hover::before {
@@ -891,13 +891,14 @@ section {
   color: #ffffff;
 }
 .skill-card h3 {
-  color: #2563eb;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
   margin-top: 0.6rem;
   z-index: 1;
   font-family: 'Playfair Display', serif;
+  text-align: center;
 }
 .skill-card p {
   color: #ffffff;
@@ -905,6 +906,7 @@ section {
   font-weight: 400;
   line-height: 1.5;
   z-index: 1;
+  text-align: center;
 }
 
 /* Fade-in animation for cards */
