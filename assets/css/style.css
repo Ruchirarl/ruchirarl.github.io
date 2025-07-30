@@ -1902,6 +1902,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   justify-content: center;
   padding: 5rem 2rem;
   position: relative;
+  background: #000000 !important;
 }
 
 .projects-section {
@@ -2277,10 +2278,10 @@ section:nth-of-type(even) {
 
 /* --- ALTERNATE SECTION BACKGROUNDS --- */
 section {
-  background: #fff;
+  background: #000000;
 }
 section:nth-of-type(even) {
-  background: #D6E4F0;
+  background: #111111;
 }
 
 /* --- CENTER GRID CONTENT --- */
@@ -2339,8 +2340,8 @@ section:nth-of-type(even) {
 
 /* --- REMOVE ALL GRAY BACKGROUNDS --- */
 section, .container, .skills-section, .tools-section, .projects-section, .background-section, .certifications-section, .contact-section {
-  background: unset !important;
-  background-color: unset !important;
+  background: #000000 !important;
+  background-color: #000000 !important;
 }
 
 /* --- CERTIFICATION CARD BIGGER --- */
