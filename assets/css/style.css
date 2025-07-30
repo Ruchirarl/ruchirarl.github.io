@@ -7,6 +7,7 @@ body {
   font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 a {
@@ -25,6 +26,142 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Improved Section Spacing and Sizing */
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Section-specific improvements */
+.hero {
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0 2rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #000000 !important;
+}
+
+.tools-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #000000 !important;
+}
+
+.projects-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #000000 !important;
+}
+
+.background-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #000000 !important;
+}
+
+.certifications-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #000000 !important;
+}
+
+.contact-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #000000 !important;
+}
+
+/* Container improvements for better content sizing */
+.skills-section .container,
+.tools-section .container,
+.projects-section .container,
+.background-section .container,
+.certifications-section .container,
+.contact-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive improvements */
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+  
+  .hero {
+    height: 100vh;
+    min-height: 100vh;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .container {
+    padding: 0 0.5rem;
+  }
 }
 
 /* Section spacing improvements - DARK THEME */
@@ -369,10 +506,12 @@ ul {
 .about-section {
   background: #000000 !important;
   min-height: 100vh;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 5rem 2rem;
   position: relative;
   border-top: 1px solid #333333;
 }
@@ -385,6 +524,7 @@ ul {
   margin: 0;
   opacity: 0.3;
   position: relative;
+  flex-shrink: 0;
 }
 
 .section-divider::before {
@@ -473,13 +613,16 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 4.5rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   flex-wrap: wrap;
+  flex: 1;
+  align-self: center;
+  min-height: 60vh;
 }
 .about-photo {
-  flex: 0 0 260px;
+  flex: 0 0 280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -490,8 +633,8 @@ ul {
   border: 3px solid #2563eb;
 }
 .about-photo img {
-  width: 240px;
-  height: 240px;
+  width: 260px;
+  height: 260px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid #333333;
@@ -499,24 +642,25 @@ ul {
   background: #111111;
 }
 .about-content {
-  flex: 1 1 350px;
+  flex: 1 1 400px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 300px;
+  min-width: 350px;
   gap: 1.2rem;
   padding: 0;
+  max-width: 500px;
 }
 .about-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 0.7rem;
   letter-spacing: 2px;
   text-transform: none;
-  text-align: left;
+  text-align: center;
   line-height: 1.1;
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
@@ -526,6 +670,7 @@ ul {
   font-weight: 600;
   margin-bottom: 1.7rem;
   letter-spacing: 0.7px;
+  text-align: center;
 }
 .about-divider {
   color: #2563eb;
@@ -538,13 +683,14 @@ ul {
   line-height: 1.7;
   font-weight: 400;
   opacity: 0.9;
+  text-align: center;
 }
 .about-buttons {
   display: flex;
   gap: 1.1rem;
   margin-top: 2.2rem;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .about-buttons .btn-primary,
@@ -590,10 +736,18 @@ ul {
   .about-content {
     align-items: center;
     padding: 0;
+    max-width: 100%;
   }
   .about-heading {
     text-align: center;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
+  }
+  .about-photo {
+    flex: 0 0 240px;
+  }
+  .about-photo img {
+    width: 220px;
+    height: 220px;
   }
 }
 
@@ -620,11 +774,12 @@ ul {
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  max-width: 1100px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
   justify-items: center;
+  width: 100%;
 }
 .skill-card {
   position: relative;
@@ -726,12 +881,13 @@ ul {
 }
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
   justify-items: center;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 .tool-bubble {
   position: relative;
@@ -825,8 +981,37 @@ ul {
   }
 }
 @media (max-width: 600px) {
-  .tools-grid {
+  .skills-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 1rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .professional-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .certifications-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .tool-bubble {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 1.5rem !important;
+  }
+  .tool-bubble span {
+    font-size: 0.8rem !important;
   }
 }
 
@@ -849,10 +1034,10 @@ ul {
 }
 .projects-grid {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 3rem auto 2rem auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2.5rem;
   justify-items: center;
 }
@@ -1018,10 +1203,13 @@ ul {
 }
 
 .contact-content {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
   align-items: stretch;
-  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .contact-info, .contact-form {
   flex: 1 1 0;
@@ -1218,11 +1406,15 @@ footer {
 }
 
 .professional-card-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2.5rem;
   justify-content: center;
-  flex-wrap: wrap;
   margin-bottom: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .experience-card {
@@ -1403,8 +1595,9 @@ footer {
 
 /* --- Education Section: Flat, Clean, No Cards --- */
 .education-split-row {
-  display: flex;
-  gap: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
   justify-content: center;
   align-items: stretch;
   margin-top: 0.2rem;
@@ -1413,6 +1606,7 @@ footer {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 .education-split-row::before {
   content: '';
@@ -1492,7 +1686,7 @@ footer {
 }
 @media (max-width: 900px) {
   .education-split-row {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 2rem;
     align-items: center;
     max-width: 98vw;
@@ -2152,9 +2346,21 @@ footer {
 /* --- SECTION SPACING --- */
 section {
   margin-bottom: 0;
+  box-sizing: border-box;
 }
 section + section {
-  margin-top: 5rem;
+  margin-top: 0;
+}
+
+/* Ensure proper content flow */
+.section-title {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 /* --- SKILLS --- */
@@ -2247,30 +2453,40 @@ section + section {
 /* --- RESPONSIVE --- */
 @media (max-width: 1200px) {
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   .tools-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .professional-card-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .education-split-row {
-    grid-template-columns: 1fr;
+  .contact-content {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
 @media (max-width: 900px) {
-  .skills-grid,
-  .tools-grid,
-  .projects-grid,
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
   .professional-card-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
   .contact-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .education-split-row {
+    flex-direction: column;
     gap: 2rem;
   }
 }
@@ -2339,11 +2555,22 @@ section:nth-of-type(even) {
 
 /* --- CENTER GRID CONTENT --- */
 .skills-grid,
-.tools-grid,
-.certifications-row {
+.tools-grid {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.certifications-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .skills-section .container,
