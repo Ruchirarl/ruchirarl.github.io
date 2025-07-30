@@ -30,14 +30,14 @@ ul {
 /* Section spacing improvements - DARK THEME */
 .skills-section {
   padding: 5rem 2rem;
-  background: #111111;
+  background: #000000 !important;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .tools-section {
   padding: 5rem 2rem;
-  background: #0a0a0a;
+  background: #000000 !important;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -50,26 +50,26 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 5rem 2rem;
-  background: #111111;
+  background: #000000 !important;
 }
 
 .background-section {
   padding: 5rem 2rem;
-  background: #0a0a0a;
+  background: #000000 !important;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .certifications-section {
   padding: 5rem 2rem;
-  background: #111111;
+  background: #000000 !important;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .contact-section {
   padding: 5rem 2rem;
-  background: #0a0a0a;
+  background: #000000 !important;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -546,7 +546,7 @@ ul {
 
 /* SKILLS SECTION - Core Competencies - DARK THEME */
 .skills-section {
-  background: #111111 !important;
+  background: #000000 !important;
   padding: 4rem 0 2.5rem 0;
 }
 .section-title {
@@ -660,7 +660,7 @@ ul {
 
 /* TECHNOLOGIES & TOOLS SECTION - DARK THEME */
 .tools-section {
-  background: #0a0a0a !important;
+  background: #000000 !important;
   padding: 4rem 0 2.5rem 0;
 }
 .tools-section .section-subtitle {
@@ -736,7 +736,7 @@ ul {
 }
 /* --- Tools Section: Gradient Background and Gradient Hover - DARK THEME --- */
 .tools-section {
-  background: linear-gradient(120deg, #0a0a0a 60%, #111111 100%);
+  background: #000000 !important;
 }
 .tool-bubble:hover {
   background: linear-gradient(90deg, #ffffff 0%, #cccccc 100%);
@@ -779,7 +779,7 @@ ul {
 
 /* Projects Section - Enhanced Visuals - DARK THEME */
 .projects-section {
-  background: #111111 !important;
+  background: #000000 !important;
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -952,7 +952,7 @@ ul {
 
 /* CONTACT SECTION - DARK THEME */
 .contact-section {
-  background: #0a0a0a !important;
+  background: #000000 !important;
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -1144,7 +1144,7 @@ footer {
 
 /* === Background Section: Premium Layout - DARK THEME === */
 .background-section {
-  background: #0a0a0a !important;
+  background: #000000 !important;
   padding: 4rem 0 3.5rem 0;
   position: relative;
   z-index: 1;
@@ -1685,7 +1685,7 @@ footer {
 
 /* === BACKGROUND SECTIONS === */
 .background-section, .education-section, .certifications-section, .skills-section, .tools-section, .projects-section, .contact-section {
-  background: rgba(243,244,246,0.98);
+  background: #000000 !important;
 }
 
 /* === FOOTER === */
@@ -1852,7 +1852,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
 
 /* --- Portfolio Section: Force Blue Palette --- */
 .projects-section {
-  background: #fff !important;
+  background: #000000 !important;
 }
 .project-card::before {
   background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%) !important;
@@ -2229,10 +2229,10 @@ section:last-of-type {
 
 /* --- SECTION BACKGROUNDS: ALTERNATE --- */
 section {
-  background: #fff !important;
+  background: #000000 !important;
 }
 section:nth-of-type(even) {
-  background: #D6E4F0 !important;
+  background: #000000 !important;
 }
 
 /* --- CENTER TITLES AND SUBTITLES --- */
@@ -2303,7 +2303,7 @@ section:nth-of-type(even) {
 
 /* --- BACKGROUND SECTION ALWAYS BLUE --- */
 .background-section {
-  background: #D6E4F0 !important;
+  background: #000000 !important;
 }
 
 /* --- PORTFOLIO SECTION TITLE UNDERLINE BLUE --- */
