@@ -951,6 +951,7 @@ section {
 .tools-section .section-title {
   color: #ffffff !important;
   margin-bottom: 0.7rem;
+  font-size: 1.8rem;
 }
 
 .tools-section .section-title::after {
@@ -2833,3 +2834,29 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
     margin-top: 0.5rem !important;
   }
 }
+
+/* Individual tool icon colors */
+.tool-card:nth-child(1) .tool-icon { color: #ff6b35; } /* Python - Orange */
+.tool-card:nth-child(2) .tool-icon { color: #00d4aa; } /* SQL - Teal */
+.tool-card:nth-child(3) .tool-icon { color: #276dc3; } /* R - Blue */
+.tool-card:nth-child(4) .tool-icon { color: #e97627; } /* Tableau - Orange */
+.tool-card:nth-child(5) .tool-icon { color: #217346; } /* Excel - Green */
+.tool-card:nth-child(6) .tool-icon { color: #ff6b6b; } /* Hugging Face - Red */
+.tool-card:nth-child(7) .tool-icon { color: #8e44ad; } /* Informatica - Purple */
+.tool-card:nth-child(8) .tool-icon { color: #f39c12; } /* Figma - Orange */
+.tool-card:nth-child(9) .tool-icon { color: #e74c3c; } /* Streamlit - Red */
+.tool-card:nth-child(10) .tool-icon { color: #3498db; } /* Google Cloud - Blue */
+.tool-card:nth-child(11) .tool-icon { color: #ff6b35; } /* dbt - Orange */
+
+/* Hover effects for colorful icons */
+.tool-card:hover:nth-child(1) .tool-icon { color: #ff6b35; }
+.tool-card:hover:nth-child(2) .tool-icon { color: #00d4aa; }
+.tool-card:hover:nth-child(3) .tool-icon { color: #276dc3; }
+.tool-card:hover:nth-child(4) .tool-icon { color: #e97627; }
+.tool-card:hover:nth-child(5) .tool-icon { color: #217346; }
+.tool-card:hover:nth-child(6) .tool-icon { color: #ff6b6b; }
+.tool-card:hover:nth-child(7) .tool-icon { color: #8e44ad; }
+.tool-card:hover:nth-child(8) .tool-icon { color: #f39c12; }
+.tool-card:hover:nth-child(9) .tool-icon { color: #e74c3c; }
+.tool-card:hover:nth-child(10) .tool-icon { color: #3498db; }
+.tool-card:hover:nth-child(11) .tool-icon { color: #ff6b35; }
