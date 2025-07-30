@@ -2072,7 +2072,7 @@ footer {
 
 /* === CARDS, MODALS, SURFACES === */
 .project-card, .experience-card, .education-split-col, .cert-card, .experience-modal {
-  background: #fff;
+  /* background: #fff; */
   border-radius: 22px;
   box-shadow: 0 8px 32px 0 rgba(31,41,55,0.10);
   border: 1.5px solid #F3F4F6;
