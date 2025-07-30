@@ -65,10 +65,11 @@ section {
 
 .skills-section {
   min-height: auto;
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 6rem 2rem;
   justify-content: center;
   align-items: center;
   background: #000000 !important;
+  position: relative;
 }
 
 .tools-section {
@@ -602,6 +603,36 @@ section {
   transform: translateX(-50%) scale(1.1);
 }
 
+/* Scroll arrow for Skills section */
+.skills-scroll-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 10;
+  animation: bounce 2s infinite;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.skills-scroll-arrow:hover {
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.2);
+  border-color: #2563eb;
+  transform: translateX(-50%) scale(1.1);
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateX(-50%) translateY(0);
@@ -776,7 +807,7 @@ section {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 800;
-  color: #2563eb;
+  color: #ffffff;
   margin-bottom: 2.5rem;
   letter-spacing: 1px;
 }
@@ -800,8 +831,8 @@ section {
 .skill-card {
   position: relative;
   background: #000000;
-  border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.1);
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
   padding: 1.5rem 1.2rem 1.2rem 1.2rem;
   display: flex;
   flex-direction: column;
@@ -813,6 +844,7 @@ section {
   max-width: 240px;
   overflow: hidden;
   backdrop-filter: blur(4px);
+  cursor: pointer;
 }
 .skill-card::before {
   content: '';
@@ -821,14 +853,14 @@ section {
   top: 0;
   width: 100%;
   height: 6px;
-  border-radius: 14px 14px 0 0;
+  border-radius: 25px 25px 0 0;
   background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
   opacity: 1;
   z-index: 2;
 }
 .skill-card:hover {
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
   border-color: #3b82f6;
   background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%);
 }
