@@ -1234,10 +1234,10 @@ section {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
   border-color: #3b82f6;
-  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  background: #000000;
 }
 
 .project-card::before {
@@ -1615,10 +1615,10 @@ footer {
 }
 
 .experience-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
   border-color: #3b82f6;
-  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  background: #000000;
 }
 
 .experience-accent-bar {
@@ -1810,10 +1810,10 @@ footer {
   margin-bottom: 1.5rem;
 }
 .education-split-col:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
   border-color: #3b82f6;
-  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  background: #000000;
 }
 .education-logo {
   width: 54px;
@@ -3003,10 +3003,10 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
 }
 
 .education-split-col:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
   border-color: #3b82f6;
-  background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+  background: #000000;
 }
 
 .education-split-row::before {
