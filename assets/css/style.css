@@ -367,13 +367,41 @@ ul {
 
 /* ABOUT SECTION - Modern Split Layout - DARK THEME */
 .about-section {
-  background: #111111 !important;
+  background: #0a0a0a !important;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   position: relative;
+  border-top: 1px solid #333333;
+}
+
+/* Scroll arrow for About section */
+.about-scroll-arrow {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #2563eb;
+  cursor: pointer;
+  z-index: 10;
+  animation: bounce 2s infinite;
+  transition: color 0.3s ease;
+}
+
+.about-scroll-arrow:hover {
+  color: #3b82f6;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 .about-flex {
   display: flex;
@@ -390,19 +418,20 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 32px rgba(255,255,255,0.1), 0 1.5px 0 #333333;
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.2), 0 1.5px 0 #333333;
   border-radius: 50%;
-  background: #333333;
+  background: #000000;
   padding: 12px;
+  border: 3px solid #2563eb;
 }
 .about-photo img {
   width: 240px;
   height: 240px;
   object-fit: cover;
   border-radius: 50%;
-  border: 6px solid #555555;
-  box-shadow: 0 6px 32px rgba(255,255,255,0.1);
-  background: #222222;
+  border: 6px solid #333333;
+  box-shadow: 0 6px 32px rgba(37, 99, 235, 0.2);
+  background: #111111;
 }
 .about-content {
   flex: 1 1 350px;
@@ -460,25 +489,29 @@ ul {
 }
 
 .about-buttons .btn-primary {
-  background: #ffffff;
-  color: #000000;
-  border: 2px solid #ffffff;
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #2563eb;
 }
 .about-buttons .btn-primary:hover {
-  background: #cccccc;
-  border-color: #cccccc;
-  color: #000000;
+  background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%);
+  border-color: #3b82f6;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .about-buttons .btn-secondary {
-  background: #333333;
+  background: #000000;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 2px solid #2563eb;
 }
 .about-buttons .btn-secondary:hover {
-  background: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
+  background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%);
+  border-color: #3b82f6;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 @media (max-width: 900px) {

@@ -48,6 +48,9 @@
 
   <!-- About Section -->
   <section class="about-section" id="about">
+    <div class="about-scroll-arrow" onclick="scrollToSection('skills')">
+      <i class="fas fa-chevron-down"></i>
+    </div>
     <div class="about-flex">
       <div class="about-photo">
         <img src="assets/images/Ruchira.jpg" alt="Ruchira Lokhande">
@@ -356,6 +359,17 @@
     particlesJS.load('particles-js', 'assets/js/particles-config.json', function () {
       console.log('particles.js config loaded');
     });
+    
+    // Smooth scroll function
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
     
     // Skill bubble interactions
     document.querySelectorAll('.skill-bubble').forEach(bubble => {
