@@ -277,9 +277,9 @@ ul {
 }
 
 .btn-outline {
-  background: #2a2a2a !important;
+  background: #2563eb !important;
   color: #ffffff;
-  border: 1px solid #e91e63;
+  border: 1px solid #2563eb;
   opacity: 1 !important;
   padding: 0.9rem 2rem;
   border-radius: 25px;
@@ -290,32 +290,19 @@ ul {
   margin: 0 1rem;
   transition: all 0.3s ease;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
+  display: inline-block;
   margin-bottom: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
   position: relative;
   overflow: hidden;
 }
 
-.btn-outline::after {
-  content: '→';
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: transform 0.3s ease;
-}
-
 .btn-outline:hover {
-  background: #333333 !important;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
   color: #ffffff;
-  border-color: #e91e63;
+  border-color: #1d4ed8;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.3);
-}
-
-.btn-outline:hover::after {
-  transform: translateX(3px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
 }
 
 .scroll-down-arrow {
