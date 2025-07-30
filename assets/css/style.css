@@ -811,14 +811,24 @@ section {
   font-size: 2rem;
   font-weight: 800;
   color: #ffffff;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   letter-spacing: 1px;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  border-radius: 2px;
+  margin: 1rem auto 0 auto;
 }
 .section-subtitle {
   text-align: center;
   color: #ffffff;
   font-size: 1.1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-weight: 500;
   letter-spacing: 0.2px;
 }
@@ -865,7 +875,7 @@ section {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
   border-color: #3b82f6;
-  background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #000000 100%);
 }
 
 .skill-card:hover::before {
