@@ -3127,3 +3127,20 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
   border-radius: 2px;
   margin: 1rem auto 0 auto;
 }
+
+.education-split-row,
+.education-split-row::before,
+.education-split-row::after {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+}
+.education-split-row::before,
+.education-split-row::after {
+  display: none !important;
+}
