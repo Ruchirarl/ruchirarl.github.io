@@ -1590,45 +1590,40 @@ footer {
 }
 
 .experience-card {
-  background: rgba(51, 51, 51, 0.97);
-  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
-  border-radius: 22px;
-  border: 2px solid transparent;
-  min-width: 300px;
-  max-width: 350px;
-  min-height: 340px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  background: #111111;
+  border: 2px solid #2563eb;
+  border-radius: 25px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
   position: relative;
-  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
-  cursor: pointer;
-  margin-bottom: 1.5rem;
-  padding-bottom: 32px;
-  padding-top: 0;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
+
 .experience-card:hover {
-  transform: scale(1.04) translateY(-4px);
-  box-shadow: 0 20px 56px rgba(255, 255, 255, 0.2);
-  border-color: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
 }
+
 .experience-accent-bar {
-  width: 100%;
-  height: 8px;
-  background: linear-gradient(90deg, #ffffff 0%, #cccccc 100%);
-  border-radius: 22px 22px 0 0;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  box-shadow: 0 2px 8px 0 rgba(255,255,255,0.2);
-  transition: filter 0.18s;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  border-radius: 25px 25px 0 0;
+  opacity: 1;
 }
+
 .experience-card:hover .experience-accent-bar {
-  filter: brightness(1.15);
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
 }
+
 .experience-logo-circle {
   width: 90px;
   height: 90px;
@@ -1652,36 +1647,26 @@ footer {
   display: block;
 }
 .experience-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  justify-content: center;
-  width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
 }
 .experience-role {
-  font-size: 1.13rem;
-  font-weight: 700;
   color: #ffffff;
-  margin-bottom: 0.2rem;
-  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
   font-family: 'Playfair Display', serif;
 }
 .experience-company {
-  font-size: 1.12rem;
+  color: #2563eb;
+  font-size: 1rem;
   font-weight: 600;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 0.2rem;
-  letter-spacing: 0.01em;
+  margin-bottom: 0.5rem;
 }
 .experience-date {
-  font-size: 1.01rem;
   color: #cccccc;
-  text-align: center;
-  margin-bottom: 0.2rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 @media (max-width: 900px) {
   .professional-card-grid {
@@ -1833,28 +1818,28 @@ footer {
   border-radius: 12px;
 }
 .education-degree {
-  font-size: 1.25rem;
+  color: #ffffff;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: #23272f;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   font-family: 'Playfair Display', serif;
 }
 .education-school {
-  font-size: 1.13rem;
+  color: #2563eb;
+  font-size: 1rem;
   font-weight: 600;
-  color: #1ca7ec;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 .education-date {
-  font-size: 1.05rem;
-  color: #666;
-  margin-bottom: 0.3rem;
-  font-weight: 500;
+  color: #cccccc;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 .education-extra {
-  font-size: 1.01rem;
-  color: #444e5e;
-  margin-bottom: 0.3rem;
+  color: #cccccc;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
 }
 @media (max-width: 900px) {
   .education-split-row {
@@ -2225,28 +2210,28 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   margin-bottom: 1.3rem;
 }
 .education-degree {
-  font-size: 1.18rem;
+  color: #ffffff;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: #1F2937;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
   font-family: 'Playfair Display', serif;
 }
 .education-school {
-  font-size: 1.08rem;
+  color: #2563eb;
+  font-size: 1rem;
   font-weight: 600;
-  color: #2563EB;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 .education-date {
-  font-size: 1.01rem;
-  color: #6B7280;
-  margin-bottom: 0.7rem;
-  font-weight: 500;
+  color: #cccccc;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 .education-extra {
-  font-size: 1.01rem;
-  color: #444e5e;
-  margin-bottom: 0.7rem;
+  color: #cccccc;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
 }
 .education-split-row::before {
   top: 1.5rem;
@@ -2930,4 +2915,91 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* BACKGROUND SECTION - DARK THEME */
+.background-section {
+  background: #000000 !important;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.background-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.background-section .section-title {
+  color: #ffffff !important;
+  margin-bottom: 0.7rem;
+  font-size: 1.8rem;
+}
+
+.background-section .section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  border-radius: 2px;
+  margin: 1rem auto 0 auto;
+}
+
+.background-section .section-subtitle {
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.background-professional {
+  margin-bottom: 4rem;
+}
+
+.background-professional .section-title {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.background-education {
+  margin-top: 4rem;
+}
+
+.background-education .section-title {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.education-split-col {
+  background: #111111;
+  border: 2px solid #2563eb;
+  border-radius: 25px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.education-split-col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+}
+
+.education-split-row::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #2563eb 50%, transparent 100%);
+  transform: translateY(-50%);
+  opacity: 0.6;
 }
