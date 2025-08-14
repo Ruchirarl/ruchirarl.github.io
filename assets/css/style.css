@@ -1790,20 +1790,7 @@ footer {
   margin-bottom: 1.2rem;
   position: relative;
 }
-.background-professional::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
-  border-radius: 2px;
-  margin: 0.1rem auto 0 auto;
-}
-
-/* --- Reduce space between separator and education --- */
-.background-professional::after {
-  margin: 0.1rem auto 0 auto;
-}
+/* Remove old auto-generated accent bars */
 .background-education {
   margin-top: 0;
 }
@@ -2805,15 +2792,7 @@ section:nth-of-type(even) {
   margin-left: auto;
   margin-right: auto;
 }
-.section-title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #E5E7EB;
-  border-radius: 2px;
-  margin: 0.75rem auto 0 auto;
-}
+/* Remove old auto-generated accent bars */
 
 /* --- SECTION SUBTITLE COLOR AND CENTER --- */
 .section-subtitle {
@@ -3588,6 +3567,21 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   text-align: center !important;
   margin: 0 auto 0.8rem auto !important;
   display: block !important;
+}
+
+/* FORCE REMOVE ALL ACCENT BARS FROM SECTION TITLES */
+.section-title::after,
+.skills-section .section-title::after,
+.tools-section .section-title::after,
+.projects-section .section-title::after,
+.background-section .section-title::after,
+.certifications-section .section-title::after,
+.contact-section .section-title::after {
+  display: none !important;
+  content: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: none !important;
 }
 
 .section-divider-accent {
