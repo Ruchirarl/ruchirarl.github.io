@@ -374,14 +374,7 @@ section {
   text-shadow: 0 4px 24px rgba(255,255,255,0.1), 0 1px 0 #ffffff;
 }
 
-.hero-divider {
-  width: 90px;
-  height: 3px;
-  background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%);
-  margin: 1.25rem 0 1.5rem 0;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.35);
-}
+/* Divider removed from hero layout per spacing preference */
 
 .hero-socials {
   display: flex;
@@ -446,35 +439,28 @@ section {
 }
 
 /* Unify buttons with theme tokens */
-.hero-buttons .btn-primary {
-  background: var(--color-accent) !important;
-  color: #ffffff !important;
-  border: 2px solid var(--color-accent) !important;
-  padding: 0.95rem 2.2rem;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  margin: 0 0.5rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 8px 24px rgba(37,99,235,0.25);
-}
-.hero-buttons .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(37,99,235,0.35); }
-
+.hero-buttons .btn-primary,
 .hero-buttons .btn-outline {
-  background: transparent !important;
+  background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%) !important;
   color: #ffffff !important;
-  border: 2px solid var(--color-accent) !important;
+  border: 0 !important;
   padding: 0.95rem 2.2rem;
   border-radius: 12px;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.5px;
   margin: 0 0.5rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-  box-shadow: 0 4px 14px rgba(37,99,235,0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-position 0.25s ease;
+  box-shadow: 0 10px 28px rgba(37,99,235,0.30);
+  background-size: 200% 100%;
+  background-position: 0% 50%;
 }
-.hero-buttons .btn-outline:hover { background: rgba(37,99,235,0.12) !important; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(37,99,235,0.28); }
+.hero-buttons .btn-primary:hover,
+.hero-buttons .btn-outline:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(37,99,235,0.40);
+  background-position: 100% 50%;
+}
 
 /* Button icon spacing */
 .hero-buttons .btn-primary i,
