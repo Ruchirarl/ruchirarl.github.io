@@ -3383,3 +3383,27 @@ section, .container, main, header, footer { background: #000000 !important; }
 /* Footer: match page background */
 footer { background: #000000 !important; color: #ffffff !important; border-top: 0 !important; }
 
+/* === Section sizing fixes: size to content, no fixed viewport heights === */
+.skills-section,
+.tools-section,
+.projects-section,
+.background-section,
+.certifications-section,
+.contact-section {
+  min-height: auto !important;
+  height: auto !important;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+/* Extra bottom padding only where arrows exist to avoid overlap */
+.skills-section { padding-bottom: 7rem !important; }
+.tools-section { padding-bottom: 7rem !important; }
+.background-section { padding-bottom: 7rem !important; }
+
+/* Ensure there's a small visual gap between sections (even with black bg) */
+.section-divider { height: 2px; opacity: 0.6; margin: 0; }
+
+/* Remove any legacy full-screen section rules */
+.projects-section { min-height: auto !important; height: auto !important; }
+.about-section { min-height: auto !important; height: auto !important; }
+
