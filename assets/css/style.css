@@ -452,7 +452,9 @@ section {
 
 /* Unify buttons with theme tokens */
 .hero-buttons .btn-primary,
-.hero-buttons .btn-outline {
+.hero-buttons .btn-outline,
+.about-buttons .btn-primary,
+.about-buttons .btn-secondary {
   background: linear-gradient(90deg, #0a0a0a 0%, #0b1a3d 45%, #1E40AF 70%) !important;
   color: #ffffff !important;
   border: 0 !important;
@@ -468,7 +470,9 @@ section {
   background-position: 0% 50%;
 }
 .hero-buttons .btn-primary:hover,
-.hero-buttons .btn-outline:hover {
+.hero-buttons .btn-outline:hover,
+.about-buttons .btn-primary:hover,
+.about-buttons .btn-secondary:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 36px rgba(20,31,60,0.55);
   background-position: 100% 50%;
@@ -641,29 +645,16 @@ section[id] { scroll-margin-top: 80px; }
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #ffffff;
   cursor: pointer;
   z-index: 10;
   animation: bounce 2s infinite;
   transition: all 0.3s ease;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: none;
 }
 
-.about-scroll-arrow:hover {
-  color: #2563eb;
-  background: rgba(37, 99, 235, 0.2);
-  border-color: #2563eb;
-  transform: translateX(-50%) scale(1.1);
-}
+.about-scroll-arrow:hover { color: #cccccc; transform: translateX(-50%) translateY(2px); }
 
 /* Scroll arrow for Skills section */
 .skills-scroll-arrow {
@@ -671,29 +662,16 @@ section[id] { scroll-margin-top: 80px; }
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #ffffff;
   cursor: pointer;
   z-index: 10;
   animation: bounce 2s infinite;
   transition: all 0.3s ease;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: none;
 }
 
-.skills-scroll-arrow:hover {
-  color: #2563eb;
-  background: rgba(37, 99, 235, 0.2);
-  border-color: #2563eb;
-  transform: translateX(-50%) scale(1.1);
-}
+.skills-scroll-arrow:hover { color: #cccccc; transform: translateX(-50%) translateY(2px); }
 
 @keyframes bounce {
   0%, 100% {
