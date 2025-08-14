@@ -936,7 +936,7 @@ section[id] { scroll-margin-top: 96px; }
   grid-auto-rows: 1fr;
   align-items: stretch;
   justify-items: stretch;
-  gap: 1.8rem;
+  gap: 2.5rem;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -1034,7 +1034,7 @@ section[id] { scroll-margin-top: 96px; }
 }
 
 @media (max-width: 1200px) {
-  .skills-grid { grid-template-columns: repeat(3, minmax(240px, 1fr)); gap: 1.5rem; }
+  .skills-grid { grid-template-columns: repeat(3, minmax(240px, 1fr)); gap: 2rem; }
   .tools-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.8rem;
@@ -1045,7 +1045,7 @@ section[id] { scroll-margin-top: 96px; }
   }
 }
 @media (max-width: 900px) {
-  .skills-grid { grid-template-columns: repeat(2, minmax(240px, 1fr)); gap: 1.5rem; }
+  .skills-grid { grid-template-columns: repeat(2, minmax(240px, 1fr)); gap: 1.8rem; }
   .tools-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
@@ -1056,7 +1056,7 @@ section[id] { scroll-margin-top: 96px; }
   }
 }
 @media (max-width: 600px) {
-  .skills-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .skills-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .tools-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 0.8rem;
@@ -2420,14 +2420,7 @@ footer {
 }
 
 /* Skills section improvements */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  justify-items: center;
-}
+/* Removed duplicate skills-grid definition */
 
 /* Tools section improvements */
 .tools-grid {
@@ -2592,12 +2585,7 @@ section + section {
 }
 
 /* --- SKILLS --- */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-}
+/* Removed duplicate skills-grid definition */
 
 /* --- TOOLS --- */
 .tools-section {
@@ -2751,15 +2739,7 @@ section:nth-of-type(even) {
   position: relative;
   display: inline-block;
 }
-.section-title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #2563EB;
-  border-radius: 2px;
-  margin: 0.75rem auto 0 auto;
-}
+/* Remove old auto-generated accent bars */
 
 /* --- REMOVE GRAY BETWEEN SECTIONS --- */
 .hero,
@@ -3382,20 +3362,7 @@ section.background-section { padding-bottom: 7rem; }
 }
 
 /* === Skills: 4 per row on desktop (final override) === */
-.skills-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, minmax(260px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-  align-items: stretch;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-/* Ensure cards size nicely inside grid */
-.skill-card { width: 100% !important; max-width: 320px; }
-@media (max-width: 1200px) { .skills-grid { grid-template-columns: repeat(3, minmax(240px, 1fr)); } }
-@media (max-width: 900px)  { .skills-grid { grid-template-columns: repeat(2, minmax(240px, 1fr)); } }
-@media (max-width: 600px)  { .skills-grid { grid-template-columns: 1fr; } }
+/* Keep only the main skills-grid definition from above */
 
 /* === Global dark background (final overrides) === */
 html, body { background: #000000 !important; }
