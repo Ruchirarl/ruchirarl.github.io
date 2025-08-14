@@ -3407,3 +3407,6 @@ footer { background: #000000 !important; color: #ffffff !important; border-top: 
 .projects-section { min-height: auto !important; height: auto !important; }
 .about-section { min-height: auto !important; height: auto !important; }
 
+/* Divider spacing to visually separate sections on black background */
+.section-divider { height: 2px; opacity: 0.6; margin: 2.5rem 0; }
+
