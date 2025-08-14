@@ -364,6 +364,11 @@ section {
   margin: 0 auto;
 }
 
+/* Structured spacing for hero rows */
+.hero-top { margin-bottom: 1.25rem; text-align: center; }
+.hero-middle { margin-bottom: 1.25rem; }
+.hero-bottom { margin-top: auto; text-align: center; }
+
 .hero-title {
   font-size: 3.6rem;
   font-family: 'Playfair Display', serif;
@@ -448,7 +453,7 @@ section {
 /* Unify buttons with theme tokens */
 .hero-buttons .btn-primary,
 .hero-buttons .btn-outline {
-  background: linear-gradient(90deg, #0a0a0a 0%, #1E40AF 50%, #2563EB 100%) !important;
+  background: linear-gradient(90deg, #0a0a0a 0%, #0b1a3d 45%, #1E40AF 70%) !important;
   color: #ffffff !important;
   border: 0 !important;
   padding: 0.95rem 2.2rem;
