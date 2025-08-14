@@ -3402,10 +3402,16 @@ section.background-section { padding-bottom: 7rem; }
 }
 
 .project-card.active {
-  opacity: 1;
-  transform: translateX(0);
+  opacity: 1 !important;
+  transform: translateX(0) !important;
   z-index: 2;
   display: block;
+}
+
+/* Make first card visible by default */
+.project-card:first-child {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .project-card.prev {
