@@ -3183,3 +3183,25 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
   margin: 0 auto 1.2rem auto;
 }
 
+/* --- Projects: Horizontal scroll layout --- */
+.projects-section .projects-grid {
+  display: flex !important;
+  flex-direction: row;
+  gap: 1.25rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.projects-section .project-card {
+  flex: 0 0 auto;
+  min-width: 340px;
+  scroll-snap-align: start;
+}
+/* Optional subtle scrollbar styling */
+.projects-section .projects-grid::-webkit-scrollbar { height: 8px; }
+.projects-section .projects-grid::-webkit-scrollbar-track { background: #0a0a0a; }
+.projects-section .projects-grid::-webkit-scrollbar-thumb { background: #2563eb55; border-radius: 8px; }
+.projects-section .projects-grid::-webkit-scrollbar-thumb:hover { background: #2563eb99; }
+
