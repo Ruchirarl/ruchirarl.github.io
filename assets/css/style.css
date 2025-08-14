@@ -338,18 +338,7 @@ section {
 .nav-links li a.active { color: #ffffff; }
 .nav-links li a.active::after { width: 100%; }
 
-/* Resume CTA inside navbar */
-.nav-links .resume-link {
-  padding: 0.4rem 0.9rem;
-  border: 1.5px solid #2563eb;
-  border-radius: 999px;
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.25);
-}
-.nav-links .resume-link:hover {
-  background: rgba(37,99,235,0.15);
-  border-color: #3b82f6;
-}
+/* Resume link matches other nav items */
 
 /* HERO SECTION - Enhanced Attractive Style */
 .hero {
@@ -386,10 +375,10 @@ section {
 }
 
 .hero-divider {
-  width: 84px;
+  width: 90px;
   height: 3px;
   background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%);
-  margin: 1rem 0 1.2rem 0;
+  margin: 1.25rem 0 1.5rem 0;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(37,99,235,0.35);
 }
@@ -397,7 +386,7 @@ section {
 .hero-socials {
   display: flex;
   gap: 1.8rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .hero-socials a {
@@ -426,23 +415,23 @@ section {
 
 /* New concise tagline */
 .hero-tagline {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 0.8rem;
-  line-height: 1.6;
+  margin-bottom: 1rem;
+  line-height: 1.65;
   max-width: 760px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.2px;
 }
 
 /* New subline under tagline */
 .hero-subline {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--color-muted);
   text-align: center;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 }
 
 .hero-intro .emoji {
@@ -461,7 +450,7 @@ section {
   background: var(--color-accent) !important;
   color: #ffffff !important;
   border: 2px solid var(--color-accent) !important;
-  padding: 0.9rem 2rem;
+  padding: 0.95rem 2.2rem;
   border-radius: 12px;
   font-weight: 700;
   font-size: 1rem;
@@ -476,7 +465,7 @@ section {
   background: transparent !important;
   color: #ffffff !important;
   border: 2px solid var(--color-accent) !important;
-  padding: 0.9rem 2rem;
+  padding: 0.95rem 2.2rem;
   border-radius: 12px;
   font-weight: 700;
   font-size: 1rem;
@@ -486,6 +475,10 @@ section {
   box-shadow: 0 4px 14px rgba(37,99,235,0.18);
 }
 .hero-buttons .btn-outline:hover { background: rgba(37,99,235,0.12) !important; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(37,99,235,0.28); }
+
+/* Button icon spacing */
+.hero-buttons .btn-primary i,
+.hero-buttons .btn-outline i { margin-right: 0.5rem; }
 
 .scroll-down-arrow {
   position: absolute;
@@ -533,11 +526,9 @@ section {
   }
   .hero-buttons .btn-primary,
   .hero-buttons .btn-outline { width: 100%; margin: 0.5rem 0; }
-  .hero-socials a {
-    width: 38px;
-    height: 38px;
-    font-size: 1.1rem;
-  }
+  .hero-socials a { width: 42px; height: 42px; font-size: 1.2rem; }
+  .hero-tagline { font-size: 1.15rem; }
+  .hero-subline { font-size: 1rem; }
   .scroll-down-arrow {
     font-size: 1.5rem;
   }
@@ -562,7 +553,7 @@ section {
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent 0%, #2563eb 50%, transparent 100%);
-  margin: 0;
+  margin: 2.75rem 0;
   opacity: 0.6;
   position: relative;
   flex-shrink: 0;
@@ -3685,10 +3676,10 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
 .projects-section .projects-grid {
   display: flex !important;
   flex-direction: row !important;
-  gap: 1.25rem !important;
+  gap: 1.75rem !important;
   overflow-x: auto !important;
   scroll-snap-type: x mandatory !important;
-  padding: 0 4rem !important;
+  padding: 0 4.5rem !important;
 }
 .projects-scroll-btn { display: grid !important; }
 
