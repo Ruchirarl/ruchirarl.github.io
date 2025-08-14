@@ -3580,3 +3580,47 @@ html, body, section, main, footer, .container { background: #000000 !important; 
 .project-tech { margin-top: auto; }
 .project-learn-more { align-self: flex-start; }
 
+/* === FINAL UNIFIED HEADINGS & BACKGROUND === */
+html, body, section, main, header, footer, .container { background: #000000 !important; }
+.navbar { background: #ffffff !important; }
+
+.section-title,
+.section-subtitle { font-family: 'Playfair Display', serif !important; }
+.section-title {
+  color: #ffffff !important;
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2px !important;
+  text-align: center !important;
+  margin: 0 auto 0.5rem auto !important;
+  position: relative !important;
+  display: inline-block !important;
+}
+.section-title::after {
+  content: '' !important;
+  display: block !important;
+  width: 72px !important;
+  height: 3px !important;
+  background: var(--color-accent) !important;
+  border-radius: 2px !important;
+  margin: 12px auto 0 auto !important;
+}
+.section-subtitle {
+  color: var(--color-muted) !important;
+  font-size: 1.1rem !important;
+  text-align: center !important;
+  margin: 0.5rem auto 2.25rem auto !important;
+  max-width: 800px !important;
+}
+
+/* === FINAL Portfolio scroller persistence === */
+.projects-section .projects-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 1.25rem !important;
+  overflow-x: auto !important;
+  scroll-snap-type: x mandatory !important;
+  padding: 0 4rem !important;
+}
+.projects-scroll-btn { display: grid !important; }
+
