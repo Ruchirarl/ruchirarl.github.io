@@ -243,6 +243,8 @@
           </div>
         </div>
       </div>
+      <button class="projects-scroll-btn projects-scroll-left" aria-label="Scroll projects left"><i class="fas fa-chevron-left"></i></button>
+      <button class="projects-scroll-btn projects-scroll-right" aria-label="Scroll projects right"><i class="fas fa-chevron-right"></i></button>
     </div>
     <div class="projects-scroll-arrow" onclick="scrollToSection('background')">
       <i class="fas fa-chevron-down"></i>
@@ -560,6 +562,22 @@
         showScrollNotif();
       }
     }, { passive: false });
+
+    // Projects left/right scroll controls
+    (function(){
+      const grid = document.querySelector('.projects-section .projects-grid');
+      const btnLeft = document.querySelector('.projects-scroll-left');
+      const btnRight = document.querySelector('.projects-scroll-right');
+      if (grid && btnLeft && btnRight) {
+        const scrollAmount = 360; // roughly one card width
+        btnLeft.addEventListener('click', () => {
+          grid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+        btnRight.addEventListener('click', () => {
+          grid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+      }
+    })();
   </script>
 </body>
 </html>
