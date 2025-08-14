@@ -457,7 +457,8 @@
       const section = document.getElementById(sectionId);
       if (!section) return;
       const navbar = document.querySelector('.navbar');
-      const offset = (navbar ? navbar.offsetHeight : 0) + 8;
+      const navH = navbar ? navbar.getBoundingClientRect().height : 0;
+      const offset = Math.ceil(navH) + 12; // extra fudge factor for perfect alignment
       const top = section.getBoundingClientRect().top + window.pageYOffset - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     }
@@ -616,6 +617,21 @@
       });
     }, { rootMargin: '-45% 0px -45% 0px', threshold: 0.01 });
     sectionEls.forEach(s => spy.observe(s));
+
+    // Intercept nav anchor clicks to use the same offset logic as the arrows
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const target = a.getAttribute('href').slice(1);
+        if (target) {
+          e.preventDefault();
+          scrollToSection(target);
+          // Close mobile menu if open
+          if (navLinks && navLinks.classList.contains('open')) {
+            navLinks.classList.remove('open');
+          }
+        }
+      });
+    });
   </script>
 </body>
 </html>

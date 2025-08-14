@@ -640,7 +640,8 @@ section {
 }
 
 /* Anchor offset so sections don't hide under fixed navbar */
-section[id] { scroll-margin-top: 80px; }
+/* Anchor offset for in-page anchors (backup for native jumps) */
+section[id] { scroll-margin-top: 96px; }
 
 .hero-scroll-arrow:hover {
   color: #2563eb;
