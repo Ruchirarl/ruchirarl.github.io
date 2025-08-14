@@ -14,13 +14,15 @@
 <body>
   <!-- Top Navigation -->
   <nav class="navbar">
+    <div class="brand">RL</div>
+    <button class="nav-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="assets/resume.pdf" download>Resume</a></li>
+      <li><a href="assets/resume.pdf" class="resume-link" download>Resume</a></li>
     </ul>
   </nav>
 
@@ -585,6 +587,31 @@
       // Initialize
       updateArrows();
     })();
+
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+
+    // Scroll‑spy to highlight active nav link
+    const sectionEls = Array.from(document.querySelectorAll('section[id]'));
+    const hrefToLink = new Map(Array.from(document.querySelectorAll('.nav-links a')).map(a => [a.getAttribute('href'), a]));
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = '#' + entry.target.id;
+        const link = hrefToLink.get(id);
+        if (!link) return;
+        if (entry.isIntersecting) {
+          document.querySelectorAll('.nav-links a.active').forEach(a => a.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -45% 0px', threshold: 0.01 });
+    sectionEls.forEach(s => spy.observe(s));
   </script>
 </body>
 </html>
