@@ -314,7 +314,7 @@ section {
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.2rem;
   margin-right: 0;
   align-items: center;
 }
@@ -611,6 +611,12 @@ section {
   color: #ffffff;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
