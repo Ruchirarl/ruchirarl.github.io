@@ -3410,3 +3410,97 @@ footer { background: #000000 !important; color: #ffffff !important; border-top: 
 /* Divider spacing to visually separate sections on black background */
 .section-divider { height: 2px; opacity: 0.6; margin: 2.5rem 0; }
 
+/* === Final Theme System and Layout Cleanup (Overrides) === */
+:root {
+  --color-background: #0a0a0a;
+  --color-surface: #0f1115;
+  --color-elevated: #111318;
+  --color-text: #ffffff;
+  --color-muted: rgba(255, 255, 255, 0.72);
+  --color-border: #2563EB33;
+  --color-accent: #2563EB;
+  --color-accent-strong: #1E40AF;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 6px 18px rgba(37, 99, 235, 0.12);
+  --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.45);
+  --section-py-desktop: 6rem;
+  --section-py-tablet: 4rem;
+  --section-py-mobile: 3rem;
+  --content-max: 1200px;
+}
+
+body { background: var(--color-background); color: var(--color-text); }
+
+section { min-height: auto !important; }
+@media (min-width: 993px) { section { padding-top: var(--section-py-desktop) !important; padding-bottom: var(--section-py-desktop) !important; } }
+@media (max-width: 992px) { section { padding-top: var(--section-py-tablet) !important; padding-bottom: var(--section-py-tablet) !important; } }
+@media (max-width: 600px) { section { padding-top: var(--section-py-mobile) !important; padding-bottom: var(--section-py-mobile) !important; } }
+
+.container { max-width: var(--content-max); }
+
+/* Section backgrounds aligned to theme */
+.skills-section,
+.tools-section,
+.projects-section,
+.background-section,
+.certifications-section,
+.contact-section { background: var(--color-background) !important; }
+
+/* Keep hero immersive */
+.hero { height: 100vh; min-height: 100vh; }
+
+/* Section headings */
+.section-title { font-size: 2.25rem; line-height: 1.2; margin: 0; text-align: center; }
+.section-subtitle { font-size: 1.05rem; color: var(--color-muted); margin-top: 0.5rem; text-align: center; }
+
+/* Unified cards styling */
+.skill-card,
+.tool-card,
+.project-card,
+.experience-card,
+.cert-card,
+.education-split-col,
+.experience-modal {
+  background: var(--color-elevated) !important;
+  border: 1.5px solid var(--color-border) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-card:hover,
+.tool-card:hover,
+.project-card:hover,
+.experience-card:hover,
+.cert-card:hover,
+.education-split-col:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-accent) !important;
+  box-shadow: 0 18px 48px rgba(37, 99, 235, 0.18);
+}
+
+/* Projects layout: clean responsive grid, consistent media */
+.projects-section { height: auto !important; min-height: auto !important; }
+.projects-section .projects-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(340px, 1fr));
+  gap: 1.75rem;
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1000px) { .projects-section .projects-grid { grid-template-columns: 1fr; } }
+.projects-section .project-card { max-width: 100%; min-width: 0; }
+.project-image img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-md); }
+
+/* Skill card sizing harmony */
+.skill-card { width: 100% !important; max-width: 320px !important; }
+
+/* Buttons: primary and outline aligned to theme */
+.btn-primary { background: var(--color-accent) !important; color: #ffffff !important; border: 2px solid var(--color-accent) !important; }
+.btn-primary:hover { background: var(--color-accent-strong) !important; border-color: var(--color-accent-strong) !important; }
+.btn-outline, .btn-secondary { background: transparent !important; color: #ffffff !important; border: 2px solid var(--color-accent) !important; }
+.btn-outline:hover, .btn-secondary:hover { background: var(--color-accent) !important; color: #ffffff !important; border-color: var(--color-accent-strong) !important; }
+
