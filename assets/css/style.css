@@ -3417,13 +3417,13 @@ footer { background: #000000 !important; color: #ffffff !important; border-top: 
   --color-elevated: #111318;
   --color-text: #ffffff;
   --color-muted: rgba(255, 255, 255, 0.72);
-  --color-border: #2563EB33;
-  --color-accent: #2563EB;
-  --color-accent-strong: #1E40AF;
+  --color-border: #eb258833;
+  --color-accent: #eb2577;
+  --color-accent-strong: #af1e6e;
   --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 20px;
-  --shadow-sm: 0 6px 18px rgba(37, 99, 235, 0.12);
+  --shadow-sm: 0 6px 18px rgba(235, 37, 96, 0.12);
   --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.45);
   --section-py-desktop: 6rem;
   --section-py-tablet: 4rem;
