@@ -906,11 +906,14 @@ section[id] { scroll-margin-top: 96px; }
 /* SKILLS SECTION - Core Competencies - DARK THEME */
 .skills-section {
   background: #000000 !important;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
   min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 .section-title {
   text-align: center;
@@ -932,13 +935,13 @@ section[id] { scroll-margin-top: 96px; }
 }
 .skills-grid {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-auto-rows: 1fr;
   align-items: stretch;
   justify-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  max-width: 1200px;
+  gap: 1.8rem;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -947,9 +950,9 @@ section[id] { scroll-margin-top: 96px; }
 .skill-card {
   position: relative;
   background: #000000;
-  border-radius: 18px;
+  border-radius: 15px;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-  padding: 1.25rem 1.1rem;
+  padding: 1rem 0.9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -957,7 +960,7 @@ section[id] { scroll-margin-top: 96px; }
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid #2563eb;
-  min-height: 200px;
+  min-height: 160px;
   overflow: hidden;
   backdrop-filter: blur(4px);
   cursor: pointer;
@@ -995,19 +998,20 @@ section[id] { scroll-margin-top: 96px; }
 }
 .skill-card h3 {
   color: #ffffff;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
-  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
   z-index: 1;
   font-family: 'Playfair Display', serif;
   text-align: center;
+  line-height: 1.2;
 }
 .skill-card p {
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.4;
   z-index: 1;
   text-align: center;
 }
@@ -3596,9 +3600,9 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
 
 .section-subtitle {
   color: var(--color-muted) !important;
-  font-size: 1.1rem !important;
+  font-size: 1.05rem !important;
   text-align: center !important;
-  margin: 0 auto 2.5rem auto !important;
+  margin: 0 auto 2rem auto !important;
   max-width: 800px !important;
   line-height: 1.4 !important;
 }
