@@ -838,13 +838,16 @@ section {
   letter-spacing: 0.2px;
 }
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   gap: 2rem;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  justify-items: center;
 }
+/* Consistent card width so flex rows center cleanly */
+.skill-card { width: 280px; max-width: 320px; }
 .skill-card {
   position: relative;
   background: #000000;
@@ -3284,4 +3287,74 @@ section.background-section { padding-bottom: 7rem; }
 .skills-scroll-arrow,
 .about-scroll-arrow,
 .hero-scroll-arrow { z-index: 6; }
+
+/* === Final layout tweaks === */
+/* Tools: 5 per row on desktop */
+.tools-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: stretch;
+}
+@media (max-width: 1200px) { .tools-grid { grid-template-columns: repeat(3, minmax(220px, 1fr)); } }
+@media (max-width: 900px)  { .tools-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); } }
+@media (max-width: 600px)  { .tools-grid { grid-template-columns: repeat(1, minmax(220px, 1fr)); } }
+
+/* Projects: show two at a time (grid), slightly wider cards */
+.projects-section .projects-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(420px, 1fr));
+  gap: 2rem;
+  overflow: visible;
+}
+.projects-section .project-card { width: auto; max-width: 640px; }
+/* Hide the previous scroller arrows for projects */
+.projects-scroll-btn { display: none !important; }
+
+/* Education: equal size cards and centered content */
+.education-split-row {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(340px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+.education-split-col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.education-logo { margin-bottom: 1rem; }
+.education-degree, .education-school, .education-date, .education-extra { text-align: center; }
+
+/* === Portfolio refinements: subtle image zoom + layout tweaks === */
+.projects-section .projects-grid { gap: 2.25rem; grid-template-columns: repeat(2, minmax(460px, 1fr)); }
+@media (max-width: 1000px) { .projects-section .projects-grid { grid-template-columns: 1fr; } }
+.project-image img { transition: transform 0.3s ease, filter 0.3s ease; will-change: transform; }
+.project-card:hover .project-image img { transform: scale(1.035); filter: brightness(0.96); }
+
+/* === Hover zoom for Education and Tools === */
+/* Education: zoom logo on hover */
+.education-logo img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  will-change: transform;
+}
+.education-split-col:hover .education-logo img {
+  transform: scale(1.06);
+  filter: brightness(0.96);
+}
+
+/* Tools: zoom icon on hover */
+.tool-icon {
+  transition: transform 0.25s ease, filter 0.25s ease;
+  will-change: transform;
+}
+.tool-card:hover .tool-icon {
+  transform: scale(1.1);
+  filter: brightness(1.05);
+}
 
