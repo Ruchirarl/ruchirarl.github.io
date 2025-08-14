@@ -906,14 +906,15 @@ section[id] { scroll-margin-top: 96px; }
 /* SKILLS SECTION - Core Competencies - DARK THEME */
 .skills-section {
   background: #000000 !important;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   min-height: 100vh;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
+  padding-top: 8rem;
 }
 .section-title {
   text-align: center;
@@ -940,7 +941,7 @@ section[id] { scroll-margin-top: 96px; }
   align-items: stretch;
   justify-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.5rem 1.5rem;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -952,7 +953,7 @@ section[id] { scroll-margin-top: 96px; }
   background: #000000;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-  padding: 0.8rem 0.6rem;
+  padding: 1.2rem 0.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -960,7 +961,7 @@ section[id] { scroll-margin-top: 96px; }
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid #2563eb;
-  min-height: 140px;
+  min-height: 180px;
   overflow: hidden;
   backdrop-filter: blur(4px);
   cursor: pointer;
@@ -1039,7 +1040,7 @@ section[id] { scroll-margin-top: 96px; }
 }
 
 @media (max-width: 1200px) {
-  .skills-grid { grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+  .skills-grid { grid-template-columns: repeat(4, 1fr); gap: 1.2rem 1.2rem; }
   .tools-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.8rem;
@@ -1050,7 +1051,7 @@ section[id] { scroll-margin-top: 96px; }
   }
 }
 @media (max-width: 900px) {
-  .skills-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .skills-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem 1rem; }
   .tools-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
@@ -1061,7 +1062,7 @@ section[id] { scroll-margin-top: 96px; }
   }
 }
 @media (max-width: 600px) {
-  .skills-grid { grid-template-columns: repeat(4, 1fr); gap: 0.8rem; }
+  .skills-grid { grid-template-columns: repeat(4, 1fr); gap: 0.8rem 0.8rem; }
   .tools-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 0.8rem;
