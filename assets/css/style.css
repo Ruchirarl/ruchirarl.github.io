@@ -496,11 +496,12 @@ section {
 
 .scroll-down-arrow i {
   color: #ffffff;
-  transition: color 0.2s;
+  transition: color 0.2s, transform 0.2s;
 }
 
 .scroll-down-arrow:hover i {
   color: #cccccc;
+  transform: translateY(2px);
 }
 
 @keyframes bounce-down {
@@ -576,21 +577,13 @@ section {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   color: #ffffff;
   cursor: pointer;
   z-index: 10;
   animation: bounce 2s infinite;
   transition: all 0.3s ease;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: none;
 }
 
 /* Mobile nav toggle */
