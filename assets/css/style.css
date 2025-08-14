@@ -770,6 +770,40 @@ section[id] { scroll-margin-top: 96px; }
   opacity: 0.9;
   text-align: left;
 }
+
+.about-intro-text {
+  font-weight: 600 !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.about-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+}
+
+.about-points li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.55;
+  font-weight: 400;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.about-points li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2563EB;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 .about-buttons {
   display: flex;
   gap: 0.75rem;
@@ -839,6 +873,11 @@ section[id] { scroll-margin-top: 96px; }
     font-size: 0.96rem;
     line-height: 1.5;
   }
+  .about-points li {
+    text-align: center;
+    font-size: 0.96rem;
+    line-height: 1.5;
+  }
   .about-buttons {
     justify-content: center;
   }
@@ -870,15 +909,7 @@ section[id] { scroll-margin-top: 96px; }
   letter-spacing: 1px;
 }
 
-.skills-section .section-title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
-  border-radius: 2px;
-  margin: 1rem auto 0 auto;
-}
+/* Remove old auto-generated accent bars */
 .section-subtitle {
   text-align: center;
   color: #ffffff;
@@ -991,7 +1022,7 @@ section[id] { scroll-margin-top: 96px; }
 }
 
 @media (max-width: 1200px) {
-  .skills-grid { grid-template-columns: repeat(3, minmax(240px, 1fr)); gap: 1.25rem; }
+  .skills-grid { grid-template-columns: repeat(3, minmax(240px, 1fr)); gap: 1.5rem; }
   .tools-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.8rem;
@@ -1002,7 +1033,7 @@ section[id] { scroll-margin-top: 96px; }
   }
 }
 @media (max-width: 900px) {
-  .skills-grid { grid-template-columns: repeat(2, minmax(240px, 1fr)); gap: 1.25rem; }
+  .skills-grid { grid-template-columns: repeat(2, minmax(240px, 1fr)); gap: 1.5rem; }
   .tools-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
@@ -1047,15 +1078,7 @@ section[id] { scroll-margin-top: 96px; }
   font-size: 1.8rem;
 }
 
-.tools-section .section-title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
-  border-radius: 2px;
-  margin: 1rem auto 0 auto;
-}
+/* Remove old auto-generated accent bars */
 
 .tools-section .section-subtitle {
   text-align: center;
@@ -2036,14 +2059,7 @@ footer {
 
 /* === ACCENT BARS & DIVIDERS === */
 .hero-divider,
-.section-title::after,
-.experience-accent-bar,
-.background-education::after,
-.education-section .section-title::after {
-  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%) !important;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
-}
+/* Remove old auto-generated accent bars */
 
 .background-education::after {
   display: none !important;
@@ -2200,17 +2216,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   margin-bottom: 2.2rem;
 }
 
-/* --- Skills Section Accent Bar: Blue Gradient --- */
-.skills-section .section-title::after {
-  content: '';
-  display: block;
-  width: 90px;
-  height: 4px;
-  margin: 1.1rem auto 2.2rem auto;
-  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%) !important;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
-}
+/* Remove old auto-generated accent bars */
 
 /* --- Background Section: Centered and Spaced --- */
 .background-section .container {
@@ -3623,7 +3629,9 @@ html, body, section, main, footer, .container { background: #000000 !important; 
 html, body, section, main, header, footer, .container { background: #000000 !important; }
 .navbar { background: rgba(0,0,0,0.6) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
 
-/* Unified section structure: Title -> Divider -> Subtitle */
+/* === UNIFIED SECTION STRUCTURE === */
+/* All sections: Title -> Accent Bar -> Subtitle -> Content */
+
 .section-title,
 .section-subtitle { font-family: 'Playfair Display', serif !important; }
 
@@ -3633,9 +3641,8 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   font-weight: 700 !important;
   letter-spacing: 0.2px !important;
   text-align: center !important;
-  margin: 0 auto 1rem auto !important;
-  position: relative !important;
-  display: inline-block !important;
+  margin: 0 auto 0.8rem auto !important;
+  display: block !important;
 }
 
 .section-divider-accent {
@@ -3643,7 +3650,7 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   height: 3px !important;
   background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%) !important;
   border-radius: 2px !important;
-  margin: 0 auto 1.5rem auto !important;
+  margin: 0 auto 1rem auto !important;
   box-shadow: 0 2px 8px rgba(37,99,235,0.35) !important;
 }
 
@@ -3653,10 +3660,30 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   text-align: center !important;
   margin: 0 auto 2.5rem auto !important;
   max-width: 800px !important;
+  line-height: 1.4 !important;
 }
 
-/* Consistent spacing from top for all sections */
-section .container { padding-top: 4rem !important; }
+/* === SECTION CENTERING === */
+/* All sections fill viewport and center content */
+section {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 2rem !important;
+}
+
+section .container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
 
 /* === FINAL Portfolio scroller persistence === */
 .projects-section .projects-grid {
