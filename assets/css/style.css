@@ -893,7 +893,7 @@ section[id] { scroll-margin-top: 96px; }
   grid-auto-rows: 1fr;
   align-items: stretch;
   justify-items: stretch;
-  gap: 1.25rem;
+  gap: 1.8rem;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -903,7 +903,7 @@ section[id] { scroll-margin-top: 96px; }
 .skill-card {
   position: relative;
   background: #000000;
-  border-radius: 25px;
+  border-radius: 18px;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
   padding: 1.25rem 1.1rem;
   display: flex;
@@ -913,7 +913,7 @@ section[id] { scroll-margin-top: 96px; }
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid #2563eb;
-  min-height: 220px;
+  min-height: 200px;
   overflow: hidden;
   backdrop-filter: blur(4px);
   cursor: pointer;
@@ -3623,34 +3623,40 @@ html, body, section, main, footer, .container { background: #000000 !important; 
 html, body, section, main, header, footer, .container { background: #000000 !important; }
 .navbar { background: rgba(0,0,0,0.6) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
 
+/* Unified section structure: Title -> Divider -> Subtitle */
 .section-title,
 .section-subtitle { font-family: 'Playfair Display', serif !important; }
+
 .section-title {
   color: #ffffff !important;
   font-size: 2.2rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.2px !important;
   text-align: center !important;
-  margin: 0 auto 0.5rem auto !important;
+  margin: 0 auto 1rem auto !important;
   position: relative !important;
   display: inline-block !important;
 }
-.section-title::after {
-  content: '' !important;
-  display: block !important;
+
+.section-divider-accent {
   width: 72px !important;
   height: 3px !important;
-  background: var(--color-accent) !important;
+  background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%) !important;
   border-radius: 2px !important;
-  margin: 12px auto 0 auto !important;
+  margin: 0 auto 1.5rem auto !important;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.35) !important;
 }
+
 .section-subtitle {
   color: var(--color-muted) !important;
   font-size: 1.1rem !important;
   text-align: center !important;
-  margin: 0.5rem auto 2.25rem auto !important;
+  margin: 0 auto 2.5rem auto !important;
   max-width: 800px !important;
 }
+
+/* Consistent spacing from top for all sections */
+section .container { padding-top: 4rem !important; }
 
 /* === FINAL Portfolio scroller persistence === */
 .projects-section .projects-grid {
