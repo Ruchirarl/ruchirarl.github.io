@@ -350,7 +350,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem 1rem 4rem 1rem;
+  padding: 6.5rem 1rem 4.5rem 1rem;
   overflow: hidden;
 }
 
@@ -374,7 +374,14 @@ section {
   text-shadow: 0 4px 24px rgba(255,255,255,0.1), 0 1px 0 #ffffff;
 }
 
-/* Divider removed from hero layout per spacing preference */
+.hero-divider {
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%);
+  margin: 0.9rem 0 1.2rem 0;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.35);
+}
 
 .hero-socials {
   display: flex;
@@ -441,7 +448,7 @@ section {
 /* Unify buttons with theme tokens */
 .hero-buttons .btn-primary,
 .hero-buttons .btn-outline {
-  background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%) !important;
+  background: linear-gradient(90deg, #0a0a0a 0%, #1E40AF 50%, #2563EB 100%) !important;
   color: #ffffff !important;
   border: 0 !important;
   padding: 0.95rem 2.2rem;
@@ -458,7 +465,7 @@ section {
 .hero-buttons .btn-primary:hover,
 .hero-buttons .btn-outline:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 36px rgba(37,99,235,0.40);
+  box-shadow: 0 16px 36px rgba(20,31,60,0.55);
   background-position: 100% 50%;
 }
 
