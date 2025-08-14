@@ -3547,3 +3547,36 @@ section { min-height: auto !important; }
 .projects-scroll-btn:hover { background: var(--color-accent); border-color: var(--color-accent); transform: translateY(-50%) scale(1.05); }
 .projects-scroll-btn i { pointer-events: none; }
 
+/* === Enforce equal section height like home (hero) === */
+section { display: flex !important; flex-direction: column; justify-content: center; align-items: center; }
+section:not(.hero) { min-height: 100vh !important; }
+
+/* Keep everything black except navbar */
+html, body, section, main, footer, .container { background: #000000 !important; }
+.navbar { background: #ffffff !important; }
+
+/* Clean headings and spacing */
+.section-title { letter-spacing: 0.2px; margin-bottom: 0.5rem !important; }
+.section-subtitle { margin-bottom: 2rem !important; }
+
+/* Uniform buttons: one system applied everywhere */
+.btn-primary, .btn-outline, .btn-secondary {
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  padding: 0.7rem 1.2rem !important;
+  font-size: 0.98rem !important;
+}
+.btn-primary { background: var(--color-accent) !important; color: #fff !important; border: 2px solid var(--color-accent) !important; }
+.btn-primary:hover { background: var(--color-accent-strong) !important; border-color: var(--color-accent-strong) !important; }
+.btn-outline, .btn-secondary { background: transparent !important; color: #fff !important; border: 2px solid var(--color-accent) !important; }
+.btn-outline:hover, .btn-secondary:hover { background: var(--color-accent) !important; color: #fff !important; border-color: var(--color-accent-strong) !important; }
+
+/* Uniform portfolio cards: consistent media, layout, and height */
+.project-card { display: flex; flex-direction: column; }
+.project-image img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-md); }
+.project-content { display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
+.project-content h3 { margin-top: 0.25rem; margin-bottom: 0.25rem; }
+.project-content p { color: var(--color-muted); display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.project-tech { margin-top: auto; }
+.project-learn-more { align-self: flex-start; }
+
