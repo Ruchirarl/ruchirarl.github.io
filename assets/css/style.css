@@ -3353,18 +3353,17 @@ section.background-section { padding-bottom: 7rem; }
 .hero-scroll-arrow { z-index: 6; }
 
 /* === Final layout tweaks === */
-/* Tools: 5 per row on desktop */
+/* Tools: 4 per row on desktop */
 .tools-grid {
   display: grid !important;
-  grid-template-columns: repeat(5, minmax(260px, 1fr));
-  gap: 2.2rem;
-  max-width: 1600px;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+  gap: 2.5rem;
+  max-width: 1400px;
   margin: 0 auto;
   justify-items: center;
   align-items: stretch;
 }
-@media (max-width: 1400px) { .tools-grid { grid-template-columns: repeat(4, minmax(240px, 1fr)); gap: 2rem; } }
-@media (max-width: 1200px) { .tools-grid { grid-template-columns: repeat(3, minmax(240px, 1fr)); gap: 1.8rem; } }
+@media (max-width: 1200px) { .tools-grid { grid-template-columns: repeat(4, minmax(240px, 1fr)); gap: 2rem; } }
 @media (max-width: 900px)  { .tools-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); gap: 1.5rem; } }
 @media (max-width: 600px)  { .tools-grid { grid-template-columns: repeat(1, minmax(220px, 1fr)); gap: 1.2rem; } }
 
