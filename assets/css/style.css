@@ -2355,6 +2355,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   padding: 5rem 2rem;
   position: relative;
   background: #000000 !important;
+  box-sizing: border-box;
 }
 
 .projects-section {
@@ -3433,7 +3434,7 @@ footer { background: #000000 !important; color: #ffffff !important; border-top: 
 
 /* Remove any legacy full-screen section rules */
 .projects-section { min-height: auto !important; height: auto !important; }
-.about-section { min-height: auto !important; height: auto !important; }
+.about-section { min-height: 100vh !important; height: 100vh !important; }
 
 /* Divider spacing to visually separate sections on black background */
 .section-divider { height: 2px; opacity: 0.6; margin: 2.5rem 0; }
