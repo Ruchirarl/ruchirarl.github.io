@@ -383,7 +383,7 @@ section {
   width: 90px;
   height: 3px;
   background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%);
-  margin: 0.9rem 0 1.2rem 0;
+  margin: 0.9rem auto 1.2rem auto;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(37,99,235,0.35);
 }
