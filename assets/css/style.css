@@ -3358,3 +3358,28 @@ section.background-section { padding-bottom: 7rem; }
   filter: brightness(1.05);
 }
 
+/* === Skills: 4 per row on desktop (final override) === */
+.skills-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Ensure cards size nicely inside grid */
+.skill-card { width: 100% !important; max-width: 320px; }
+@media (max-width: 1200px) { .skills-grid { grid-template-columns: repeat(3, minmax(240px, 1fr)); } }
+@media (max-width: 900px)  { .skills-grid { grid-template-columns: repeat(2, minmax(240px, 1fr)); } }
+@media (max-width: 600px)  { .skills-grid { grid-template-columns: 1fr; } }
+
+/* === Global dark background (final overrides) === */
+html, body { background: #000000 !important; }
+/* All major wrappers stay black to avoid gray bands between sections */
+section, .container, main, header, footer { background: #000000 !important; }
+/* Keep the top navbar light as requested */
+.navbar { background: #ffffff !important; }
+/* Footer: match page background */
+footer { background: #000000 !important; color: #ffffff !important; border-top: 0 !important; }
+
