@@ -1626,10 +1626,7 @@ footer {
   opacity: 1;
 }
 
-.experience-card:hover .experience-accent-bar {
-  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
-}
+
 
 .experience-logo-circle {
   width: 90px;
@@ -3289,14 +3286,7 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   background: none !important;
 }
 
-.section-divider-accent {
-  width: 72px !important;
-  height: 3px !important;
-  background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%) !important;
-  border-radius: 2px !important;
-  margin: 0 auto 1rem auto !important;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.35) !important;
-}
+
 
 .section-subtitle {
   color: var(--color-muted) !important;
