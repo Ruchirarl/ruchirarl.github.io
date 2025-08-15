@@ -751,14 +751,14 @@ section[id] {
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
-  padding-top: 8rem;
+  padding-top: 5rem;
 }
 .section-title {
   text-align: center;
   font-size: 2rem;
   font-weight: 800;
   color: #ffffff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   letter-spacing: 1px;
 }
 
@@ -789,8 +789,8 @@ section[id] {
   align-items: stretch;
   justify-items: center;
   justify-content: center;
-  row-gap: 1.5rem;
-  column-gap: 2.8rem;
+  row-gap: 2.0rem;
+  column-gap: 2.0rem;
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
