@@ -1290,10 +1290,10 @@ section[id] {
   background: #000000;
   color: #ffffff;
   border: 2px solid #2563eb;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 1rem 0;
   font-weight: 700;
-  font-size: 1.08rem;
+  font-size: 1.1rem;
   margin-top: auto;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -1337,7 +1337,7 @@ section[id] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   align-items: stretch;
   width: 100%;
   max-width: 1200px;
@@ -2383,49 +2383,52 @@ section:nth-of-type(even) {
 .contact-link {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 2rem;
-  padding: 0.7rem 0.8rem;
-  background-color: #f3f7fd;
-  border-radius: 8px;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
-  color: #2563EB;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
-  border: 2px solid transparent;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.2rem;
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #2563eb;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.2);
   text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 .contact-link .contact-icon {
-  font-size: 1.15rem;
-  width: 32px;
+  font-size: 1.3rem;
+  width: 40px;
   text-align: center;
   transition: color 0.3s;
+  color: #2563eb;
+  flex-shrink: 0;
 }
 .contact-link .contact-details h3 {
-  color: #1F2937;
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 0;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
+  line-height: 1.2;
 }
 .contact-link .contact-details p {
-  font-size: 0.85rem;
-  color: #2563EB;
-  font-weight: 500;
+  display: none; /* Remove description text to keep it clean */
 }
 .contact-link:hover, .contact-link:focus {
   background: linear-gradient(135deg, #2563eb 0%, #000000 100%) !important;
-  color: #fff !important;
-  border-color: #2563EB !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37,99,235,0.3);
 }
 .contact-link:hover .contact-icon,
 .contact-link:focus .contact-icon {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 .contact-link:hover .contact-details h3,
-.contact-link:focus .contact-details h3,
-.contact-link:hover .contact-details p,
-.contact-link:focus .contact-details p {
-  color: #fff;
+.contact-link:focus .contact-details h3 {
+  color: #ffffff;
 }
 
 
@@ -2740,7 +2743,7 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   text-align: center !important;
   max-width: 800px !important;
   line-height: 1.4 !important;
-  margin-bottom: 3rem !important;  /* Standard spacing: Subtitle → Content */
+  margin-bottom: 2rem !important;  /* Reduced from 3rem for contact section */
 }
 
 /* === SECTION CENTERING === */
@@ -2775,8 +2778,8 @@ html, body {
   font-weight: 800 !important;
   letter-spacing: 0.2px;
   color: #ffffff !important;
-  margin-top: 3rem !important;  /* Space from previous content */
-  margin-bottom: 2rem !important;  /* Space to next content */
+  margin-top: 1.5rem !important;  /* Reduced from 3rem */
+  margin-bottom: 1.5rem !important;  /* Reduced from 2rem */
 }
 
 /* Make experience cards larger and center all content */
