@@ -1250,7 +1250,7 @@ section[id] {
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   justify-items: center;
-  align-items: start;
+  align-items: stretch;
 }
 .project-card {
   position: relative;
@@ -1258,6 +1258,7 @@ section[id] {
   border: 2px solid #2563eb;
   border-radius: 25px;
   width: 100%;
+  height: 100%;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
   overflow: hidden;
   display: flex;
@@ -1336,9 +1337,10 @@ section[id] {
   display: flex;
   flex-direction: column;
   flex: 1;
+  height: 100%;
 }
 .project-content h3 {
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -1356,6 +1358,7 @@ section[id] {
   gap: 0.5rem;
   margin-bottom: 1.2rem;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 .tech-tag {
   background: rgba(37, 99, 235, 0.2);
@@ -1377,7 +1380,7 @@ section[id] {
   padding: 1rem 0;
   font-weight: 700;
   font-size: 1.08rem;
-  margin-top: 1.5rem;
+  margin-top: auto;
   cursor: pointer;
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   box-shadow: 0 2px 8px rgba(255,255,255,0.1);
