@@ -1,638 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ruchira Lokhande | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruchira Lokhande | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top Navigation -->
-  <nav class="navbar">
-    <div class="brand">RL</div>
-    <button class="nav-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
-    <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#tools">Tools</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="assets/resume.pdf" download>Resume</a></li>
-    </ul>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div id="particles-js"></div>
-    <div class="hero-center">
-      <div class="hero-top">
-        <h1 class="hero-title fade-in-up">Ruchira Lokhande</h1>
-        <div class="hero-divider fade-in-up delay-1"></div>
-      </div>
-      <div class="hero-middle">
-        <div class="hero-socials fade-in-up delay-2">
-          <a href="mailto:ruchirarl@yahoo.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/ruchirarl" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/ruchira-lokhande" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://medium.com/@ruchirarl" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
-        </div>
-      </div>
-      <div class="hero-bottom">
-        <p class="hero-tagline fade-in-up delay-3">Driven by curiosity, guided by data.</p>
-        <p class="hero-subline fade-in-up delay-3">Business Analyst | Data Storytelling | Decision Science</p>
-        <div class="hero-buttons fade-in-up delay-4">
-          <a href="assets/resume.pdf" class="btn-primary" download><i class="fas fa-file-arrow-down"></i> RESUME</a>
-          <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i> CONTACT</a>
-        </div>
-      </div>
-    </div>
-    <div class="hero-scroll-arrow" onclick="scrollToSection('about')">
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </section>
+    <header class="navbar">
+        <a href="#home" class="nav-logo">RL</a>
+        <nav>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="menu"><i class="fas fa-bars"></i></button>
+    </header>
 
-  <!-- About Section -->
-  <section class="about-section" id="about">
-    <div class="about-flex">
-      <div class="about-photo">
-        <img src="assets/images/Ruchira.jpg" alt="Ruchira Lokhande">
-      </div>
-      <div class="about-content">
-        <h2 class="about-heading">Ruchira Lokhande</h2>
-        <h3 class="about-subtitle">Business & Data Analyst</h3>
-        <p>
-          I'm the kind of person who genuinely enjoys digging into a complex problem to figure out how it works. I see complex business challenges as opportunities for improvement and growth, and I love the process of analyzing the data to find a clear path forward. My Master of Science in Business Analytics from UC Davis gave me the strategic and technical skills to turn that interest into real, data-driven solutions.
-        </p>
-        <p class="about-intro-text">Here are 4 things to know about me:</p>
-        <ul class="about-points">
-          <li>My passion for Artificial Intelligence is rooted in both my academic background, which includes an undergraduate honors in AI and Machine Learning, and my hands-on experience deploying machine learning models to solve real-world business problems.</li>
-          <li>I lead with empathy to bridge communication gaps, acting as a trusted translator between technical and business teams by focusing on the 'why' behind every business need.</li>
-          <li>I believe data is only useful when it's understood. I specialize in transforming complex datasets into clear stories by building compelling Tableau dashboards that empower strategic, at-a-glance decision-making.</li>
-          <li>When I'm not working, I'm focused on continuous improvement. You can usually find me learning new productivity frameworks, enjoying a strategic game of badminton, or getting creative in the kitchen.</li>
-        </ul>
-        <p>
-          Whether you have a complex problem to solve, want to talk about the future of data, or think I'd be a great fit for your team, I'm always open to a conversation. Let's connect.
-        </p>
-        <div class="about-buttons">
-          <a href="#background" class="btn-primary btn-journey">View My Journey</a>
-          <a href="https://linkedin.com/in/ruchiralokhande" target="_blank" class="btn-secondary">LinkedIn</a>
-          <a href="#projects" class="btn-secondary">Portfolio</a>
-          <a href="https://medium.com/@ruchirarl" target="_blank" class="btn-secondary">Medium</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Divider -->
-  <div class="section-divider"></div>
-
-  <!-- Skills Section -->
-  <section class="skills-section" id="skills">
-    <div class="container">
-      <h2 class="section-title">Core Competencies</h2>
-      <div class="section-divider-accent"></div>
-      <p class="section-subtitle">My Core Strengths as a Business Analyst</p>
-      <div class="skills-grid">
-        <div class="skill-card fade-in"><h3>KPI Development & Strategy</h3><p>Aligning business objectives with measurable Key Performance Indicators (KPIs), developing strategic frameworks to track progress and drive sustainable growth.</p></div>
-        <div class="skill-card fade-in"><h3>Data Management & Warehousing</h3><p>Architecting and managing scalable data warehousing solutions, implementing robust ETL/ELT pipelines to ensure data integrity and accessibility for analytics.</p></div>
-        <div class="skill-card fade-in"><h3>End-to-End Data Pipeline Development</h3><p>Engineering and automating full-scale data pipelines on modern cloud platforms, transforming raw data into analysis-ready assets for real-time insights.</p></div>
-        <div class="skill-card fade-in"><h3>Data Visualization & Dashboarding</h3><p>Translating complex datasets into compelling visual stories by designing and building interactive dashboards in Tableau that reveal insights and empower data-driven decisions.</p></div>
-        <div class="skill-card fade-in"><h3>Statistical Modeling</h3><p>Applying rigorous statistical methods and hypothesis testing to uncover significant trends, quantify uncertainty, and provide a strong analytical foundation for business decisions.</p></div>
-        <div class="skill-card fade-in"><h3>Predictive Analytics</h3><p>Building and deploying predictive models using Python to forecast future outcomes and inform proactive business strategies.</p></div>
-        <div class="skill-card fade-in"><h3>Machine Learning</h3><p>Developing and deploying machine learning models with Python and scikit-learn to uncover hidden patterns, automate complex processes, and drive operational efficiency.</p></div>
-        <div class="skill-card fade-in"><h3>Natural Language Processing (NLP)</h3><p>Leveraging state-of-the-art transformer models and libraries like Hugging Face to analyze, interpret, and generate insights from unstructured text data at scale.</p></div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Divider -->
-  <div class="section-divider"></div>
-
-  <!-- Technologies & Tools Section -->
-  <section class="tools-section" id="tools">
-    <div class="container">
-      <h2 class="section-title">Technical Toolkit</h2>
-      <div class="section-divider-accent"></div>
-      <p class="section-subtitle">The technologies and tools I leverage to deliver actionable insights</p>
-      <div class="tools-grid">
-        <div class="tool-card">
-          <div class="tool-icon"><i class="fab fa-python"></i></div>
-          <h3>Python</h3>
-          <p>Data analysis & machine learning</p>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon"><i class="fas fa-database"></i></div>
-          <h3>SQL</h3>
-          <p>Data querying & manipulation</p>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon"><i class="fas fa-chart-bar"></i></div>
-          <h3>Tableau</h3>
-          <p>Data visualization & dashboards</p>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon"><i class="fab fa-google"></i></div>
-          <h3>Google Cloud Platform (GCP)</h3>
-          <p>Cloud infrastructure & services</p>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon"><i class="fas fa-search"></i></div>
-          <h3>BigQuery</h3>
-          <p>Data warehousing & analytics</p>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon"><i class="fas fa-tools"></i></div>
-          <h3>dbt (Data Build Tool)</h3>
-          <p>Data transformation workflows</p>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon"><i class="fas fa-brain"></i></div>
-          <h3>Scikit-learn</h3>
-          <p>Machine learning library</p>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon"><i class="fas fa-stream"></i></div>
-          <h3>Streamlit</h3>
-          <p>Web app development</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Divider -->
-  <div class="section-divider"></div>
-
-  <!-- Projects Section -->
-  <section class="projects-section" id="projects">
-    <div class="container">
-      <h2 class="section-title">Project Showcase</h2>
-      <div class="section-divider-accent"></div>
-      <p class="section-subtitle">Demonstrating value through impactful, data-driven projects</p>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/Project_1.png" alt="ESynapse | Real-Time E-commerce Analytics Pipeline">
-          </div>
-          <div class="project-content">
-            <h3>ESynapse | Real-Time E-commerce Analytics Pipeline</h3>
-            <p>Architected a real-time GCP data pipeline using Python, Pub/Sub, and BigQuery, automating hourly data transformations for 5+ analytical models with dbt.</p>
-            <p>Informed GTM strategy by defining 8+ business KPIs with advanced SQL in dbt and delivered a 30-day sales forecast using BigQuery ML, visualized via a live Tableau dashboard.</p>
-            <div class="project-tech">
-              <span class="tech-tag">GCP</span>
-              <span class="tech-tag">BigQuery</span>
-              <span class="tech-tag">dbt</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Tableau</span>
+    <main>
+        <section id="home" class="hero section">
+            <div id="particles-js"></div>
+            <div class="hero-content fade-in-up">
+                <h1 class="hero-title">Ruchira Lokhande</h1>
+                <div class="section-divider-accent"></div>
+                <p class="hero-tagline">Business Analyst | Data Storytelling | Decision Science</p>
+                <div class="hero-socials">
+                    <a href="mailto:ruchirarl@yahoo.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/ruchirarl" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ruchira-lokhande" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://medium.com/@ruchirarl" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="assets/resume.pdf" class="btn btn-primary" download><i class="fas fa-file-arrow-down"></i> Resume</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Contact</a>
+                </div>
             </div>
-            <a class="project-learn-more" href="https://github.com/Ruchirarl/ESynapse.git" target="_blank" rel="noopener">View Project</a>
-          </div>
-        </div>
+            <a href="#about" class="scroll-arrow" aria-label="Scroll to About section"><i class="fas fa-chevron-down"></i></a>
+        </section>
+
+        <section id="about" class="about-section section">
+            <div class="container about-flex">
+                <div class="about-photo">
+                    <img src="assets/images/Ruchira.jpg" alt="Ruchira Lokhande">
+                </div>
+                <div class="about-content">
+                    <h2 class="about-heading">About Me</h2>
+                    <p>I'm a Business & Data Analyst who genuinely enjoys digging into complex problems. My Master of Science in Business Analytics from UC Davis gave me the strategic and technical skills to turn that interest into real, data-driven solutions.</p>
+                    <ul class="about-points">
+                        <li>Passionate about AI, with hands-on experience deploying ML models to solve real-world business problems.</li>
+                        <li>I lead with empathy, acting as a trusted translator between technical and business teams.</li>
+                        <li>I specialize in transforming complex data into clear stories with compelling Tableau dashboards.</li>
+                        <li>Outside of work, I focus on continuous improvement, learning new frameworks, and staying active.</li>
+                    </ul>
+                    <div class="about-buttons">
+                        <a href="#background" class="btn btn-primary btn-journey">My Journey</a>
+                        <a href="#projects" class="btn btn-secondary">Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section section">
+            <div class="container">
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="section-divider-accent"></div>
+                <p class="section-subtitle">My core strengths in business analysis, from strategy and modeling to data pipeline development.</p>
+                <div class="skills-grid">
+                    <div class="card skill-card"><h3>KPI Development</h3><p>Aligning business objectives with measurable KPIs to track progress and drive growth.</p></div>
+                    <div class="card skill-card"><h3>Data Warehousing</h3><p>Architecting scalable data solutions and implementing robust ETL/ELT pipelines.</p></div>
+                    <div class="card skill-card"><h3>Data Visualization</h3><p>Designing interactive Tableau dashboards that reveal insights and empower decisions.</p></div>
+                    <div class="card skill-card"><h3>Statistical Modeling</h3><p>Applying rigorous statistical methods to uncover significant trends and quantify uncertainty.</p></div>
+                    <div class="card skill-card"><h3>Predictive Analytics</h3><p>Building predictive models to forecast future outcomes and inform proactive strategies.</p></div>
+                    <div class="card skill-card"><h3>Machine Learning</h3><p>Deploying ML models with Python to uncover hidden patterns and automate processes.</p></div>
+                </div>
+            </div>
+        </section>
         
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/Project_2.png" alt="ViewTube | YouTube Analytics Dashboard">
-          </div>
-          <div class="project-content">
-            <h3>ViewTube | YouTube Analytics Dashboard</h3>
-            <p>Developed an end-to-end analytics application (Python, Streamlit) that automated a 200‑video workflow, from API ingestion to a 1‑click executive report, reducing manual analysis time by over 80%.</p>
-            <p>Translated complex channel data into a compelling, data‑backed story using a Streamlit application; improved projected views/day by 20–30% via insights on keyword lift and sentiment.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Streamlit</span>
-              <span class="tech-tag">YouTube API</span>
-              <span class="tech-tag">Analytics</span>
+        <section id="tools" class="tools-section section">
+            <div class="container">
+                <h2 class="section-title">Technical Toolkit</h2>
+                <div class="section-divider-accent"></div>
+                <p class="section-subtitle">The technologies and tools I leverage to deliver actionable insights.</p>
+                <div class="tools-grid">
+                    <div class="card tool-card"><i class="tool-icon fab fa-python"></i><h3>Python</h3></div>
+                    <div class="card tool-card"><i class="tool-icon fas fa-database"></i><h3>SQL</h3></div>
+                    <div class="card tool-card"><i class="tool-icon fas fa-chart-bar"></i><h3>Tableau</h3></div>
+                    <div class="card tool-card"><i class="tool-icon fab fa-google"></i><h3>GCP</h3></div>
+                    <div class="card tool-card"><i class="tool-icon fas fa-search"></i><h3>BigQuery</h3></div>
+                    <div class="card tool-card"><i class="tool-icon fas fa-tools"></i><h3>dbt</h3></div>
+                    <div class="card tool-card"><i class="tool-icon fas fa-brain"></i><h3>Scikit-learn</h3></div>
+                    <div class="card tool-card"><i class="tool-icon fas fa-stream"></i><h3>Streamlit</h3></div>
+                </div>
             </div>
-            <a class="project-learn-more" href="https://github.com/Ruchirarl/ViewTube.git" target="_blank" rel="noopener">View Project</a>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/Project_3.png" alt="EquiTrack | Strategic Portfolio Analyzer">
-          </div>
-          <div class="project-content">
-            <h3>EquiTrack | Strategic Portfolio Analyzer</h3>
-            <p>Engineered an end‑to‑end analytics pipeline using Python and dbt, automating daily transformation of raw financial data into 7 tested models and delivering 18 key metrics like Sharpe Ratio and Volatility.</p>
-            <p>Modeled next‑day stock returns with scikit‑learn using 9 predictive features and visualized historical market insights in a 12‑chart Tableau dashboard.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">dbt</span>
-              <span class="tech-tag">scikit‑learn</span>
-              <span class="tech-tag">Tableau</span>
-            </div>
-            <a class="project-learn-more" href="https://github.com/Ruchirarl/EquiTrack.git" target="_blank" rel="noopener">View Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <!-- Section Divider -->
-  <div class="section-divider"></div>
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <h2 class="section-title">Project Showcase</h2>
+                <div class="section-divider-accent"></div>
+                <p class="section-subtitle">Demonstrating value through impactful, data-driven projects.</p>
+                <div class="projects-grid">
+                    <div class="card project-card">
+                        <div class="project-image"><img src="assets/images/Project_1.png" alt="ESynapse | Real-Time E-commerce Analytics Pipeline"></div>
+                        <div class="project-content">
+                            <h3>ESynapse | Real-Time E-commerce Analytics</h3>
+                            <p>Architected a real-time GCP data pipeline using Python, Pub/Sub, and BigQuery, automating data transformations for analytical models with dbt and delivering a live Tableau dashboard.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">GCP</span><span class="tech-tag">BigQuery</span><span class="tech-tag">dbt</span><span class="tech-tag">Python</span><span class="tech-tag">Tableau</span>
+                            </div>
+                            <a href="https://github.com/Ruchirarl/ESynapse.git" class="btn btn-primary project-learn-more" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="project-image"><img src="assets/images/Project_2.png" alt="ViewTube | YouTube Analytics Dashboard"></div>
+                        <div class="project-content">
+                            <h3>ViewTube | YouTube Analytics Dashboard</h3>
+                            <p>Developed an end-to-end Streamlit app that automated a 200-video workflow, from API ingestion to a 1-click report, reducing manual analysis time by over 80%.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span><span class="tech-tag">Streamlit</span><span class="tech-tag">YouTube API</span><span class="tech-tag">Analytics</span>
+                            </div>
+                            <a href="https://github.com/Ruchirarl/ViewTube.git" class="btn btn-primary project-learn-more" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Background Section -->
-  <section class="background-section" id="background">
-    <div class="container">
-      <h2 class="section-title">Professional Experience & Education</h2>
-      <div class="section-divider-accent"></div>
-      <p class="section-subtitle">My journey in business analysis and academic foundations</p>
-      <!-- Professional Experience -->
-      <div class="background-professional">
-        <h3 class="background-subtitle">Professional Experience</h3>
-        <div class="professional-card-grid">
-          <div class="experience-card experience-modal-trigger" data-title="Business Analyst" data-company="De Fonte Law" data-date="September 2024 – June 2025" data-details='<ul><li>Informed firm growth strategy by analyzing 5+ years of data to identify the most profitable client matters and referral sources, enabling a more targeted marketing approach.</li><li>Identified workflow bottlenecks and lead conversion drop-offs using Python, providing recommendations projected to increase operational efficiency by 10%.</li><li>Devised a strategic roadmap for market differentiation by conducting a competitive analysis of 12 firms using web scraping and data-driven research.</li><li>Built 2 Tableau dashboards to visualize firm KPIs, enabling immediate analysis of client acquisition and workload trends.</li></ul>'>
-            <div class="experience-accent-bar"></div>
-            <div class="experience-logo-circle">
-              <img src="assets/images/Defontelaw.jpg" alt="De Fonte Law Logo">
+        <section id="background" class="background-section section">
+            <div class="container">
+                <h2 class="section-title">My Journey</h2>
+                <div class="section-divider-accent"></div>
+                <p class="section-subtitle">A timeline of my professional experience and academic achievements.</p>
+                
+                <h3 class="section-title" style="font-size: 1.5rem; margin-top: 2rem;">Professional Experience</h3>
+                <div class="background-grid">
+                    <div class="card experience-card" data-logo="assets/images/Defontelaw.jpg" data-title="Business Analyst" data-company="De Fonte Law" data-date="September 2024 – June 2025" data-details='<ul><li>Informed firm growth strategy by analyzing 5+ years of data to identify the most profitable client matters.</li><li>Identified workflow bottlenecks using Python, providing recommendations projected to increase efficiency by 10%.</li><li>Built 2 Tableau dashboards to visualize firm KPIs for client acquisition and workload trends.</li></ul>'>
+                        <div class="experience-logo-circle"><img src="assets/images/Defontelaw.jpg" alt="De Fonte Law Logo"></div>
+                        <h4 class="experience-role">Business Analyst</h4>
+                        <p class="experience-company">De Fonte Law</p>
+                        <p class="experience-date">2024 – 2025</p>
+                    </div>
+                    <div class="card experience-card" data-logo="assets/images/Deloitte.jpg" data-title="Analyst" data-company="Deloitte US-India" data-date="January 2024 – May 2024" data-details='<ul><li>Achieved a 100% first-pass rate on 2 technical assessments based on complex, real-world client scenarios.</li><li>Gained proficiency in SQL, Python, and ETL processes using Informatica through enterprise data solution case studies.</li></ul>'>
+                        <div class="experience-logo-circle"><img src="assets/images/Deloitte.jpg" alt="Deloitte Logo"></div>
+                        <h4 class="experience-role">Analyst</h4>
+                        <p class="experience-company">Deloitte US-India</p>
+                        <p class="experience-date">2024</p>
+                    </div>
+                    <div class="card experience-card" data-logo="assets/images/AI4M.jpg" data-title="Business Analyst Intern" data-company="AI4M Technology" data-date="January 2023 – July 2023" data-details='<ul><li>Improved manufacturing defect detection accuracy by 10% by applying computer vision and ML models.</li><li>Designed and deployed Figma dashboards for real-time defect tracking, reducing design iterations by 25%.</li><li>Managed 4 cross-functional AI projects while serving as the client liaison.</li></ul>'>
+                        <div class="experience-logo-circle"><img src="assets/images/AI4M.jpg" alt="AI4M Logo"></div>
+                        <h4 class="experience-role">Business Analyst Intern</h4>
+                        <p class="experience-company">AI4M Technology</p>
+                        <p class="experience-date">2023</p>
+                    </div>
+                </div>
+
+                <h3 class="section-title" style="font-size: 1.5rem; margin-top: 4rem;">Education</h3>
+                <div class="education-grid">
+                    <div class="card education-card">
+                        <div class="education-logo"><img src="assets/images/Davis.jpg" alt="UC Davis Logo"></div>
+                        <h4 class="education-degree">M.S., Data Science</h4>
+                        <p class="education-school">University of California, Davis</p>
+                    </div>
+                    <div class="card education-card">
+                        <div class="education-logo"><img src="assets/images/Symbiosis.jpg" alt="Symbiosis Institute of Technology Logo"></div>
+                        <h4 class="education-degree">B.Tech, Information Technology</h4>
+                        <p class="education-school">Symbiosis Institute of Technology</p>
+                    </div>
+                </div>
             </div>
-            <div class="experience-content">
-              <div class="experience-role">Business Analyst</div>
-              <div class="experience-company">De Fonte Law</div>
-              <div class="experience-date">September 2024 – June 2025</div>
+        </section>
+
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-divider-accent"></div>
+                <p class="section-subtitle">I'm currently open to new opportunities and collaborations. Let's discuss how my skills can benefit your team.</p>
+                <form id="contactForm" action="mailto:ruchirarl@yahoo.com" method="POST" enctype="text/plain" style="width: 100%; max-width: 600px;">
+                    <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+                    <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
+                    <div class="form-group"><textarea name="message" placeholder="Your Message" rows="5" required></textarea></div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
             </div>
-          </div>
-          <div class="experience-card experience-modal-trigger" data-title="Analyst" data-company="Deloitte US-India" data-date="January 2024 – May 2024" data-details='<ul><li>Achieved a 100% first-pass rate on 2 technical assessments based on complex, real-world client scenarios, demonstrating rapid mastery of core analytical methodologies.</li><li>Gained proficiency in SQL, Python, and ETL processes using Informatica through enterprise data solution case studies.</li></ul>'>
-            <div class="experience-accent-bar"></div>
-            <div class="experience-logo-circle">
-              <img src="assets/images/Deloitte.jpg" alt="Deloitte Logo">
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Ruchira Lokhande</p>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/ruchira-lokhande" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ruchirarl" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
-            <div class="experience-content">
-              <div class="experience-role">Analyst</div>
-              <div class="experience-company">Deloitte US-India</div>
-              <div class="experience-date">January 2024 – May 2024</div>
-            </div>
-          </div>
-          <div class="experience-card experience-modal-trigger" data-title="Business Analyst Intern" data-company="AI4M Technology Pvt. Ltd." data-date="January 2023 – July 2023" data-details='<ul><li>Improved manufacturing defect detection accuracy by 10% by applying computer vision and ML models (KNN, XGBoost, CNN) to identify production bottlenecks.</li><li>Designed and deployed Figma dashboards for real-time defect tracking, reducing design iterations by 25% and improving performance monitoring.</li><li>Managed 4 cross-functional AI projects while serving as the client liaison, overseeing the entire project lifecycle from requirements gathering and use case development to UAT and final demos.</li></ul>'>
-            <div class="experience-accent-bar"></div>
-            <div class="experience-logo-circle">
-              <img src="assets/images/AI4M.jpg" alt="AI4M Logo">
-            </div>
-            <div class="experience-content">
-              <div class="experience-role">Business Analyst Intern</div>
-              <div class="experience-company">AI4M Technology Pvt. Ltd.</div>
-              <div class="experience-date">January 2023 – July 2023</div>
-            </div>
-          </div>
         </div>
-        <!-- Modal for Experience Details -->
-        <div id="experience-modal" class="experience-modal-overlay" style="display:none;">
-          <div class="experience-modal">
+    </footer>
+
+    <div id="experience-modal-overlay" class="experience-modal-overlay" style="display:none;">
+        <div class="experience-modal">
             <button class="modal-close" aria-label="Close">&times;</button>
             <div class="modal-logo"><img src="" alt="Experience Logo"></div>
             <div class="modal-content">
-              <h4 class="modal-title"></h4>
-              <span class="modal-company"></span>
-              <span class="modal-date"></span>
-              <div class="modal-details"></div>
+                <h4 class="modal-title"></h4>
+                <span class="modal-company"></span>
+                <span class="modal-date"></span>
+                <div class="modal-details"></div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- Education Section -->
-      <div class="background-education">
-        <h3 class="background-subtitle">Education</h3>
-        <div class="education-split-row">
-          <div class="education-split-col">
-            <div class="education-logo"><img src="assets/images/Davis.jpg" alt="UC Davis Logo"></div>
-            <div class="education-degree">Master of Science, Data Science</div>
-            <div class="education-school">University of California, Davis</div>
-            <div class="education-date">2024–2025</div>
-            <div class="education-extra"><b>GPA:</b> 3.59/4.0 | <i>MSBA Fellowship Scholar | Beta Gamma Sigma Honor Society, Inducted 2025</i></div>
-            <div class="education-extra"><b>Highlighted Coursework:</b>Machine Learning, Statistics, Big Data Analytics, Data Management, Analytical Decision Making.</div>
-          </div>
-          <div class="education-split-col">
-            <div class="education-logo"><img src="assets/images/Symbiosis.jpg" alt="Symbiosis Institute of Technology Logo"></div>
-            <div class="education-degree">Bachelor of Technology, Information Technology</div>
-            <div class="education-school">Symbiosis Institute of Technology</div>
-            <div class="education-date">2019–2023</div>
-            <div class="education-extra"><b>GPA:</b> 3.55/4.0 | <b>Honors:</b> Artificial Intelligence and Machine Learning</div>
-            <div class="education-extra"><b>Highlighted Coursework:</b> Agile Software Development, Project Management, Deep Learning, Neural Networks.</div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- Section Divider -->
-  <div class="section-divider"></div>
+    <script src="assets/js/particles.min.js"></script>
+    <script>
+        // --- Initialize Particles.js ---
+        particlesJS.load('particles-js', 'assets/js/particles-config.json');
 
-  <!-- Certifications Section -->
-  <section class="certifications-section" id="certifications">
-    <div class="container">
-      <h2 class="section-title">Certifications</h2>
-      <div class="section-divider-accent"></div>
-      <div class="certifications-row">
-        <div class="cert-card">
-          <img src="assets/images/Tableau.png" alt="Tableau Certification">
-          <div class="cert-content">
-            <h4>Tableau Desktop Specialist</h4>
-            <span class="cert-date">2025</span>
-          </div>
-        </div>
-        <div class="cert-card">
-          <img src="assets/images/McKinsey.png" alt="McKinsey Forward Program">
-          <div class="cert-content">
-            <h4>McKinsey Forward Program</h4>
-            <span class="cert-date">2025</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Divider -->
-  <div class="section-divider"></div>
-
-  <!-- Contact Section -->
-  <section class="contact-section" id="contact">
-    <div class="container">
-      <h2 class="section-title">Let's Connect</h2>
-      <div class="section-divider-accent"></div>
-      <p class="section-subtitle">I'm currently open to new opportunities and collaborations. Let's discuss how my skills can benefit your team</p>
-      
-      <div class="contact-content">
-        <div class="contact-info">
-          <a href="mailto:ruchirarl@yahoo.com" class="contact-item contact-link" target="_blank">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="contact-details">
-              <h3>Email</h3>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/ruchira-lokhande" class="contact-item contact-link" target="_blank">
-            <div class="contact-icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <div class="contact-details">
-              <h3>LinkedIn</h3>
-            </div>
-          </a>
-          <a href="https://medium.com/@ruchirarl24" class="contact-item contact-link" target="_blank">
-            <div class="contact-icon">
-              <i class="fab fa-medium"></i>
-            </div>
-            <div class="contact-details">
-              <h3>Medium</h3>
-            </div>
-          </a>
-          <a href="https://github.com/ruchirarl" class="contact-item contact-link" target="_blank">
-            <div class="contact-icon">
-              <i class="fab fa-github"></i>
-            </div>
-            <div class="contact-details">
-              <h3>GitHub</h3>
-            </div>
-          </a>
-        </div>
+        // --- Mobile Nav Toggle ---
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+            });
+            // Close menu when a link is clicked
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navMenu.classList.contains('open')) {
+                        navMenu.classList.remove('open');
+                    }
+                });
+            });
+        }
         
-        <div class="contact-form">
-          <form id="contactForm" action="mailto:ruchirarl@yahoo.com" method="POST" enctype="text/plain">
-            <div class="form-group">
-              <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-              <input type="email" id="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-              <input type="text" id="subject" name="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group">
-              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+        // --- Experience Modal ---
+        const modalOverlay = document.getElementById('experience-modal-overlay');
+        if (modalOverlay) {
+            const modal = modalOverlay.querySelector('.experience-modal');
+            const closeBtn = modal.querySelector('.modal-close');
+            
+            document.querySelectorAll('.experience-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    modal.querySelector('.modal-logo img').src = this.dataset.logo;
+                    modal.querySelector('.modal-title').textContent = this.dataset.title;
+                    modal.querySelector('.modal-company').textContent = this.dataset.company;
+                    modal.querySelector('.modal-date').textContent = this.dataset.date;
+                    modal.querySelector('.modal-details').innerHTML = this.dataset.details;
+                    
+                    modalOverlay.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>© 2025 Ruchira Lokhande | Business Analyst & Data Enthusiast</p>
-      <div class="footer-links">
-        <a href="https://linkedin.com/in/ruchiralokhande" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/ruchirarl" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="assets/resume.pdf" download>
-          <i class="fas fa-file-pdf"></i> Resume
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="assets/js/particles.min.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'assets/js/particles-config.json', function () {
-      console.log('particles.js config loaded');
-    });
-    
-    // Smooth scroll function with fixed navbar offset
-    function scrollToSection(sectionId) {
-      const section = document.getElementById(sectionId);
-      if (!section) return;
-      const navbar = document.querySelector('.navbar');
-      const navH = navbar ? Math.ceil(navbar.getBoundingClientRect().height) : 0;
-      const offset = navH + 16; // small buffer
-      const top = section.getBoundingClientRect().top + window.pageYOffset - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-    
-    // Skill bubble interactions
-    document.querySelectorAll('.skill-bubble').forEach(bubble => {
-      bubble.addEventListener('mouseenter', function() {
-        this.style.transform = 'scale(1.1) rotate(5deg)';
-      });
-      
-      bubble.addEventListener('mouseleave', function() {
-        this.style.transform = 'scale(1) rotate(0deg)';
-      });
-    });
-    
-    // Remove contact form JS handler
-
-    // Experience Modal Popup
-    const modal = document.getElementById('experience-modal');
-    const modalLogo = modal.querySelector('.modal-logo img');
-    const modalTitle = modal.querySelector('.modal-title');
-    const modalCompany = modal.querySelector('.modal-company');
-    const modalDate = modal.querySelector('.modal-date');
-    const modalDetails = modal.querySelector('.modal-details');
-    const closeBtn = modal.querySelector('.modal-close');
-
-    // Notification for scroll attempt
-    let scrollNotif;
-    function showScrollNotif() {
-      if (scrollNotif) return;
-      scrollNotif = document.createElement('div');
-      scrollNotif.textContent = 'Close the popup to scroll the page.';
-      scrollNotif.style.position = 'fixed';
-      scrollNotif.style.top = '32px';
-      scrollNotif.style.right = '32px';
-      scrollNotif.style.bottom = '';
-      scrollNotif.style.background = 'rgba(44,62,80,0.97)';
-      scrollNotif.style.color = '#fff';
-      scrollNotif.style.padding = '0.8rem 1.5rem';
-      scrollNotif.style.borderRadius = '12px';
-      scrollNotif.style.fontSize = '1rem';
-      scrollNotif.style.boxShadow = '0 4px 24px rgba(44,62,80,0.18)';
-      scrollNotif.style.zIndex = '10001';
-      scrollNotif.style.opacity = '0.98';
-      scrollNotif.style.transition = 'opacity 0.3s';
-      document.body.appendChild(scrollNotif);
-      setTimeout(() => {
-        if (scrollNotif) {
-          scrollNotif.style.opacity = '0';
-          setTimeout(() => {
-            if (scrollNotif) {
-              document.body.removeChild(scrollNotif);
-              scrollNotif = null;
+            function closeModal() {
+                modalOverlay.style.display = 'none';
+                document.body.style.overflow = '';
             }
-          }, 400);
+
+            closeBtn.addEventListener('click', closeModal);
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) closeModal();
+            });
         }
-      }, 2200);
-    }
-
-    let modalOpen = false;
-    document.querySelectorAll('.experience-modal-trigger').forEach(card => {
-      card.addEventListener('click', function() {
-        modalLogo.src = this.querySelector('img').src;
-        modalLogo.alt = this.getAttribute('data-title') + ' Logo';
-        modalTitle.textContent = this.getAttribute('data-title');
-        modalCompany.textContent = this.getAttribute('data-company');
-        modalDate.textContent = this.getAttribute('data-date');
-        modalDetails.innerHTML = this.getAttribute('data-details');
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-        modalOpen = true;
-      });
-    });
-    closeBtn.addEventListener('click', function() {
-      modal.style.display = 'none';
-      document.body.style.overflow = '';
-      modalOpen = false;
-    });
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = '';
-        modalOpen = false;
-      }
-    });
-    // Listen for scroll attempts when modal is open
-    window.addEventListener('wheel', function(e) {
-      if (modalOpen) {
-        e.preventDefault();
-        showScrollNotif();
-      }
-    }, { passive: false });
-    window.addEventListener('touchmove', function(e) {
-      if (modalOpen) {
-        e.preventDefault();
-        showScrollNotif();
-      }
-    }, { passive: false });
-
-    // Projects left/right scroll controls - scroll by one full card
-    (function(){
-      const grid = document.querySelector('.projects-section .projects-grid');
-      const btnLeft = document.querySelector('.projects-scroll-left');
-      const btnRight = document.querySelector('.projects-scroll-right');
-      if (!grid || !btnLeft || !btnRight) return;
-
-      function getStep() {
-        const firstCard = grid.querySelector('.project-card');
-        if (!firstCard) return 0;
-        const cardRect = firstCard.getBoundingClientRect();
-        const styles = window.getComputedStyle(grid);
-        const gap = parseFloat(styles.columnGap || styles.gap || '0') || 0;
-        return Math.ceil(cardRect.width + gap);
-      }
-
-      function updateArrows() {
-        const maxScroll = grid.scrollWidth - grid.clientWidth - 2; // tolerance
-        btnLeft.style.visibility = grid.scrollLeft <= 2 ? 'hidden' : 'visible';
-        btnRight.style.visibility = grid.scrollLeft >= maxScroll ? 'hidden' : 'visible';
-      }
-
-      btnLeft.addEventListener('click', () => {
-        grid.scrollBy({ left: -getStep(), behavior: 'smooth' });
-      });
-      btnRight.addEventListener('click', () => {
-        grid.scrollBy({ left: getStep(), behavior: 'smooth' });
-      });
-
-      grid.addEventListener('scroll', updateArrows, { passive: true });
-      window.addEventListener('resize', updateArrows);
-      // Initialize
-      updateArrows();
-    })();
-
-    // Mobile nav toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-      });
-    }
-
-    // Scroll‑spy to highlight active nav link
-    const sectionEls = Array.from(document.querySelectorAll('section[id]'));
-    const hrefToLink = new Map(Array.from(document.querySelectorAll('.nav-links a')).map(a => [a.getAttribute('href'), a]));
-    const spy = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const id = '#' + entry.target.id;
-        const link = hrefToLink.get(id);
-        if (!link) return;
-        if (entry.isIntersecting) {
-          document.querySelectorAll('.nav-links a.active').forEach(a => a.classList.remove('active'));
-          link.classList.add('active');
-        }
-      });
-    }, { rootMargin: '-45% 0px -45% 0px', threshold: 0.01 });
-    sectionEls.forEach(s => spy.observe(s));
-
-    // Intercept nav anchor clicks to use the same offset logic as the arrows
-    document.querySelectorAll('.nav-links a[href^="#"]').forEach(a => {
-      a.addEventListener('click', (e) => {
-        const target = a.getAttribute('href').slice(1);
-        if (target) {
-          e.preventDefault();
-          scrollToSection(target);
-          // Close mobile menu if open
-          if (navLinks && navLinks.classList.contains('open')) {
-            navLinks.classList.remove('open');
-          }
-        }
-      });
-    });
-
-    // Keep CSS var for sections that need centered min-height calc
-    const root = document.documentElement;
-    const navbar = document.querySelector('.navbar');
-    const recomputeOffset = () => {
-      const h = navbar ? Math.ceil(navbar.getBoundingClientRect().height) : 0;
-      root.style.setProperty('--nav-offset', `${h + 16}px`);
-    };
-    recomputeOffset();
-    window.addEventListener('resize', recomputeOffset);
-
-    // Project carousel JavaScript removed - using simple grid layout
-  </script>
+    </script>
 </body>
 </html>
