@@ -39,7 +39,11 @@ ul {
   box-sizing: border-box;
 }
 
-/* Improved Section Spacing and Sizing */
+/* === STANDARDIZED SECTION SPACING SYSTEM === */
+/* All sections follow the same spacing pattern:
+   Divider → 4rem → Title → 1.5rem → Accent Bar → 1.5rem → Subtitle → 3rem → Content → 4rem → Divider
+*/
+
 section {
   width: 100%;
   min-height: auto;
@@ -47,7 +51,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem;  /* Standard top/bottom spacing from dividers */
   box-sizing: border-box;
   position: relative;
 }
@@ -743,31 +747,23 @@ section[id] {
 /* SKILLS SECTION - Core Competencies - DARK THEME */
 .skills-section {
   background: #000000 !important;
-  padding: 1rem 2rem;
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  box-sizing: border-box;
-  padding-top: 5rem;
+  /* Uses standardized section spacing from main section rule */
 }
 .section-title {
   text-align: center;
   font-size: 2rem;
   font-weight: 800;
   color: #ffffff;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.5rem;  /* Standard spacing: Title → Accent Bar */
   letter-spacing: 1px;
 }
 
-/* Remove old auto-generated accent bars */
+/* Section subtitle with standardized spacing */
 .section-subtitle {
   text-align: center;
   color: #ffffff;
   font-size: 1.1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem;  /* Standard spacing: Subtitle → Content */
   font-weight: 500;
   letter-spacing: 0.2px;
 }
@@ -777,7 +773,7 @@ section[id] {
   width: 60px;
   height: 3px;
   background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%);
-  margin: 0.5rem auto 1.5rem auto;
+  margin: 0 auto 1.5rem auto;  /* Standard spacing: Accent Bar → Subtitle */
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(37,99,235,0.35);
 }
@@ -977,7 +973,7 @@ section[id] {
 /* TECHNOLOGIES & TOOLS SECTION - DARK THEME */
 .tools-section {
   background: #000000 !important;
-  padding: 5rem 2rem;
+  /* Uses standardized section spacing from main section rule */
 }
 .tools-section .section-title {
   color: #ffffff !important;
@@ -1134,8 +1130,8 @@ section[id] {
 /* Projects Section - Enhanced Visuals - DARK THEME */
 .projects-section {
   background: #000000 !important;
-  padding: 5rem 2rem;
   text-align: center;
+  /* Uses standardized section spacing from main section rule */
 }
 .projects-section .container {
   max-width: 1200px;
@@ -1326,6 +1322,7 @@ section[id] {
 }
 
 /* CONTACT SECTION - DARK THEME */
+/* Uses standardized section spacing from main section rule */
 
 .contact-content {
   display: grid;
@@ -1507,6 +1504,7 @@ footer {
 }
 
 /* === Background Section: Premium Layout - DARK THEME === */
+/* Uses standardized section spacing from main section rule */
 
 
 
@@ -1629,7 +1627,8 @@ footer {
   font-weight: 800;
 }
 
-/* --- Certifications section: more vertical space --- */
+/* --- Certifications section --- */
+/* Uses standardized section spacing from main section rule */
 
 /* --- Education Section: Flat, Clean, No Cards --- */
 .education-split-row {
@@ -2216,15 +2215,7 @@ section + section {
 }
 
 /* Ensure proper content flow */
-.section-title {
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-
-.section-subtitle {
-  margin-top: 0;
-  margin-bottom: 3rem;
-}
+/* All spacing now handled by standardized section spacing system */
 
 /* --- SKILLS --- */
 /* Removed duplicate skills-grid definition */
@@ -2586,19 +2577,7 @@ section:nth-of-type(even) {
 
 
 /* === Section sizing normalization (final overrides) === */
-section.skills-section,
-section.tools-section,
-section.projects-section,
-section.background-section,
-section.certifications-section,
-section.contact-section {
-  padding: 5rem 2rem;
-}
-/* Extra bottom padding for sections with scroll arrows to avoid overlap */
-section.skills-section,
-section.tools-section,
-section.projects-section,
-section.background-section { padding-bottom: 7rem; }
+/* All sections now use standardized spacing from the main section rule above */
 
 /* Normalize container widths */
 .skills-section .container,
@@ -2613,8 +2592,8 @@ section.background-section { padding-bottom: 7rem; }
 }
 
 /* Normalize headings */
-.section-title { font-size: 1.8rem !important; color: #ffffff !important; margin-bottom: 0.7rem; }
-.section-subtitle { font-size: 1.1rem !important; color: #ffffff !important; margin-bottom: 3rem !important; text-align: center; }
+.section-title { font-size: 1.8rem !important; color: #ffffff !important; }
+.section-subtitle { font-size: 1.1rem !important; color: #ffffff !important; text-align: center; }
 
 
 
@@ -2639,16 +2618,7 @@ section, .container, main, header, footer { background: #000000 !important; }
 footer { background: #000000 !important; color: #ffffff !important; border-top: 0 !important; }
 
 /* === Section sizing fixes: size to content, no fixed viewport heights === */
-.background-section,
-.certifications-section,
-.contact-section {
-  min-height: auto !important;
-  height: auto !important;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-
-.background-section { padding-bottom: 7rem !important; }
+/* All sections now use standardized spacing from the main section rule above */
 
 /* Ensure there's a small visual gap between sections (even with black bg) */
 .section-divider { height: 2px; opacity: 0.6; margin: 2.5rem 0; }
@@ -2732,14 +2702,12 @@ section { min-height: auto !important; }
 
 /* === Enforce equal section height like home (hero) === */
 section { display: flex !important; flex-direction: column; justify-content: center; align-items: center; }
-section:not(.hero) { min-height: 100vh !important; }
 
 /* Keep everything black */
 html, body, section, main, footer, .container { background: #000000 !important; }
 
 /* Clean headings and spacing */
-.section-title { letter-spacing: 0.2px; margin-bottom: 0.5rem !important; }
-.section-subtitle { margin-bottom: 2rem !important; }
+.section-title { letter-spacing: 0.2px; }
 
 /* Uniform buttons: one system applied everywhere */
 .btn-primary, .btn-outline, .btn-secondary {
@@ -2768,7 +2736,6 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   font-weight: 700 !important;
   letter-spacing: 0.2px !important;
   text-align: center !important;
-  margin: 0 auto 0.8rem auto !important;
   display: block !important;
 }
 
@@ -2776,21 +2743,12 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   color: var(--color-muted) !important;
   font-size: 1.05rem !important;
   text-align: center !important;
-  margin: 0 auto 1.5rem auto !important;
   max-width: 800px !important;
   line-height: 1.4 !important;
 }
 
 /* === SECTION CENTERING === */
-/* All sections fill viewport and center content */
-section {
-  min-height: 100vh !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
-  padding: 0 2rem !important;
-}
+/* All sections use standardized spacing from the main section rule above */
 
 section .container {
   width: 100% !important;
