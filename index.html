@@ -391,25 +391,26 @@
           </a>
         </div>
         
-        <div class="contact-form">
-          <form id="contactForm" action="mailto:ruchirarl@yahoo.com" method="POST" enctype="text/plain">
-            <div class="form-group">
-              <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-              <input type="email" id="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-              <input type="text" id="subject" name="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group">
-              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-          </form>
-        </div>
+                 <div class="contact-form">
+           <div id="form-message" class="form-message"></div>
+           <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+             <div class="form-group">
+               <input type="text" id="name" name="name" placeholder="Your Name" required>
+             </div>
+             <div class="form-group">
+               <input type="email" id="email" name="email" placeholder="Your Email" required>
+             </div>
+             <div class="form-group">
+               <input type="text" id="subject" name="subject" placeholder="Subject" required>
+             </div>
+             <div class="form-group">
+               <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+             </div>
+             <button type="submit" class="btn-primary">
+               <i class="fas fa-paper-plane"></i> Send Message
+             </button>
+           </form>
+         </div>
       </div>
     </div>
   </section>
@@ -597,7 +598,89 @@
     recomputeOffset();
     window.addEventListener('resize', recomputeOffset);
 
-    // Project carousel JavaScript removed - using simple grid layout
-  </script>
+         // Project carousel JavaScript removed - using simple grid layout
+     
+     // === MEDIUM ARTICLES LOADING ===
+     async function loadMediumArticles() {
+       const articlesGrid = document.getElementById('articles-grid');
+       if (!articlesGrid) return;
+       
+       try {
+         // Medium RSS feed URL (you'll need to get this)
+         const rssUrl = 'https://medium.com/feed/@ruchirarl24';
+         
+         // For now, let's show some sample articles
+         // In production, you'd fetch from RSS or Medium API
+         const sampleArticles = [
+           {
+             title: "Data-Driven Decision Making in Business Analytics",
+             excerpt: "Exploring how businesses can leverage data analytics to make informed strategic decisions and drive growth.",
+             date: "Jan 15, 2025",
+             readTime: "5 min read",
+             image: "assets/images/Project_1.png", // Using project image as placeholder
+             url: "https://medium.com/@ruchirarl24"
+           },
+           {
+             title: "Machine Learning Applications in Business Intelligence",
+             excerpt: "Understanding the intersection of ML and BI, and how it's transforming traditional business intelligence.",
+             date: "Jan 10, 2025",
+             readTime: "7 min read",
+             image: "assets/images/Project_2.png",
+             url: "https://medium.com/@ruchirarl24"
+           },
+           {
+             title: "Building Effective Data Dashboards with Tableau",
+             excerpt: "Best practices for creating compelling and actionable data visualizations that drive business insights.",
+             date: "Jan 5, 2025",
+             readTime: "6 min read",
+             image: "assets/images/Project_3.png",
+             url: "https://medium.com/@ruchirarl24"
+           }
+         ];
+         
+         // Clear loading state
+         articlesGrid.innerHTML = '';
+         
+         // Display articles
+         sampleArticles.forEach(article => {
+           const articleCard = document.createElement('div');
+           articleCard.className = 'article-card';
+           articleCard.innerHTML = `
+             <div class="article-image">
+               <img src="${article.image}" alt="${article.title}">
+             </div>
+             <div class="article-content">
+               <h3 class="article-title">${article.title}</h3>
+               <p class="article-excerpt">${article.excerpt}</p>
+               <div class="article-meta">
+                 <span class="article-date">${article.date}</span>
+                 <span class="article-read-time">${article.readTime}</span>
+               </div>
+               <a href="${article.url}" class="article-link" target="_blank" rel="noopener">
+                 <i class="fas fa-external-link-alt"></i> Read Article
+               </a>
+             </div>
+           `;
+           articlesGrid.appendChild(articleCard);
+         });
+         
+       } catch (error) {
+         console.error('Error loading articles:', error);
+         // Show error state
+         articlesGrid.innerHTML = `
+           <div class="article-card" style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
+             <h3 style="color: #64748b;">Articles loading...</h3>
+             <p style="color: #94a3b8;">Check out my Medium profile for the latest insights!</p>
+             <a href="https://medium.com/@ruchirarl24" target="_blank" class="btn-outline" style="margin-top: 1rem;">
+               <i class="fab fa-medium"></i> Visit Medium
+             </a>
+           </div>
+         `;
+       }
+     }
+     
+     // Load articles when page loads
+     document.addEventListener('DOMContentLoaded', loadMediumArticles);
+   </script>
 </body>
 </html>
