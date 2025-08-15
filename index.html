@@ -175,61 +175,71 @@
       <h2 class="section-title">Project Showcase</h2>
       <div class="section-divider-accent"></div>
       <p class="section-subtitle">Demonstrating value through impactful, data-driven projects</p>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/Project_1.png" alt="ESynapse | Real-Time E-commerce Analytics Pipeline">
-          </div>
-          <div class="project-content">
-            <h3>ESynapse | Real-Time E-commerce Analytics Pipeline</h3>
-            <p>Architected a real-time GCP data pipeline using Python, Pub/Sub, and BigQuery, automating hourly data transformations for 5+ analytical models with dbt.</p>
-            <p>Informed GTM strategy by defining 8+ business KPIs with advanced SQL in dbt and delivered a 30-day sales forecast using BigQuery ML, visualized via a live Tableau dashboard.</p>
-            <div class="project-tech">
-              <span class="tech-tag">GCP</span>
-              <span class="tech-tag">BigQuery</span>
-              <span class="tech-tag">dbt</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Tableau</span>
+      <div class="projects-container">
+        <button class="project-nav-btn project-prev" onclick="changeProject(-1)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="projects-grid">
+          <div class="project-card active">
+            <div class="project-image">
+              <img src="assets/images/Project_1.png" alt="ESynapse | Real-Time E-commerce Analytics Pipeline">
             </div>
-            <a class="project-learn-more" href="https://github.com/Ruchirarl/ESynapse.git" target="_blank" rel="noopener">View Project</a>
+            <div class="project-content">
+              <h3>ESynapse | Real-Time E-commerce Analytics Pipeline</h3>
+              <p>Architected a real-time GCP data pipeline using Python, Pub/Sub, and BigQuery, automating hourly data transformations for 5+ analytical models with dbt.</p>
+              <p>Informed GTM strategy by defining 8+ business KPIs with advanced SQL in dbt and delivered a 30-day sales forecast using BigQuery ML, visualized via a live Tableau dashboard.</p>
+              <div class="project-tech">
+                <span class="tech-tag">GCP</span>
+                <span class="tech-tag">BigQuery</span>
+                <span class="tech-tag">dbt</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Tableau</span>
+              </div>
+              <a class="project-learn-more" href="https://github.com/Ruchirarl/ESynapse.git" target="_blank" rel="noopener">View Project</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/images/Project_2.png" alt="ViewTube | YouTube Analytics Dashboard">
+            </div>
+            <div class="project-content">
+              <h3>ViewTube | YouTube Analytics Dashboard</h3>
+              <p>Developed an end-to-end analytics application (Python, Streamlit) that automated a 200‑video workflow, from API ingestion to a 1‑click executive report, reducing manual analysis time by over 80%.</p>
+              <p>Translated complex channel data into a compelling, data‑backed story using a Streamlit application; improved projected views/day by 20–30% via insights on keyword lift and sentiment.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">YouTube API</span>
+                <span class="tech-tag">Analytics</span>
+              </div>
+              <a class="project-learn-more" href="https://github.com/Ruchirarl/ViewTube.git" target="_blank" rel="noopener">View Project</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/images/Project_3.png" alt="EquiTrack | Strategic Portfolio Analyzer">
+            </div>
+            <div class="project-content">
+              <h3>EquiTrack | Strategic Portfolio Analyzer</h3>
+              <p>Engineered an end‑to‑end analytics pipeline using Python and dbt, automating daily transformation of raw financial data into 7 tested models and delivering 18 key metrics like Sharpe Ratio and Volatility.</p>
+              <p>Modeled next‑day stock returns with scikit‑learn using 9 predictive features and visualized historical market insights in a 12‑chart Tableau dashboard.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">dbt</span>
+                <span class="tech-tag">scikit‑learn</span>
+                <span class="tech-tag">Tableau</span>
+              </div>
+              <a class="project-learn-more" href="https://github.com/Ruchirarl/EquiTrack.git" target="_blank" rel="noopener">View Project</a>
+            </div>
           </div>
         </div>
         
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/Project_2.png" alt="ViewTube | YouTube Analytics Dashboard">
-          </div>
-          <div class="project-content">
-            <h3>ViewTube | YouTube Analytics Dashboard</h3>
-            <p>Developed an end-to-end analytics application (Python, Streamlit) that automated a 200‑video workflow, from API ingestion to a 1‑click executive report, reducing manual analysis time by over 80%.</p>
-            <p>Translated complex channel data into a compelling, data‑backed story using a Streamlit application; improved projected views/day by 20–30% via insights on keyword lift and sentiment.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Streamlit</span>
-              <span class="tech-tag">YouTube API</span>
-              <span class="tech-tag">Analytics</span>
-            </div>
-            <a class="project-learn-more" href="https://github.com/Ruchirarl/ViewTube.git" target="_blank" rel="noopener">View Project</a>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/Project_3.png" alt="EquiTrack | Strategic Portfolio Analyzer">
-          </div>
-          <div class="project-content">
-            <h3>EquiTrack | Strategic Portfolio Analyzer</h3>
-            <p>Engineered an end‑to‑end analytics pipeline using Python and dbt, automating daily transformation of raw financial data into 7 tested models and delivering 18 key metrics like Sharpe Ratio and Volatility.</p>
-            <p>Modeled next‑day stock returns with scikit‑learn using 9 predictive features and visualized historical market insights in a 12‑chart Tableau dashboard.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">dbt</span>
-              <span class="tech-tag">scikit‑learn</span>
-              <span class="tech-tag">Tableau</span>
-            </div>
-            <a class="project-learn-more" href="https://github.com/Ruchirarl/EquiTrack.git" target="_blank" rel="noopener">View Project</a>
-          </div>
-        </div>
+        <button class="project-nav-btn project-next" onclick="changeProject(1)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </div>
   </section>
@@ -632,7 +642,24 @@
     recomputeOffset();
     window.addEventListener('resize', recomputeOffset);
 
-    // Project carousel JavaScript removed - using simple grid layout
+    // Project Navigation
+    let currentProjectIndex = 0;
+    const projectCards = document.querySelectorAll('.project-card');
+    const totalProjects = projectCards.length;
+
+    function changeProject(direction) {
+      // Hide current project
+      projectCards[currentProjectIndex].classList.remove('active');
+      
+      // Calculate new index
+      currentProjectIndex = (currentProjectIndex + direction + totalProjects) % totalProjects;
+      
+      // Show new project
+      projectCards[currentProjectIndex].classList.add('active');
+    }
+
+    // Initialize first project as active
+    projectCards[0].classList.add('active');
   </script>
 </body>
 </html>
