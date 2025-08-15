@@ -3367,128 +3367,124 @@ section.background-section { padding-bottom: 7rem; }
 @media (max-width: 900px)  { .tools-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); gap: 1.5rem; } }
 @media (max-width: 600px)  { .tools-grid { grid-template-columns: repeat(1, minmax(220px, 1fr)); gap: 1.2rem; } }
 
-/* PROJECT CAROUSEL - COMPLETE RESET */
-.project-carousel {
-  position: relative !important;
-  max-width: 1000px !important;
-  width: 1000px !important;
-  margin: 2rem auto !important;
-  padding: 0 80px !important;
-  background: transparent !important;
-  min-height: 700px !important;
-  height: 700px !important;
-  display: block !important;
+/* CLEAN PROJECT GRID LAYOUT */
+.projects-section .projects-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2rem !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 2rem 0 !important;
 }
 
-.project-display {
-  position: relative !important;
-  width: 100% !important;
-  height: 600px !important;
-  min-height: 600px !important;
+.projects-section .project-card {
   background: #111111 !important;
-  border: 3px solid #2563eb !important;
+  border: 2px solid #2563eb !important;
   border-radius: 20px !important;
   overflow: hidden !important;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3) !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15) !important;
+}
+
+.projects-section .project-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.3) !important;
+  border-color: #3b82f6 !important;
+}
+
+.projects-section .project-image {
+  width: 100% !important;
+  height: 250px !important;
+  overflow: hidden !important;
+}
+
+.projects-section .project-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.3s ease !important;
+}
+
+.projects-section .project-card:hover .project-image img {
+  transform: scale(1.05) !important;
+}
+
+.projects-section .project-content {
+  padding: 1.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.projects-section .project-content h3 {
+  color: #ffffff !important;
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+  font-family: 'Playfair Display', serif !important;
+  line-height: 1.3 !important;
+}
+
+.projects-section .project-content p {
+  color: #e5e7eb !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.projects-section .project-tech {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  margin: 1rem 0 !important;
+}
+
+.projects-section .tech-tag {
+  background: rgba(37, 99, 235, 0.2) !important;
+  color: #2563eb !important;
+  padding: 0.3rem 0.8rem !important;
+  border-radius: 15px !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(37, 99, 235, 0.3) !important;
+}
+
+.projects-section .project-learn-more {
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%) !important;
+  color: white !important;
+  padding: 0.8rem 1.5rem !important;
+  border: none !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  margin-top: auto !important;
+  transition: all 0.3s ease !important;
   display: block !important;
 }
 
-/* RESET ALL PROJECT CARD STYLES FOR CAROUSEL */
-.project-carousel .project-card {
-  all: unset;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #1a1a1a;
-  display: none;
-  flex-direction: column;
+.projects-section .project-learn-more:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4) !important;
 }
 
-.project-carousel .project-card.active {
-  display: flex !important;
+/* Responsive Grid */
+@media (max-width: 1024px) {
+  .projects-section .projects-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
 }
 
-.project-carousel .project-card:first-child {
-  display: flex !important;
-}
-
-/* PROJECT CARD CONTENT */
-.project-carousel .project-image {
-  width: 100%;
-  height: 50%;
-  overflow: hidden;
-  background: #333;
-}
-
-.project-carousel .project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.project-carousel .project-content {
-  width: 100%;
-  height: 50%;
-  padding: 2rem;
-  color: white;
-  background: #1a1a1a;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.project-carousel .project-content h3 {
-  color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0 0 1rem 0;
-  font-family: 'Playfair Display', serif;
-}
-
-.project-carousel .project-content p {
-  color: #e5e7eb;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 0 0 0.8rem 0;
-}
-
-.project-carousel .project-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.project-carousel .tech-tag {
-  background: rgba(37, 99, 235, 0.2);
-  color: #2563eb;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  border: 1px solid rgba(37, 99, 235, 0.3);
-}
-
-.project-carousel .project-learn-more {
-  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
-  margin-top: auto;
-  transition: all 0.3s ease;
-}
-
-.project-carousel .project-learn-more:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+@media (max-width: 768px) {
+  .projects-section .projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    padding: 1rem !important;
+  }
 }
 
 .carousel-btn {
