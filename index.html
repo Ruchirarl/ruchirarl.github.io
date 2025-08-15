@@ -547,40 +547,7 @@
       }
     }, { passive: false });
 
-    // Projects left/right scroll controls - scroll by one full card
-    (function(){
-      const grid = document.querySelector('.projects-section .projects-grid');
-      const btnLeft = document.querySelector('.projects-scroll-left');
-      const btnRight = document.querySelector('.projects-scroll-right');
-      if (!grid || !btnLeft || !btnRight) return;
-
-      function getStep() {
-        const firstCard = grid.querySelector('.project-card');
-        if (!firstCard) return 0;
-        const cardRect = firstCard.getBoundingClientRect();
-        const styles = window.getComputedStyle(grid);
-        const gap = parseFloat(styles.columnGap || styles.gap || '0') || 0;
-        return Math.ceil(cardRect.width + gap);
-      }
-
-      function updateArrows() {
-        const maxScroll = grid.scrollWidth - grid.clientWidth - 2; // tolerance
-        btnLeft.style.visibility = grid.scrollLeft <= 2 ? 'hidden' : 'visible';
-        btnRight.style.visibility = grid.scrollLeft >= maxScroll ? 'hidden' : 'visible';
-      }
-
-      btnLeft.addEventListener('click', () => {
-        grid.scrollBy({ left: -getStep(), behavior: 'smooth' });
-      });
-      btnRight.addEventListener('click', () => {
-        grid.scrollBy({ left: getStep(), behavior: 'smooth' });
-      });
-
-      grid.addEventListener('scroll', updateArrows, { passive: true });
-      window.addEventListener('resize', updateArrows);
-      // Initialize
-      updateArrows();
-    })();
+    // Projects grid layout - no horizontal scrolling needed
 
     // Mobile nav toggle
     const navToggle = document.querySelector('.nav-toggle');

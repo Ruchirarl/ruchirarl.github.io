@@ -62,20 +62,9 @@ section {
 
 
 
-.background-section {
-  min-height: auto;
-  padding: 5rem 2rem;
-  justify-content: center;
-  align-items: center;
-  background: #000000 !important;
-}
 
-.certifications-section {
-  background: #000 !important;
-  padding: 6rem 2rem 5rem 2rem !important;
-  text-align: center;
-  width: 100%;
-}
+
+
 
 .certifications-section .container {
   max-width: 1200px;
@@ -153,19 +142,9 @@ section {
 
 
 
-.background-section {
-  padding: 5rem 2rem;
-  background: #000000 !important;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
-.certifications-section {
-  padding: 5rem 2rem;
-  background: #000000 !important;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
+
 
 .contact-section {
   padding: 5rem 2rem;
@@ -174,15 +153,7 @@ section {
   margin-bottom: 0;
 }
 
-.skills-section .container,
-.tools-section .container,
-.background-section .container,
-.certifications-section .container,
-.contact-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-}
+
 
 /* PARTICLES BACKGROUND */
 #particles-js {
@@ -1279,6 +1250,7 @@ section[id] {
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   justify-items: center;
+  align-items: start;
 }
 .project-card {
   position: relative;
@@ -1286,14 +1258,12 @@ section[id] {
   border: 2px solid #2563eb;
   border-radius: 25px;
   width: 100%;
-  max-width: 350px;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   transition: transform 0.18s, box-shadow 0.18s, border 0.18s;
-  margin: 0 auto;
   min-height: 420px;
   opacity: 0;
   transform: translateY(30px);
@@ -1647,17 +1617,7 @@ footer {
 
 
 
-.professional-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2.5rem;
-  justify-content: center;
-  margin-bottom: 4rem;
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .experience-card {
   background: #000000;
@@ -1784,10 +1744,7 @@ footer {
   margin-top: 0;
 }
 
-/* --- Force background-section color --- */
-.background-section {
-  background: #EEF2FB !important;
-}
+
 
 /* --- Ensure particles are visible in hero --- */
 #particles-js {
@@ -2167,11 +2124,6 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
 /* Remove old auto-generated accent bars */
 
 /* --- Background Section: Centered and Spaced --- */
-.background-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .background-section .section-title {
   text-align: center;
   margin-bottom: 2.8rem;
@@ -2192,10 +2144,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   margin-bottom: 2.5rem;
   text-align: center;
 }
-.professional-card-grid {
-  justify-content: center;
-  margin-bottom: 0;
-}
+
 .background-education {
   margin-top: 2.5rem;
 }
@@ -2305,15 +2254,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
 
 
 
-.background-section {
-  padding: 5rem 2rem;
-  background: #EEF2FB;
-}
 
-.certifications-section {
-  padding: 5rem 2rem;
-  background: #fff;
-}
 
 .contact-section {
   padding: 5rem 2rem;
@@ -2332,18 +2273,8 @@ footer {
 /* Tools section improvements */
 
 /* Background section improvements */
-.background-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.professional-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-  justify-content: center;
-}
+
 
 /* Projects section improvements */
 
@@ -2485,15 +2416,6 @@ section + section {
 
 
 /* --- BACKGROUND --- */
-.background-section {
-  background: #EEF2FB;
-  padding: 5rem 2rem;
-  margin-bottom: 5rem;
-}
-.background-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .professional-card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2511,11 +2433,6 @@ section + section {
 }
 
 /* --- CERTIFICATIONS --- */
-.certifications-section {
-  background: #fff;
-  padding: 5rem 2rem;
-  margin-bottom: 5rem;
-}
 
 /* --- CONTACT --- */
 .contact-section {
@@ -3445,17 +3362,8 @@ section { min-height: auto !important; }
 
 /* Projects layout: clean responsive grid, consistent media */
 .projects-section { height: auto !important; min-height: auto !important; }
-.projects-section .projects-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(340px, 1fr));
-  gap: 1.75rem;
-  max-width: var(--content-max);
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (max-width: 1000px) { .projects-section .projects-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
-.projects-section .project-card { max-width: 100%; min-width: 0; }
-.project-image img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-md); }
+
+
 
 
 
@@ -3465,48 +3373,11 @@ section { min-height: auto !important; }
 .btn-outline, .btn-secondary { background: transparent !important; color: #ffffff !important; border: 2px solid var(--color-accent) !important; }
 .btn-outline:hover, .btn-secondary:hover { background: var(--color-accent) !important; color: #ffffff !important; border-color: var(--color-accent-strong) !important; }
 
-/* === Portfolio: Horizontal scroll with arrows (final) === */
+/* === Portfolio: Clean three-column grid layout === */
 .projects-section { position: relative; height: auto !important; min-height: auto !important; }
-.projects-section .projects-grid {
-  display: flex !important;
-  flex-direction: row;
-  gap: 1.25rem;
-  overflow-x: auto;
-  overflow-y: visible;
-  scroll-snap-type: x mandatory;
-  padding: 0 4rem; /* space for arrows */
-  -webkit-overflow-scrolling: touch;
-}
-.projects-section .project-card {
-  flex: 0 0 560px;
-  max-width: 560px;
-  scroll-snap-align: start;
-}
-@media (max-width: 1200px) { .projects-section .project-card { flex-basis: 520px; max-width: 520px; } }
-@media (max-width: 900px)  { .projects-section .project-card { flex-basis: 420px; max-width: 420px; } }
-@media (max-width: 600px)  { .projects-section .project-card { flex-basis: 86vw;  max-width: 86vw;  } }
 
-/* Arrow buttons */
-.projects-scroll-btn {
-  display: grid !important;
-  place-items: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 44px; height: 44px;
-  border-radius: 999px;
-  background: rgba(15,17,21,0.85);
-  border: 1px solid var(--color-border);
-  color: #ffffff;
-  cursor: pointer;
-  z-index: 10;
-  backdrop-filter: blur(6px);
-  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
-}
-.projects-scroll-left { left: 12px; }
-.projects-scroll-right { right: 12px; }
-.projects-scroll-btn:hover { background: var(--color-accent); border-color: var(--color-accent); transform: translateY(-50%) scale(1.05); }
-.projects-scroll-btn i { pointer-events: none; }
+
+/* Arrow buttons removed - using grid layout instead */
 
 /* === Enforce equal section height like home (hero) === */
 section { display: flex !important; flex-direction: column; justify-content: center; align-items: center; }
@@ -3531,14 +3402,7 @@ html, body, section, main, footer, .container { background: #000000 !important; 
 .btn-outline, .btn-secondary { background: transparent !important; color: #fff !important; border: 2px solid var(--color-accent) !important; }
 .btn-outline:hover, .btn-secondary:hover { background: var(--color-accent) !important; color: #fff !important; border-color: var(--color-accent-strong) !important; }
 
-/* Uniform portfolio cards: consistent media, layout, and height */
-.project-card { display: flex; flex-direction: column; }
-.project-image img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-md); }
-.project-content { display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
-.project-content h3 { margin-top: 0.25rem; margin-bottom: 0.25rem; }
-.project-content p { color: var(--color-muted); display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.project-tech { margin-top: auto; }
-.project-learn-more { align-self: flex-start; }
+/* Portfolio cards maintain existing styling */
 
 /* === FINAL UNIFIED HEADINGS & BACKGROUND === */
 html, body, section, main, header, footer, .container { background: #000000 !important; }
