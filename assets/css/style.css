@@ -1608,47 +1608,12 @@ footer {
 }
 
 /* === Background Section: Premium Layout - DARK THEME === */
-.background-section {
-  background: #000000 !important;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-.background-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 
 
 
 
-.experience-card {
-  background: #000000;
-  border: 2px solid #2563eb;
-  border-radius: 25px;
-  padding: 2rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-  min-width: 300px;
-  max-width: 350px;
-  min-height: 340px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  cursor: pointer;
-  margin-bottom: 1.5rem;
-}
 
-.experience-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
-  border-color: #3b82f6;
-  background: #000000;
-}
 
 .experience-accent-bar {
   position: absolute;
@@ -2103,24 +2068,7 @@ footer {
   background: #F3F4F6;
 }
 
-/* --- Global Section Headings: Playfair Display --- */
-h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: #1F2937;
-  letter-spacing: 0.5px;
-}
-.section-title {
-  font-size: 2.2rem;
-  margin-bottom: 2.2rem;
-  color: #1F2937;
-}
-.section-subtitle {
-  font-size: 1.18rem;
-  color: #2563EB;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
+
 
 
 
@@ -2289,23 +2237,7 @@ footer {
   margin-top: 3rem;
 }
 
-/* Section title spacing */
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1F2937;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-}
 
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #6B7280;
-  text-align: center;
-  margin-bottom: 3rem;
-  font-weight: 400;
-}
 
 /* Responsive improvements */
 @media (max-width: 1200px) {
@@ -2496,33 +2428,11 @@ section:last-of-type {
   margin-bottom: 0;
 }
 
-/* --- SECTION BACKGROUNDS: ALTERNATE --- */
-section {
-  background: #000000 !important;
-}
-section:nth-of-type(even) {
-  background: #000000 !important;
-}
 
-/* --- CENTER TITLES AND SUBTITLES --- */
-.section-title {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section-subtitle {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  color: #2563EB;
-}
 
-/* --- SECTION TITLE UNDERLINE --- */
-.section-title {
-  margin-bottom: 2rem;
-  position: relative;
-  display: inline-block;
-}
+
+
+
 /* Remove old auto-generated accent bars */
 
 /* --- REMOVE GRAY BETWEEN SECTIONS --- */
@@ -2569,38 +2479,17 @@ section:nth-of-type(even) {
   align-items: center;
 }
 
-/* --- BACKGROUND SECTION ALWAYS BLUE --- */
-.background-section {
-  background: #000000 !important;
-}
+
 
 /* --- PORTFOLIO SECTION TITLE UNDERLINE BLUE --- */
 /* Remove old auto-generated accent bars */
 
-/* --- SECTION TITLE UNDERLINE (DEFAULT) --- */
-.section-title {
-  margin-bottom: 2rem;
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 /* Remove old auto-generated accent bars */
 
-/* --- SECTION SUBTITLE COLOR AND CENTER --- */
-.section-subtitle {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  color: #2563EB;
-}
 
-/* --- REMOVE ALL GRAY BACKGROUNDS --- */
-section, .container, .background-section, .certifications-section, .contact-section {
-  background: #000000 !important;
-  background-color: #000000 !important;
-}
+
+
 
 /* --- CERTIFICATION CARD BIGGER --- */
 .cert-card {
@@ -2738,31 +2627,7 @@ section, .container, .background-section, .certifications-section, .contact-sect
   padding: 0 2rem;
 }
 
-/* BACKGROUND SECTION - DARK THEME */
-.background-section {
-  background: #000000 !important;
-  padding: 5rem 2rem;
-  text-align: center;
-}
 
-.background-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.background-section .section-title {
-  color: #ffffff !important;
-  margin-bottom: 0.7rem;
-  font-size: 1.8rem;
-}
-
-/* Remove old auto-generated accent bars */
-
-.background-section .section-subtitle {
-  color: #ffffff !important;
-  font-size: 1.1rem;
-  margin-bottom: 3rem;
-}
 
 .background-professional {
   margin-bottom: 4rem;
@@ -2786,24 +2651,7 @@ section, .container, .background-section, .certifications-section, .contact-sect
   text-align: center;
 }
 
-.education-split-col {
-  background: #111111;
-  border: 2px solid #2563eb;
-  border-radius: 25px;
-  padding: 2rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-}
 
-.education-split-col:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
-  border-color: #3b82f6;
-  background: #000000;
-}
 
 .education-split-row::before {
   content: '';
