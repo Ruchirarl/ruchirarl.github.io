@@ -72,13 +72,7 @@ section {
   padding: 0 2rem;
 }
 
-.contact-section {
-  min-height: auto;
-  padding: 5rem 2rem;
-  justify-content: center;
-  align-items: center;
-  background: #000000 !important;
-}
+
 
 /* Container improvements for better content sizing */
 .skills-section .container,
@@ -146,12 +140,7 @@ section {
 
 
 
-.contact-section {
-  padding: 5rem 2rem;
-  background: #000000 !important;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 
 
 
@@ -1427,23 +1416,12 @@ section[id] {
 }
 
 /* CONTACT SECTION - DARK THEME */
-.contact-section {
-  background: #000000 !important;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  font-family: 'Playfair Display', serif;
-}
 
 .contact-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
   align-items: stretch;
   width: 100%;
   max-width: 1200px;
@@ -1742,9 +1720,6 @@ footer {
 }
 
 /* --- Certifications section: more vertical space --- */
-.certifications-section {
-  padding: 5.5rem 0 5rem 0;
-}
 
 /* --- Education Section: Flat, Clean, No Cards --- */
 .education-split-row {
@@ -2215,10 +2190,7 @@ footer {
 
 
 
-.contact-section {
-  padding: 5rem 2rem;
-  background: #EEF2FB;
-}
+
 
 footer {
   padding: 2rem;
@@ -2237,13 +2209,7 @@ footer {
 
 /* Projects section improvements */
 
-/* Contact section improvements */
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin-top: 3rem;
-}
+
 
 
 
@@ -2378,11 +2344,6 @@ section + section {
 /* --- CERTIFICATIONS --- */
 
 /* --- CONTACT --- */
-.contact-section {
-  background: #EEF2FB;
-  padding: 5rem 2rem;
-  margin-bottom: 0;
-}
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2446,9 +2407,7 @@ section:last-of-type {
 /* --- REMOVE GRAY BETWEEN SECTIONS --- */
 
 
-.background-section,
-.certifications-section,
-.contact-section {
+.background-section {
   background: unset;
 }
 
@@ -2771,11 +2730,7 @@ section:nth-of-type(even) {
   margin-bottom: 2rem;
 }
 
-.certifications-section .section-title {
-  color: #ffffff !important;
-  font-size: 1.5rem;
-  margin-bottom: 0.7rem;
-}
+
 /* Remove old auto-generated accent bars */
 
 .education-split-row,
