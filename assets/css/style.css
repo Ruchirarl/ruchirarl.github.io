@@ -42,6 +42,13 @@ ul {
 /* === STANDARDIZED SECTION SPACING SYSTEM === */
 /* All sections follow the same spacing pattern:
    Divider → 4rem → Title → 1.5rem → Accent Bar → 1.5rem → Subtitle → 3rem → Content → 4rem → Divider
+   
+   IMPLEMENTATION:
+   - section: padding: 4rem 2rem (top/bottom spacing from dividers)
+   - .section-title: margin-bottom: 1.5rem (Title → Accent Bar)
+   - .section-divider-accent: margin: 0 auto 1.5rem auto (Accent Bar → Subtitle)
+   - .section-subtitle: margin-bottom: 3rem (Subtitle → Content)
+   - .background-subtitle: margin-top: 3rem, margin-bottom: 2rem (for subsections)
 */
 
 section {
@@ -276,6 +283,7 @@ section[id] {
   position: relative;
   background: transparent !important;
   z-index: 1;
+  height: 100vh;  /* Full viewport height */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -301,7 +309,7 @@ section[id] {
 .hero-bottom { margin-top: auto; text-align: center; }
 
 .hero-title {
-  font-size: 3.6rem;
+  font-size: 4.2rem;  /* Increased from 3.6rem */
   font-family: 'Playfair Display', serif;
   font-weight: 800;
   color: #ffffff;
@@ -311,24 +319,24 @@ section[id] {
 }
 
 .hero-divider {
-  width: 90px;
-  height: 3px;
+  width: 110px;  /* Increased from 90px */
+  height: 4px;  /* Increased from 3px */
   background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%);
-  margin: 0.9rem auto 1.2rem auto;
+  margin: 1.2rem auto 1.5rem auto;  /* Increased margins */
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(37,99,235,0.35);
 }
 
 .hero-socials {
   display: flex;
-  gap: 1.8rem;
-  margin-bottom: 2rem;
+  gap: 2.2rem;  /* Increased from 1.8rem */
+  margin-bottom: 2.5rem;  /* Increased from 2rem */
 }
 
 .hero-socials a {
-  width: 48px;
-  height: 48px;
-  font-size: 1.5rem;
+  width: 56px;  /* Increased from 48px */
+  height: 56px;  /* Increased from 48px */
+  font-size: 1.7rem;  /* Increased from 1.5rem */
   background: #000000;
   color: #ffffff;
   border-radius: 50%;
@@ -351,10 +359,10 @@ section[id] {
 
 /* New concise tagline */
 .hero-tagline {
-  font-size: 1.4rem;
+  font-size: 1.6rem;  /* Increased from 1.4rem */
   color: #ffffff;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;  /* Increased from 1rem */
   line-height: 1.65;
   max-width: 760px;
   font-weight: 700;
@@ -363,11 +371,11 @@ section[id] {
 
 /* New subline under tagline */
 .hero-subline {
-  font-size: 1.05rem;
+  font-size: 1.2rem;  /* Increased from 1.05rem */
   color: var(--color-muted);
   text-align: center;
   margin-top: 0;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.5rem;  /* Increased from 2.2rem */
 }
 
 .hero-intro .emoji {
@@ -381,28 +389,28 @@ section[id] {
   text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
-/* Unify buttons with theme tokens */
+/* Hero buttons with unified styling */
 .hero-buttons .btn-primary,
 .hero-buttons .btn-outline {
-  background: linear-gradient(90deg, #0a0a0a 0%, #0b1a3d 45%, #1E40AF 70%) !important;
+  background: #000000 !important;
   color: #ffffff !important;
-  border: 0 !important;
-  padding: 0.95rem 2.2rem;
+  border: 2px solid #2563eb !important;
+  padding: 1.1rem 2.5rem;  /* Increased padding */
   border-radius: 12px;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;  /* Increased font size */
   letter-spacing: 0.5px;
-  margin: 0 0.5rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background-position 0.25s ease;
+  margin: 0 0.7rem;  /* Increased margin */
+  transition: all 0.3s ease;
   box-shadow: 0 10px 28px rgba(37,99,235,0.30);
-  background-size: 200% 100%;
-  background-position: 0% 50%;
 }
 .hero-buttons .btn-primary:hover,
 .hero-buttons .btn-outline:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #000000 100%) !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
   transform: translateY(-2px);
-  box-shadow: 0 16px 36px rgba(20,31,60,0.55);
-  background-position: 100% 50%;
+  box-shadow: 0 16px 36px rgba(37,99,235,0.4);
 }
 
 /* Button icon spacing */
@@ -446,19 +454,19 @@ section[id] {
 
 @media (max-width: 600px) {
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2.8rem;  /* Increased from 2.2rem */
   }
   .hero-divider {
-    width: 50px;
+    width: 70px;  /* Increased from 50px */
   }
   .hero-center {
     max-width: 95vw;
   }
   .hero-buttons .btn-primary,
   .hero-buttons .btn-outline { width: 100%; margin: 0.5rem 0; }
-  .hero-socials a { width: 42px; height: 42px; font-size: 1.2rem; }
-  .hero-tagline { font-size: 1.15rem; }
-  .hero-subline { font-size: 1rem; }
+  .hero-socials a { width: 48px; height: 48px; font-size: 1.4rem; }  /* Increased sizes */
+  .hero-tagline { font-size: 1.3rem; }  /* Increased from 1.15rem */
+  .hero-subline { font-size: 1.1rem; }  /* Increased from 1rem */
   .scroll-down-arrow {
     font-size: 1.5rem;
   }
@@ -667,11 +675,11 @@ section[id] {
   border: 2px solid #2563eb;
 }
 .about-buttons .btn-primary:hover {
-  background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%);
-  border-color: #3b82f6;
+  background: linear-gradient(135deg, #2563eb 0%, #000000 100%);
+  border-color: #2563eb;
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
 }
 
 .about-buttons .btn-secondary {
@@ -680,11 +688,11 @@ section[id] {
   border: 2px solid #2563eb;
 }
 .about-buttons .btn-secondary:hover {
-  background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%);
-  border-color: #3b82f6;
+  background: linear-gradient(135deg, #2563eb 0%, #000000 100%);
+  border-color: #2563eb;
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
 }
 
 @media (max-width: 900px) {
@@ -1279,17 +1287,17 @@ section[id] {
   border: 1px solid rgba(37, 99, 235, 0.3);
 }
 .project-learn-more {
-  background: linear-gradient(90deg, #ffffff 0%, #cccccc 100%);
-  color: #000000;
-  border: none;
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #2563eb;
   border-radius: 8px;
   padding: 1rem 0;
   font-weight: 700;
   font-size: 1.08rem;
   margin-top: auto;
   cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-  box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.2);
   text-align: center;
   text-decoration: none;
   display: block;
@@ -1300,10 +1308,11 @@ section[id] {
   margin-left: 0.5rem;
 }
 .project-learn-more:hover {
-  background: linear-gradient(90deg, #cccccc 0%, #ffffff 100%);
-  color: #000000;
-  box-shadow: 0 4px 16px rgba(255,255,255,0.2);
-  transform: scale(1.03);
+  background: linear-gradient(135deg, #2563eb 0%, #000000 100%);
+  color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 8px 25px rgba(37,99,235,0.3);
+  transform: translateY(-2px);
 }
 @media (max-width: 1100px) {
   .projects-grid {
@@ -1867,41 +1876,23 @@ footer {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   padding: 0.9rem 2.5rem;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
   cursor: pointer;
   display: inline-block;
   margin-bottom: 0.5rem;
   box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #2563eb;
 }
-.btn-primary {
-  background: #2563EB;
-  color: #fff;
-  border: 2px solid #2563EB;
-}
-.btn-primary:hover, .btn-primary:active {
-  background: #1E40AF;
-  border-color: #1E40AF;
-  color: #fff;
-}
-.btn-outline {
-  background: #fff;
-  color: #2563EB;
-  border: 2px solid #2563EB;
-}
-.btn-outline:hover, .btn-outline:active {
-  background: #2563EB;
-  color: #fff;
-  border-color: #1E40AF;
-}
-.btn-secondary {
-  background: #fff;
-  color: #2563EB;
-  border: 2px solid #2563EB;
-}
+.btn-primary:hover, .btn-primary:active,
+.btn-outline:hover, .btn-outline:active,
 .btn-secondary:hover, .btn-secondary:active {
-  background: #2563EB;
-  color: #fff;
-  border-color: #1E40AF;
+  background: linear-gradient(135deg, #2563eb 0%, #000000 100%);
+  border-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37,99,235,0.3);
 }
 
 
@@ -2385,11 +2376,7 @@ section:nth-of-type(even) {
 
 
 
-/* Reduce gap between title and subtitle in skills section */
-.skills-section .section-title {
-  margin-bottom: 0.7rem;
-  color: #ffffff !important;
-}
+/* Skills section uses standardized spacing from main section-title rule */
 
 
 /* CONTACT SECTION */
@@ -2426,7 +2413,7 @@ section:nth-of-type(even) {
   font-weight: 500;
 }
 .contact-link:hover, .contact-link:focus {
-  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%) !important;
+  background: linear-gradient(135deg, #2563eb 0%, #000000 100%) !important;
   color: #fff !important;
   border-color: #2563EB !important;
 }
@@ -2715,11 +2702,18 @@ html, body, section, main, footer, .container { background: #000000 !important; 
   font-weight: 700 !important;
   padding: 0.7rem 1.2rem !important;
   font-size: 0.98rem !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #2563eb !important;
+  transition: all 0.3s ease !important;
 }
-.btn-primary { background: var(--color-accent) !important; color: #fff !important; border: 2px solid var(--color-accent) !important; }
-.btn-primary:hover { background: var(--color-accent-strong) !important; border-color: var(--color-accent-strong) !important; }
-.btn-outline, .btn-secondary { background: transparent !important; color: #fff !important; border: 2px solid var(--color-accent) !important; }
-.btn-outline:hover, .btn-secondary:hover { background: var(--color-accent) !important; color: #fff !important; border-color: var(--color-accent-strong) !important; }
+.btn-primary:hover, .btn-outline:hover, .btn-secondary:hover { 
+  background: linear-gradient(135deg, #2563eb 0%, #000000 100%) !important; 
+  color: #ffffff !important; 
+  border-color: #2563eb !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+}
 
 /* === FINAL UNIFIED HEADINGS & BACKGROUND === */
 html, body, section, main, header, footer, .container { background: #000000 !important; }
@@ -2737,6 +2731,7 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   letter-spacing: 0.2px !important;
   text-align: center !important;
   display: block !important;
+  margin-bottom: 1.5rem !important;  /* Equal spacing: Title → Accent Bar */
 }
 
 .section-subtitle {
@@ -2745,6 +2740,7 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
   text-align: center !important;
   max-width: 800px !important;
   line-height: 1.4 !important;
+  margin-bottom: 3rem !important;  /* Standard spacing: Subtitle → Content */
 }
 
 /* === SECTION CENTERING === */
@@ -2779,6 +2775,8 @@ html, body {
   font-weight: 800 !important;
   letter-spacing: 0.2px;
   color: #ffffff !important;
+  margin-top: 3rem !important;  /* Space from previous content */
+  margin-bottom: 2rem !important;  /* Space to next content */
 }
 
 /* Make experience cards larger and center all content */
