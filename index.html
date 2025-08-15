@@ -627,7 +627,7 @@
     const navbar = document.querySelector('.navbar');
     const recomputeOffset = () => {
       const h = navbar ? Math.ceil(navbar.getBoundingClientRect().height) : 0;
-      root.style.setProperty('--nav-offset', ${h + 16}px);
+      root.style.setProperty('--nav-offset', `${h + 16}px`);
     };
     recomputeOffset();
     window.addEventListener('resize', recomputeOffset);
