@@ -292,7 +292,7 @@ section {
 
 @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
 
-/* NAVBAR - DARK THEME */
+/* === NAVBAR - CLEAN & CONSOLIDATED === */
 .navbar {
   position: fixed;
   top: 0;
@@ -340,14 +340,103 @@ section {
   transition: width 0.25s ease;
 }
 
-.nav-links li a:hover::after { width: 100%; }
+.nav-links li a:hover::after { 
+  width: 100%; 
+}
 
-.nav-links li a:hover, .nav-links li a:focus { color: #ffffff; }
+.nav-links li a:hover, 
+.nav-links li a:focus { 
+  color: #ffffff; 
+}
 
-.nav-links li a.active { color: #ffffff; }
-.nav-links li a.active::after { width: 100%; }
+.nav-links li a.active { 
+  color: #ffffff; 
+}
 
-/* Resume link matches other nav items */
+.nav-links li a.active::after { 
+  width: 100%; 
+}
+
+/* Resume button styling */
+.btn-nav-resume {
+  background: #fff;
+  color: #2563EB;
+  border: 2px solid #2563EB;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  height: 40px;
+  line-height: 1.2;
+  box-shadow: none;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.btn-nav-resume:hover, 
+.btn-nav-resume:focus {
+  background: #2563EB;
+  color: #fff;
+  border-color: #1E40AF;
+}
+
+/* Mobile navigation */
+.nav-toggle {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  background: transparent;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive navbar */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-toggle { 
+    display: inline-flex; 
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    flex-direction: column;
+    gap: 1rem;
+    transform: translateY(-12px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+  
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* Anchor offset for fixed navbar */
+section[id] { 
+  scroll-margin-top: 96px; 
+}
 
 /* HERO SECTION - Enhanced Attractive Style */
 .hero {
@@ -600,54 +689,7 @@ section {
   background: none;
 }
 
-/* Mobile nav toggle */
-.nav-toggle {
-  display: none;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 8px;
-  background: transparent;
-  color: #ffffff;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 1024px) {
-  .nav-links {
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-toggle { display: inline-flex; }
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    padding: 1rem 2rem;
-    background: rgba(0,0,0,0.9);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    flex-direction: column;
-    gap: 1rem;
-    transform: translateY(-12px);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.25s ease, transform 0.25s ease;
-  }
-  .nav-links.open {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
-
-/* Anchor offset so sections don't hide under fixed navbar */
 /* Anchor offset for in-page anchors (backup for native jumps) */
-section[id] { scroll-margin-top: 96px; }
 
 .hero-scroll-arrow:hover {
   color: #2563eb;
@@ -1721,10 +1763,6 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  
-  .nav-links {
-    gap: 1rem;
-  }
 }
 
 /* === Background Section: Premium Layout - DARK THEME === */
@@ -2182,28 +2220,7 @@ footer {
   color: #fff;
   border-color: #1E40AF;
 }
-.btn-nav-resume {
-  background: #fff;
-  color: #2563EB;
-  border: 2px solid #2563EB;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.5rem 1.2rem;
-  height: 40px;
-  line-height: 1.2;
-  box-shadow: none;
-  transition: background 0.18s, color 0.18s, border 0.18s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0;
-}
-.btn-nav-resume:hover, .btn-nav-resume:focus {
-  background: #2563EB;
-  color: #fff;
-  border-color: #1E40AF;
-}
+
 
 /* === CARDS, MODALS, SURFACES === */
 .project-card, .experience-card, .education-split-col, .cert-card, .experience-modal {
@@ -3558,8 +3575,7 @@ section.background-section { padding-bottom: 7rem; }
 html, body { background: #000000 !important; }
 /* All major wrappers stay black to avoid gray bands between sections */
 section, .container, main, header, footer { background: #000000 !important; }
-/* Keep the top navbar light as requested */
-.navbar { background: rgba(0,0,0,0.6) !important; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.08); }
+
 /* Footer: match page background */
 footer { background: #000000 !important; color: #ffffff !important; border-top: 0 !important; }
 
@@ -3731,9 +3747,8 @@ section { min-height: auto !important; }
 section { display: flex !important; flex-direction: column; justify-content: center; align-items: center; }
 section:not(.hero) { min-height: 100vh !important; }
 
-/* Keep everything black except navbar */
+/* Keep everything black */
 html, body, section, main, footer, .container { background: #000000 !important; }
-.navbar { background: rgba(0,0,0,0.6) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
 
 /* Clean headings and spacing */
 .section-title { letter-spacing: 0.2px; margin-bottom: 0.5rem !important; }
@@ -3762,7 +3777,6 @@ html, body, section, main, footer, .container { background: #000000 !important; 
 
 /* === FINAL UNIFIED HEADINGS & BACKGROUND === */
 html, body, section, main, header, footer, .container { background: #000000 !important; }
-.navbar { background: rgba(0,0,0,0.6) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
 
 /* === UNIFIED SECTION STRUCTURE === */
 /* All sections: Title -> Accent Bar -> Subtitle -> Content */
