@@ -54,13 +54,7 @@ section {
 
 
 
-.about-section {
-  min-height: auto;
-  padding: 4rem 2rem;
-  justify-content: center;
-  align-items: center;
-  background: #000000 !important;
-}
+
 
 .skills-section {
   min-height: auto;
@@ -508,9 +502,7 @@ section[id] {
 
 /* Unify buttons with theme tokens */
 .hero-buttons .btn-primary,
-.hero-buttons .btn-outline,
-.about-buttons .btn-primary,
-.about-buttons .btn-secondary {
+.hero-buttons .btn-outline {
   background: linear-gradient(90deg, #0a0a0a 0%, #0b1a3d 45%, #1E40AF 70%) !important;
   color: #ffffff !important;
   border: 0 !important;
@@ -526,9 +518,7 @@ section[id] {
   background-position: 0% 50%;
 }
 .hero-buttons .btn-primary:hover,
-.hero-buttons .btn-outline:hover,
-.about-buttons .btn-primary:hover,
-.about-buttons .btn-secondary:hover {
+.hero-buttons .btn-outline:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 36px rgba(20,31,60,0.55);
   background-position: 100% 50%;
@@ -2397,17 +2387,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
 
 /* --- Fullscreen Section Layouts --- */
 
-.about-section {
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 2rem;
-  position: relative;
-  background: #000000 !important;
-  box-sizing: border-box;
-}
+
 
 .projects-section {
   min-height: 100vh;
@@ -2774,7 +2754,7 @@ section:nth-of-type(even) {
 
 /* --- REMOVE GRAY BETWEEN SECTIONS --- */
 
-.about-section,
+
 .skills-section,
 .tools-section,
 .projects-section,
@@ -3291,7 +3271,7 @@ section.background-section { padding-bottom: 7rem; }
 .projects-scroll-arrow,
 .background-scroll-arrow,
 .skills-scroll-arrow,
-.about-scroll-arrow,
+
 
 
 /* === Final layout tweaks === */
@@ -3546,7 +3526,7 @@ footer { background: #000000 !important; color: #ffffff !important; border-top: 
 
 /* Remove any legacy full-screen section rules */
 .projects-section { min-height: 100vh !important; height: 100vh !important; }
-.about-section { min-height: 100vh !important; height: 100vh !important; }
+
 
 /* Divider spacing to visually separate sections on black background */
 .section-divider { height: 2px; opacity: 0.6; margin: 2.5rem 0; }
