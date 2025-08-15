@@ -3341,3 +3341,59 @@ html, body {
   box-sizing: border-box;
 }
 
+
+/* === Background > Experience & Education Tweaks (Overrides) === */
+/* Hide the big blue accent line under the background section subheading */
+.background-section .section-divider-accent { display: none !important; }
+
+/* Use Playfair for 'Professional Experience' and 'Education' subtitles */
+.background-subtitle {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.2px;
+  color: #ffffff !important;
+}
+
+/* Make experience cards larger and center all content */
+.professional-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(320px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: stretch;
+}
+.experience-card {
+  width: 100%;
+  max-width: 380px;
+  min-height: 480px;
+  padding: 2rem 1.5rem;
+  background: #000000;
+  border: 2px solid #2563eb;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.experience-card .experience-content,
+.experience-card .experience-role,
+.experience-card .experience-company,
+.experience-card .experience-date { text-align: center; }
+.experience-logo-circle { margin-left: auto; margin-right: auto; }
+
+@media (max-width: 1000px) { .professional-card-grid { grid-template-columns: repeat(2, minmax(280px, 1fr)); } }
+@media (max-width: 600px) { .professional-card-grid { grid-template-columns: 1fr; } }
+
+/* Subtle divider between Experience and Education blocks */
+.background-professional { position: relative; }
+.background-professional::after {
+  content: '';
+  display: block;
+  width: 92%;
+  max-width: 1000px;
+  height: 1px;
+  margin: 2rem auto 0 auto;
+  background: linear-gradient(90deg, rgba(37,99,235,0), rgba(37,99,235,0.35), rgba(37,99,235,0));
+  opacity: 0.6;
+}
