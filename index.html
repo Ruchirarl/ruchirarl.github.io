@@ -632,54 +632,7 @@
     recomputeOffset();
     window.addEventListener('resize', recomputeOffset);
 
-    // Project Carousel Functionality
-    let currentProject = 0;
-    const totalProjects = 3;
-
-    function changeProject(direction) {
-      const cards = document.querySelectorAll('.project-card');
-      const indicators = document.querySelectorAll('.indicator');
-      
-      // Remove active class from current card and indicator
-      cards[currentProject].classList.remove('active');
-      if (indicators[currentProject]) {
-        indicators[currentProject].classList.remove('active');
-      }
-      
-      // Calculate new project index (with wrapping)
-      currentProject = (currentProject + direction + totalProjects) % totalProjects;
-      
-      // Add active class to new card and indicator
-      cards[currentProject].classList.add('active');
-      if (indicators[currentProject]) {
-        indicators[currentProject].classList.add('active');
-      }
-    }
-
-    function goToProject(index) {
-      const cards = document.querySelectorAll('.project-card');
-      const indicators = document.querySelectorAll('.indicator');
-      
-      // Remove active class from current card and indicator
-      cards[currentProject].classList.remove('active');
-      if (indicators[currentProject]) {
-        indicators[currentProject].classList.remove('active');
-      }
-      
-      // Set new project index
-      currentProject = index;
-      
-      // Add active class to new card and indicator
-      cards[currentProject].classList.add('active');
-      if (indicators[currentProject]) {
-        indicators[currentProject].classList.add('active');
-      }
-    }
-
-    // Auto-advance carousel every 8 seconds
-    setInterval(() => {
-      changeProject(1);
-    }, 8000);
+    // Project carousel JavaScript removed - using simple grid layout
   </script>
 </body>
 </html>
