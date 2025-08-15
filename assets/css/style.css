@@ -3369,22 +3369,28 @@ section.background-section { padding-bottom: 7rem; }
 
 /* PROJECT CAROUSEL - COMPLETE RESET */
 .project-carousel {
-  position: relative;
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 0 80px;
-  background: transparent;
+  position: relative !important;
+  max-width: 1000px !important;
+  width: 1000px !important;
+  margin: 2rem auto !important;
+  padding: 0 80px !important;
+  background: transparent !important;
+  min-height: 700px !important;
+  height: 700px !important;
+  display: block !important;
 }
 
 .project-display {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  background: #1a1a1a;
-  border: 3px solid #2563eb;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+  position: relative !important;
+  width: 100% !important;
+  height: 600px !important;
+  min-height: 600px !important;
+  background: #ff0000 !important;
+  border: 5px solid #2563eb !important;
+  border-radius: 20px !important;
+  overflow: visible !important;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3) !important;
+  display: block !important;
 }
 
 /* RESET ALL PROJECT CARD STYLES FOR CAROUSEL */
@@ -3638,7 +3644,7 @@ footer { background: #000000 !important; color: #ffffff !important; border-top: 
 .section-divider { height: 2px; opacity: 0.6; margin: 0; }
 
 /* Remove any legacy full-screen section rules */
-.projects-section { min-height: auto !important; height: auto !important; }
+.projects-section { min-height: 100vh !important; height: 100vh !important; }
 .about-section { min-height: 100vh !important; height: 100vh !important; }
 
 /* Divider spacing to visually separate sections on black background */
