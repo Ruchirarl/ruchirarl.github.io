@@ -930,8 +930,12 @@ section[id] {
   width: 100%;
   margin: 0 auto;
 }
-/* Consistent card width so flex rows center cleanly */
-.skill-card { width: 100% !important; max-width: 250px !important; }
+/* Consistent card width and height so all cards are the same size */
+.skill-card { 
+  width: 100% !important; 
+  max-width: 250px !important; 
+  height: 200px !important; /* Fixed height for all cards */
+}
 .skill-card {
   position: relative;
   background: #000000;
@@ -945,7 +949,7 @@ section[id] {
   text-align: center;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 2px solid #2563eb;
-  min-height: 180px;
+  height: 200px !important; /* Fixed height for consistency */
   overflow: hidden;
   backdrop-filter: blur(4px);
   cursor: pointer;
