@@ -58,13 +58,7 @@ section {
 
 
 
-.tools-section {
-  min-height: auto;
-  padding: 5rem 2rem;
-  justify-content: center;
-  align-items: center;
-  background: #000000 !important;
-}
+
 
 .projects-section {
   min-height: auto;
@@ -161,12 +155,7 @@ section {
 
 /* Section spacing improvements - DARK THEME */
 
-.tools-section {
-  padding: 5rem 2rem;
-  background: #000000 !important;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 
 .projects-section {
   min-height: 100vh;
@@ -1163,15 +1152,7 @@ section[id] {
   font-weight: 500;
   letter-spacing: 0.2px;
 }
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  justify-items: center;
-  width: 100%;
-}
+
 .tool-card {
   position: relative;
   background: #000000;
@@ -1254,9 +1235,6 @@ section[id] {
 }
 
 /* --- Tools Section: Gradient Background and Gradient Hover - DARK THEME --- */
-.tools-section {
-  background: #000000 !important;
-}
 .tool-bubble:hover {
   background: linear-gradient(90deg, #ffffff 0%, #cccccc 100%);
   color: #000000;
@@ -2189,7 +2167,7 @@ footer {
 /* === NAVBAR (overridden below) === */
 
 /* === BACKGROUND SECTIONS === */
-.background-section, .education-section, .certifications-section, .tools-section, .projects-section, .contact-section {
+.background-section, .education-section, .certifications-section, .projects-section, .contact-section {
   background: #000000 !important;
 }
 
@@ -2384,10 +2362,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
 
 
 
-.tools-section {
-  padding: 5rem 2rem;
-  background: #EEF2FB;
-}
+
 
 .background-section {
   padding: 5rem 2rem;
@@ -2414,15 +2389,6 @@ footer {
 /* Removed duplicate skills-grid definition */
 
 /* Tools section improvements */
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  justify-items: center;
-  width: 100%;
-}
 
 /* Background section improvements */
 .background-section .container {
@@ -2579,21 +2545,6 @@ section + section {
 /* Removed duplicate skills-grid definition */
 
 /* --- TOOLS --- */
-.tools-section {
-  background: #EEF2FB;
-  padding: 5rem 2rem;
-  margin-bottom: 5rem;
-  border-radius: 0 0 32px 32px;
-}
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* --- PROJECTS --- */
 .projects-section {
@@ -2735,7 +2686,6 @@ section:nth-of-type(even) {
 /* --- REMOVE GRAY BETWEEN SECTIONS --- */
 
 
-.tools-section,
 .projects-section,
 .background-section,
 .certifications-section,
@@ -2806,7 +2756,7 @@ section:nth-of-type(even) {
 }
 
 /* --- REMOVE ALL GRAY BACKGROUNDS --- */
-section, .container, .tools-section, .projects-section, .background-section, .certifications-section, .contact-section {
+section, .container, .projects-section, .background-section, .certifications-section, .contact-section {
   background: #000000 !important;
   background-color: #000000 !important;
 }
@@ -3482,7 +3432,6 @@ section, .container, main, header, footer { background: #000000 !important; }
 footer { background: #000000 !important; color: #ffffff !important; border-top: 0 !important; }
 
 /* === Section sizing fixes: size to content, no fixed viewport heights === */
-.tools-section,
 .projects-section,
 .background-section,
 .certifications-section,
@@ -3494,7 +3443,7 @@ footer { background: #000000 !important; color: #ffffff !important; border-top: 
 }
 /* Extra bottom padding only where arrows exist to avoid overlap */
 
-.tools-section { padding-bottom: 7rem !important; }
+
 .background-section { padding-bottom: 7rem !important; }
 
 /* Ensure there's a small visual gap between sections (even with black bg) */
@@ -3538,7 +3487,6 @@ section { min-height: auto !important; }
 .container { max-width: var(--content-max); }
 
 /* Section backgrounds aligned to theme */
-.tools-section,
 .projects-section,
 .background-section,
 .certifications-section,
@@ -3695,7 +3643,7 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
 /* FORCE REMOVE ALL ACCENT BARS FROM SECTION TITLES */
 .section-title::after,
 
-.tools-section .section-title::after,
+
 .projects-section .section-title::after,
 .background-section .section-title::after,
 .certifications-section .section-title::after,
