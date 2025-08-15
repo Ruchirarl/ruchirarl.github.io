@@ -862,6 +862,17 @@ section[id] {
   font-weight: 500;
   letter-spacing: 0.2px;
 }
+
+/* Section divider accent bars */
+.section-divider-accent {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%);
+  margin: 0.5rem auto 1.5rem auto;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.35);
+}
+
 .skills-grid {
   display: grid !important;
   grid-template-columns: repeat(4, minmax(200px, 250px));
@@ -3320,8 +3331,6 @@ html, body {
 
 
 /* === Background > Experience & Education Tweaks (Overrides) === */
-/* Hide the big blue accent line under the background section subheading */
-.background-section .section-divider-accent { display: none !important; }
 
 /* Use Playfair for 'Professional Experience' and 'Education' subtitles */
 .background-subtitle {
