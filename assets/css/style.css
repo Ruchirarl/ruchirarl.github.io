@@ -60,13 +60,7 @@ section {
 
 
 
-.projects-section {
-  min-height: auto;
-  padding: 5rem 2rem;
-  justify-content: center;
-  align-items: center;
-  background: #000000 !important;
-}
+
 
 .background-section {
   min-height: auto;
@@ -157,16 +151,7 @@ section {
 
 
 
-.projects-section {
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 2rem;
-  background: #000000 !important;
-}
+
 
 .background-section {
   padding: 5rem 2rem;
@@ -2131,7 +2116,7 @@ footer {
 /* === NAVBAR (overridden below) === */
 
 /* === BACKGROUND SECTIONS === */
-.background-section, .education-section, .certifications-section, .projects-section, .contact-section {
+.background-section, .education-section, .certifications-section, .contact-section {
   background: #000000 !important;
 }
 
@@ -2279,9 +2264,6 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
 }
 
 /* --- Portfolio Section: Force Blue Palette --- */
-.projects-section {
-  background: #000000 !important;
-}
 .project-card::before {
   background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%) !important;
 }
@@ -2314,15 +2296,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
 
 
 
-.projects-section {
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 2rem;
-}
+
 
 
 
@@ -2369,12 +2343,6 @@ footer {
 }
 
 /* Projects section improvements */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
 
 /* Contact section improvements */
 .contact-content {
@@ -2511,20 +2479,7 @@ section + section {
 /* --- TOOLS --- */
 
 /* --- PROJECTS --- */
-.projects-section {
-  background: #fff;
-  padding: 5rem 2rem;
-  margin-bottom: 5rem;
-}
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 /* --- BACKGROUND --- */
 .background-section {
@@ -2650,7 +2605,6 @@ section:nth-of-type(even) {
 /* --- REMOVE GRAY BETWEEN SECTIONS --- */
 
 
-.projects-section,
 .background-section,
 .certifications-section,
 .contact-section {
@@ -2720,7 +2674,7 @@ section:nth-of-type(even) {
 }
 
 /* --- REMOVE ALL GRAY BACKGROUNDS --- */
-section, .container, .projects-section, .background-section, .certifications-section, .contact-section {
+section, .container, .background-section, .certifications-section, .contact-section {
   background: #000000 !important;
   background-color: #000000 !important;
 }
@@ -3396,7 +3350,6 @@ section, .container, main, header, footer { background: #000000 !important; }
 footer { background: #000000 !important; color: #ffffff !important; border-top: 0 !important; }
 
 /* === Section sizing fixes: size to content, no fixed viewport heights === */
-.projects-section,
 .background-section,
 .certifications-section,
 .contact-section {
@@ -3451,7 +3404,6 @@ section { min-height: auto !important; }
 .container { max-width: var(--content-max); }
 
 /* Section backgrounds aligned to theme */
-.projects-section,
 .background-section,
 .certifications-section,
 .contact-section { background: var(--color-background) !important; }
@@ -3608,7 +3560,7 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
 .section-title::after,
 
 
-.projects-section .section-title::after,
+
 .background-section .section-title::after,
 .certifications-section .section-title::after,
 .contact-section .section-title::after {
