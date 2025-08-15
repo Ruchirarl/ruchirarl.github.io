@@ -52,16 +52,7 @@ section {
   position: relative;
 }
 
-/* Section-specific improvements */
-.hero {
-  min-height: 100vh;
-  height: 100vh;
-  padding: 0 2rem;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
+
 
 .about-section {
   min-height: auto;
@@ -164,10 +155,7 @@ section {
     min-height: auto;
   }
   
-  .hero {
-    height: 100vh;
-    min-height: 100vh;
-  }
+
   
   .container {
     padding: 0 1rem;
@@ -251,36 +239,6 @@ section {
   left: 0;
   background-color: transparent !important;
   pointer-events: none;
-}
-.hero {
-  background: none;
-  position: relative;
-}
-
-/* Fix particles overlay on hero content */
-.hero-center {
-  position: relative;
-  z-index: 10;
-}
-
-.hero-title {
-  position: relative;
-  z-index: 10;
-}
-
-.hero-socials {
-  position: relative;
-  z-index: 10;
-}
-
-.hero-intro {
-  position: relative;
-  z-index: 10;
-}
-
-.hero-buttons {
-  position: relative;
-  z-index: 10;
 }
 
 /* Entry animations */
@@ -1931,10 +1889,7 @@ footer {
   background-color: transparent !important;
   pointer-events: none;
 }
-.hero {
-  background: none;
-  position: relative;
-}
+
 
 /* --- Increase font size for section subtitles --- */
 .background-subtitle {
@@ -2169,7 +2124,7 @@ footer {
 }
 
 /* === ACCENT BARS & DIVIDERS === */
-.hero-divider,
+
 /* Remove old auto-generated accent bars */
 
 .background-education::after {
@@ -2441,16 +2396,6 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
 }
 
 /* --- Fullscreen Section Layouts --- */
-.hero {
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  overflow: hidden;
-}
 
 .about-section {
   min-height: 100vh;
@@ -2828,7 +2773,7 @@ section:nth-of-type(even) {
 /* Remove old auto-generated accent bars */
 
 /* --- REMOVE GRAY BETWEEN SECTIONS --- */
-.hero,
+
 .about-section,
 .skills-section,
 .tools-section,
@@ -3347,7 +3292,7 @@ section.background-section { padding-bottom: 7rem; }
 .background-scroll-arrow,
 .skills-scroll-arrow,
 .about-scroll-arrow,
-.hero-scroll-arrow { z-index: 6; }
+
 
 /* === Final layout tweaks === */
 /* Tools: 4 per row on desktop */
@@ -3644,8 +3589,7 @@ section { min-height: auto !important; }
 .certifications-section,
 .contact-section { background: var(--color-background) !important; }
 
-/* Keep hero immersive */
-.hero { height: 100vh; min-height: 100vh; }
+
 
 /* Section headings */
 .section-title { font-size: 2.25rem; line-height: 1.2; margin: 0; text-align: center; }
