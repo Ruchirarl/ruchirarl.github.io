@@ -3360,8 +3360,8 @@ section.background-section { padding-bottom: 7rem; }
 }
 
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
   gap: 2rem;
   justify-content: center;
   margin-top: 3rem;
@@ -3465,11 +3465,8 @@ section.background-section { padding-bottom: 7rem; }
 /* Responsive */
 @media (max-width: 1024px) {
   .projects-grid {
+    grid-template-columns: repeat(2, 350px);
     gap: 1.5rem;
-  }
-  
-  .project-card {
-    width: 320px;
   }
 }
 
@@ -3479,12 +3476,15 @@ section.background-section { padding-bottom: 7rem; }
   }
   
   .projects-grid {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .project-card {
     width: 100%;
-    max-width: 400px;
   }
 }
 
