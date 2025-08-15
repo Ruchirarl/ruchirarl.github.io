@@ -56,14 +56,7 @@ section {
 
 
 
-.skills-section {
-  min-height: auto;
-  padding: 4rem 2rem 8rem 2rem;
-  justify-content: center;
-  align-items: center;
-  background: #000000 !important;
-  position: relative;
-}
+
 
 .tools-section {
   min-height: auto;
@@ -167,12 +160,6 @@ section {
 }
 
 /* Section spacing improvements - DARK THEME */
-.skills-section {
-  padding: 5rem 2rem;
-  background: #000000 !important;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
 .tools-section {
   padding: 5rem 2rem;
@@ -2198,7 +2185,7 @@ footer {
 /* === NAVBAR (overridden below) === */
 
 /* === BACKGROUND SECTIONS === */
-.background-section, .education-section, .certifications-section, .skills-section, .tools-section, .projects-section, .contact-section {
+.background-section, .education-section, .certifications-section, .tools-section, .projects-section, .contact-section {
   background: #000000 !important;
 }
 
@@ -2241,15 +2228,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   margin-bottom: 1.5rem;
 }
 
-/* --- Skills Section Headings --- */
-.skills-section .section-title {
-  font-size: 2.1rem;
-  margin-bottom: 1.2rem;
-}
-.skills-section .section-subtitle {
-  font-size: 1.08rem;
-  margin-bottom: 2.2rem;
-}
+
 
 /* Remove old auto-generated accent bars */
 
@@ -2399,10 +2378,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   padding: 5rem 2rem;
 }
 
-.skills-section {
-  padding: 5rem 2rem;
-  background: #fff;
-}
+
 
 .tools-section {
   padding: 5rem 2rem;
@@ -2755,7 +2731,6 @@ section:nth-of-type(even) {
 /* --- REMOVE GRAY BETWEEN SECTIONS --- */
 
 
-.skills-section,
 .tools-section,
 .projects-section,
 .background-section,
@@ -2827,7 +2802,7 @@ section:nth-of-type(even) {
 }
 
 /* --- REMOVE ALL GRAY BACKGROUNDS --- */
-section, .container, .skills-section, .tools-section, .projects-section, .background-section, .certifications-section, .contact-section {
+section, .container, .tools-section, .projects-section, .background-section, .certifications-section, .contact-section {
   background: #000000 !important;
   background-color: #000000 !important;
 }
@@ -2863,9 +2838,7 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
   margin-bottom: 0.7rem;
   color: #ffffff !important;
 }
-.skills-section .section-subtitle {
-  margin-bottom: 1.2rem;
-}
+
 
 /* CONTACT SECTION */
 .contact-link {
@@ -3505,7 +3478,6 @@ section, .container, main, header, footer { background: #000000 !important; }
 footer { background: #000000 !important; color: #ffffff !important; border-top: 0 !important; }
 
 /* === Section sizing fixes: size to content, no fixed viewport heights === */
-.skills-section,
 .tools-section,
 .projects-section,
 .background-section,
@@ -3517,7 +3489,7 @@ footer { background: #000000 !important; color: #ffffff !important; border-top: 
   padding-bottom: 5rem !important;
 }
 /* Extra bottom padding only where arrows exist to avoid overlap */
-.skills-section { padding-bottom: 7rem !important; }
+
 .tools-section { padding-bottom: 7rem !important; }
 .background-section { padding-bottom: 7rem !important; }
 
@@ -3562,7 +3534,6 @@ section { min-height: auto !important; }
 .container { max-width: var(--content-max); }
 
 /* Section backgrounds aligned to theme */
-.skills-section,
 .tools-section,
 .projects-section,
 .background-section,
@@ -3615,8 +3586,7 @@ section { min-height: auto !important; }
 .projects-section .project-card { max-width: 100%; min-width: 0; }
 .project-image img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-md); }
 
-/* Skill card sizing harmony */
-.skill-card { width: 100% !important; max-width: 320px !important; }
+
 
 /* Buttons: primary and outline aligned to theme */
 .btn-primary { background: var(--color-accent) !important; color: #ffffff !important; border: 2px solid var(--color-accent) !important; }
@@ -3720,7 +3690,7 @@ html, body, section, main, header, footer, .container { background: #000000 !imp
 
 /* FORCE REMOVE ALL ACCENT BARS FROM SECTION TITLES */
 .section-title::after,
-.skills-section .section-title::after,
+
 .tools-section .section-title::after,
 .projects-section .section-title::after,
 .background-section .section-title::after,
