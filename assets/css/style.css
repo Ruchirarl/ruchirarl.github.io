@@ -3365,7 +3365,7 @@ html, body {
 .experience-card {
   width: 100%;
   max-width: 380px;
-  min-height: 480px;
+  min-height: 420px;
   padding: 2rem 1.5rem;
   background: #000000;
   border: 2px solid #2563eb;
