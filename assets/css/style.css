@@ -3385,10 +3385,10 @@ section.background-section { padding-bottom: 7rem; }
   width: 100% !important;
   height: 600px !important;
   min-height: 600px !important;
-  background: #ff0000 !important;
-  border: 5px solid #2563eb !important;
+  background: #111111 !important;
+  border: 3px solid #2563eb !important;
   border-radius: 20px !important;
-  overflow: visible !important;
+  overflow: hidden !important;
   box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3) !important;
   display: block !important;
 }
