@@ -20,7 +20,7 @@ const certificationsData = [
     logo: '☁️',
     badge: '/aws-badge.png', // Placeholder for badge image
     color: 'from-orange-500 to-yellow-600',
-    url: 'https://www.credly.com/earner/earned/badge/1140c485-1729-400b-ab32-1da1e7987a41',
+    url: 'https://www.credly.com/badges/1140c485-1729-400b-ab32-1da1e7987a41/public_url',
     description: 'Foundational understanding of AWS Cloud concepts and services',
     hasBadge: true
   },
@@ -31,7 +31,7 @@ const certificationsData = [
     logo: '🎯',
     badge: '/mckinsey-badge.png', // Placeholder for badge image
     color: 'from-purple-500 to-indigo-600',
-    url: 'https://www.credly.com/earner/earned/badge/090ade78-d82f-4792-a693-08312cc4bb5b',
+    url: 'https://www.credly.com/badges/090ade78-d82f-4792-a693-08312cc4bb5b/public_url',
     description: 'Professional development program focused on digital skills and leadership',
     hasBadge: true
   },

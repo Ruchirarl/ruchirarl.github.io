@@ -8,7 +8,7 @@ const navItems = [
   { name: 'EXPERIENCE', href: '#experience' },
   { name: 'PROJECTS', href: '#projects' },
   { name: 'CERTIFICATIONS', href: '#certifications' },
-  { name: 'MEDIUM ARTICLES', href: '#medium' },
+  { name: 'MEDIUM BLOGS', href: '#medium' },
   { name: 'CONTACT', href: '#contact' },
 ]
 

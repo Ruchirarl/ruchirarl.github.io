@@ -152,7 +152,7 @@ export const MediumArticles: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display text-white mb-4">
-            Medium Articles
+            Medium Blogs
           </h2>
           <div className="w-24 h-1 bg-primary-500 mx-auto rounded mb-6"></div>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-4">
@@ -256,7 +256,7 @@ export const MediumArticles: React.FC = () => {
                 className="inline-flex items-center space-x-2 text-primary-400 hover:text-primary-300 transition-colors duration-200"
               >
                 <BookOpen className="h-5 w-5" />
-                <span>Read all articles on Medium</span>
+                <span>Read all blogs on Medium</span>
                 <ExternalLink className="h-4 w-4" />
               </a>
             </div>
