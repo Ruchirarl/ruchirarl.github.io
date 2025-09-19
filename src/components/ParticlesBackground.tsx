@@ -84,7 +84,7 @@ export const ParticlesBackground: React.FC = () => {
             },
             onclick: {
               enable: true,
-              mode: "bubble"
+              mode: "push"
             },
             resize: true
           },
@@ -96,21 +96,21 @@ export const ParticlesBackground: React.FC = () => {
               }
             },
             bubble: {
-              distance: 300,
-              size: 20,
-              duration: 1.5,
-              opacity: 0.8,
-              speed: 2
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3
             },
             repulse: {
               distance: 200,
               duration: 0.4
             },
             push: {
-              particles_nb: 2
+              particles_nb: 4
             },
             remove: {
-              particles_nb: 3
+              particles_nb: 2
             }
           }
         },

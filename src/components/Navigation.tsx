@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Menu, X, Sun, Moon } from 'lucide-react'
-import { useTheme } from '../contexts/ThemeContext'
+import { Menu, X } from 'lucide-react'
 
 const navItems = [
   { name: 'HOME', href: '#home' },
@@ -16,7 +15,6 @@ const navItems = [
 export const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const { theme, toggleTheme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {

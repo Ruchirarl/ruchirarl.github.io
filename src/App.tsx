@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Navigation } from './components/Navigation'
 import { Home } from './components/sections/Home'
 import { About } from './components/sections/About'
@@ -8,7 +8,6 @@ import { Projects } from './components/sections/Projects'
 import { Certifications } from './components/sections/Certifications'
 import { MediumArticles } from './components/sections/MediumArticles'
 import { Contact } from './components/sections/Contact'
-import { ParticlesBackground } from './components/ParticlesBackground'
 import { ThemeProvider } from './contexts/ThemeContext'
 
 function App() {

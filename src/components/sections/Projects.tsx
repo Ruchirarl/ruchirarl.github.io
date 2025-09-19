@@ -63,7 +63,10 @@ const ProjectCard: React.FC<{ project: typeof projectsData[0] }> = ({ project })
             className="w-full h-full object-top object-cover rounded-lg"
             onError={(e) => {
               e.currentTarget.style.display = 'none'
-              e.currentTarget.nextElementSibling.style.display = 'flex'
+              const nextElement = e.currentTarget.nextElementSibling as HTMLElement
+              if (nextElement) {
+                nextElement.style.display = 'flex'
+              }
             }}
           />
           <div className="w-full h-full flex items-center justify-center text-6xl" style={{display: 'none'}}>

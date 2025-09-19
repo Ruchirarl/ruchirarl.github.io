@@ -101,7 +101,10 @@ const EducationCard: React.FC<{ education: typeof educationData[0] }> = ({ educa
             className="w-full h-full object-contain"
             onError={(e) => {
               e.currentTarget.style.display = 'none'
-              e.currentTarget.nextElementSibling.style.display = 'flex'
+              const nextElement = e.currentTarget.nextElementSibling as HTMLElement
+              if (nextElement) {
+                nextElement.style.display = 'flex'
+              }
             }}
           />
           <div className="w-full h-full bg-primary-600 rounded-lg flex items-center justify-center text-white text-lg font-bold" style={{display: 'none'}}>
@@ -181,7 +184,10 @@ const ExperienceCard: React.FC<{ experience: typeof experienceData[0] }> = ({ ex
             className="w-full h-full object-contain"
             onError={(e) => {
               e.currentTarget.style.display = 'none'
-              e.currentTarget.nextElementSibling.style.display = 'flex'
+              const nextElement = e.currentTarget.nextElementSibling as HTMLElement
+              if (nextElement) {
+                nextElement.style.display = 'flex'
+              }
             }}
           />
           <div className="w-full h-full bg-accent-600 rounded-lg flex items-center justify-center text-white text-lg font-bold" style={{display: 'none'}}>

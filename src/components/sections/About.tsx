@@ -26,7 +26,10 @@ export const About: React.FC = () => {
                     onError={(e) => {
                       // Fallback to icon if image not found
                       e.currentTarget.style.display = 'none'
-                      e.currentTarget.nextElementSibling.style.display = 'flex'
+                      const nextElement = e.currentTarget.nextElementSibling as HTMLElement
+                      if (nextElement) {
+                        nextElement.style.display = 'flex'
+                      }
                     }}
                   />
                   <div className="w-full h-full rounded-full bg-dark-800 flex items-center justify-center" style={{display: 'none'}}>

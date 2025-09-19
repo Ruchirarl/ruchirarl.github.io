@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
-import { ExternalLink, Calendar, Clock, BookOpen, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ExternalLink, Calendar, Clock, BookOpen, ArrowRight, ChevronLeft, ChevronRight, RefreshCw } from 'lucide-react'
 import { fetchMediumArticles, formatArticleDate, testMediumRSS } from '../../utils/mediumRSS'
 
 interface MediumArticle {
