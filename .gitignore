@@ -63,3 +63,9 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 
+# Sensitive files - keep local but don't commit to GitHub
+public/Ruchira_Lokhande_Resume.pdf
+public/test-resume.pdf
+public/profile-photo.jpg
+public/*.pdf
+
