@@ -29,10 +29,10 @@ const projectsData = [
       'Segmented customers by income and region to identify high-sensitivity markets, providing actionable insights for revenue optimization and pricing strategy.'
     ],
     tech: ['R', 'Causal Inference', 'Statistical Modeling', 'Logistic Regression', 'Experiment Design', 'Data Visualization'],
-    github: '',
-    demo: '',
+    github: 'https://github.com/Ruchirarl/Hotel-Price-Sensitivity-Analysis',
+    demo: 'https://github.com/Ruchirarl/Hotel-Price-Sensitivity-Analysis',
     image: '🏨',
-    imageUrl: '',
+    imageUrl: '/hotel-pricing.png',
     color: 'from-indigo-500 to-blue-600'
   },
   {

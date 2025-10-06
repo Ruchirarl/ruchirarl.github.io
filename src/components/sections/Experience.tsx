@@ -214,7 +214,7 @@ const ExperienceCard: React.FC<{ experience: typeof experienceData[0] }> = ({ ex
           </div>
           <p className="text-primary-400 font-semibold mb-4">{experience.position}</p>
           {('overview' in experience) && (
-            <p className="text-gray-300 text-sm md:text-base leading-6 mb-4">{(experience as any).overview}</p>
+            <p className="text-gray-300 text-xs md:text-sm leading-6 mb-4">{(experience as any).overview}</p>
           )}
           {('techStack' in experience) && (
             <div className="mb-4 flex flex-wrap gap-2">
