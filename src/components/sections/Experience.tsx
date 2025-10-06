@@ -55,11 +55,14 @@ const experienceData = [
     period: 'September 2024 – June 2025',
     logo: '⚖️',
     logoUrl: '/defonte-logo.png',
+    overview: 'Partnered with De Fonte Law, a San Francisco-based boutique firm, to modernize operations through analytics. The engagement integrated CRM data analysis, competitive intelligence, and BI automation to improve client intake efficiency and marketing performance.',
     achievements: [
-      'Served as Project Manager directing cross-functional project workflows, leading weekly stakeholder meetings with 4 team members, and delivering a strategic roadmap that influenced a 30% increase in marketing visibility.',
-      'Performed a root-cause analysis on 5+ years of CRM data using Python to identify 3 critical workflow bottlenecks, delivering a process re-engineering plan projected to increase operational efficiency by 10%.',
-      'Translated business requirements into a suite of interactive Tableau dashboards, automating 80+ hours of monthly manual reporting and providing the firm\'s founder with on-demand KPI tracking across operational metrics.'
-    ]
+      'Performed a deep-dive analysis on 5+ years of CRM (Clio) data using Python, identifying three workflow bottlenecks and recommending process changes that improved client intake efficiency by 10%.',
+      'Designed and deployed interactive Tableau dashboards that automated 80+ hours of manual reporting and provided on-demand KPI tracking for firm leadership.',
+      'Built a Python script to scrape and analyze data from 12 competitor sites, informing a marketing roadmap that boosted online visibility by 30%.',
+      'Led 12+ stakeholder sessions to gather requirements and present insights, establishing a standardized reporting cadence that enhanced communication between accounting, operations, and marketing teams.'
+    ],
+    techStack: ['Python (Pandas, BeautifulSoup)', 'Tableau', 'Excel', 'CRM (Clio)']
   },
   {
     company: 'Deloitte USI',
@@ -205,6 +208,18 @@ const ExperienceCard: React.FC<{ experience: typeof experienceData[0] }> = ({ ex
             {experience.period}
           </div>
           <p className="text-primary-400 font-semibold mb-4">{experience.position}</p>
+          {('overview' in experience) && (
+            <p className="text-gray-300 mb-4">{(experience as any).overview}</p>
+          )}
+          {('techStack' in experience) && (
+            <div className="mb-4 flex flex-wrap gap-2">
+              {(experience as any).techStack.map((tech: string) => (
+                <span key={tech} className="px-3 py-1 text-xs rounded-full bg-primary-500/10 border border-primary-500/30 text-primary-300">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
           
           <button
             onClick={() => setIsExpanded(!isExpanded)}
