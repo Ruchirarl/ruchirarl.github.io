@@ -71,10 +71,13 @@ const experienceData = [
     period: 'January 2024 – May 2024',
     logo: '🏢',
     logoUrl: '/deloitte-logo.png',
+    overview: 'During Deloitte’s Analyst training program, I gained hands-on experience in enterprise data integration, warehouse development, and data validation. The focus was on creating automated data workflows that improved reporting efficiency and accuracy.',
     achievements: [
-      'Engineered a reusable ETL pipeline with Informatica to transform and load data into Snowflake using advanced SQL, automating the integration of 3 disparate data sources and reducing data aggregation time by 95%.',
-      'Developed an automated Python (Pandas) script to cleanse and validate a 20,000-record, 15-field workforce dataset, achieving 100% data integrity for downstream predictive modeling exercises.'
-    ]
+      'Built a SQL-based ETL pipeline in Informatica to consolidate three source systems into Snowflake, forming the base for a centralized data warehouse.',
+      'Automated data integration workflows, reducing aggregation time by 90% in test projects and accelerating access to analytics datasets.',
+      'Developed a Python (Pandas) validation script to clean and verify a 20,000-record workforce dataset, achieving 100% data accuracy for BI reports.'
+    ],
+    techStack: ['Informatica', 'Snowflake', 'SQL', 'Python (Pandas)']
   },
   {
     company: 'AI4M Technology Pvt. Ltd.',
@@ -83,11 +86,13 @@ const experienceData = [
     period: 'January 2023 – July 2023',
     logo: '🤖',
     logoUrl: '/ai4m-logo.png',
+    overview: 'Worked in an AI-for-Manufacturing startup to support digital transformation across production environments. Focused on managing analytics projects, defining KPIs, and translating data-science outputs into business-ready insights that enhanced operational efficiency and product quality.',
     achievements: [
-      'Managed the end-to-end lifecycle of 4 AI initiatives as the primary client liaison, overseeing the process from requirements gathering and authoring specifications (FRS) to final UAT, accelerating delivery by 20%.',
-      'Led requirements gathering sessions with 4 manufacturing clients to design and prototype 4 real-time KPI dashboards in Figma, defining 20+ operational metrics and visual specifications that reduced development rework by 25%.',
-      'Partnered with the data science team on a computer vision solution that improved defect detection accuracy by 10%, translating complex model outputs into actionable insights for client stakeholders to resolve production bottlenecks.'
-    ]
+      'Managed four analytics initiatives from requirements gathering to UAT, acting as client liaison and reducing delivery timelines by 20%.',
+      'Designed KPI dashboard prototypes in Figma (20+ metrics) and guided their implementation as desktop applications, reducing rework by 25% and cutting report generation time by 2 hours per week.',
+      'Collaborated with the data science team on a computer-vision defect detection solution, improving detection accuracy by 10% and enabling automated quality checks on manufacturing lines.'
+    ],
+    techStack: ['Python', 'Figma', 'Excel', 'Computer Vision APIs']
   }
 ]
 
@@ -209,7 +214,7 @@ const ExperienceCard: React.FC<{ experience: typeof experienceData[0] }> = ({ ex
           </div>
           <p className="text-primary-400 font-semibold mb-4">{experience.position}</p>
           {('overview' in experience) && (
-            <p className="text-gray-300 mb-4">{(experience as any).overview}</p>
+            <p className="text-gray-300 text-sm md:text-base leading-6 mb-4">{(experience as any).overview}</p>
           )}
           {('techStack' in experience) && (
             <div className="mb-4 flex flex-wrap gap-2">

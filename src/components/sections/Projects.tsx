@@ -20,6 +20,22 @@ const projectsData = [
     color: 'from-blue-500 to-purple-600'
   },
   {
+    title: 'Hotel Pricing Elasticity',
+    subtitle: 'Dynamic Pricing Analysis Using Causal Inference',
+    description: 'Built an end-to-end analysis in R to model how hotel booking likelihood changes with price fluctuations across customer income groups and regions, simulating a dynamic pricing framework for an online travel agency.',
+    highlights: [
+      'Analyzed a 25,000-row randomized experiment dataset to estimate true price elasticity, isolating the causal impact of price on booking probability.',
+      'Modeled booking behavior using logistic regression, quantifying that low-income customers were ~2× more price sensitive than high-income groups.',
+      'Segmented customers by income and region to identify high-sensitivity markets, providing actionable insights for revenue optimization and pricing strategy.'
+    ],
+    tech: ['R', 'Causal Inference', 'Statistical Modeling', 'Logistic Regression', 'Experiment Design', 'Data Visualization'],
+    github: '',
+    demo: '',
+    image: '🏨',
+    imageUrl: '',
+    color: 'from-indigo-500 to-blue-600'
+  },
+  {
     title: 'ESynapse',
     subtitle: 'Real-Time E-commerce Analytics Pipeline',
     description: 'Architected a real-time GCP data pipeline using Python, Pub/Sub, and BigQuery, automating hourly data transformations for 5+ analytical models with dbt.',
