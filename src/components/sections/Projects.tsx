@@ -33,6 +33,7 @@ const projectsData = [
     demo: 'https://github.com/Ruchirarl/Hotel-Price-Sensitivity-Analysis',
     image: '🏨',
     imageUrl: '/hotel-pricing.png',
+    imagePosition: 'object-center',
     color: 'from-indigo-500 to-blue-600'
   },
   {
@@ -76,7 +77,7 @@ const ProjectCard: React.FC<{ project: typeof projectsData[0] }> = ({ project })
           <img 
             src={project.imageUrl} 
             alt={`${project.title} project screenshot`}
-            className="w-full h-full object-top object-cover rounded-lg"
+            className={`w-full h-full ${(project as any).imagePosition ?? 'object-top'} object-cover rounded-lg`}
             onError={(e) => {
               e.currentTarget.style.display = 'none'
               const nextElement = e.currentTarget.nextElementSibling as HTMLElement
