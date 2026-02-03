@@ -47,31 +47,30 @@ export const About: React.FC = () => {
           <div className="space-y-6 lg:col-span-2">
             <div className="space-y-5 text-gray-300 text-base leading-relaxed">
               <p className="text-xl font-medium text-white">
-                I believe data is only powerful when it drives real change.
+                I believe data is only valuable when it drives decisions and actions.
               </p>
               
               <p>
-                I've delivered measurable results across Deloitte, startups, and law firms—boosting accuracy to 100%, cutting 80+ hours of manual work, and improving efficiency by 10%.
+                I am a Data Analyst with experience across a Big 4 environment and fast-moving teams, partnering with stakeholders to define metrics, build dashboards, and translate messy data into clear, actionable insights. 
+                I work primarily with SQL, Python, Tableau, and modern data stacks like BigQuery and dbt.
               </p>
-              
+
               <p>
-                From working at one of the Big 4 to thriving in fast-paced startups and shaping strategy for a law firm, I've seen how analytics can transform the way organizations operate and grow. With a Master's in Business Analytics from UC Davis, I bring both the technical depth (Python, SQL, Tableau, GCP, dbt) and the business acumen to turn raw data into insights leaders can act on.
+              Recent impact includes improving client intake conversion by 10% through funnel analysis, automating KPI reporting to save 80+ hours per month, and strengthening reporting reliability by building QA checks and reconciliation workflows across 20,000+ records. 
+              I have also supported operations teams by standardizing KPI definitions, building self-serve reporting, and using analytics to surface bottlenecks and optimization opportunities.
               </p>
-              
+
               <p>
-                At Deloitte, I engineered ETL workflows that processed 20,000+ records with 100% first-pass accuracy. At AI4M Technology, I improved defect detection by 10% using ML while managing four cross-functional AI projects. And at De Fonte Law, I built Tableau dashboards that turned manual analysis into a one-day review and designed a roadmap projected to boost efficiency by 10%.
+              What I enjoy most is connecting analytics to strategy, helping teams focus on the few metrics that matter and turning insights into next steps.
               </p>
-              
-              <p>
-                What excites me most is connecting data to strategy—making analytics not just about dashboards and models, but about impact you can see and measure.
-              </p>
+
               
               <p className="text-gray-300">
-                Outside of work, I love experimenting with new recipes and playing badminton—pursuits that, like analytics, demand precision, creativity, and strategy.
+                Outside of work, you will usually find me experimenting with new recipes or playing badminton.
               </p>
               
               <p className="text-pink-500 font-medium">
-                Whether you have a complex problem to solve, want to talk about the future of data, or think I'd be a great fit for your team, I'm always open to a conversation. Let's connect.
+              If you are building a data-driven team or want to talk analytics, I am always open to a conversation.
               </p>
             </div>
 
