@@ -46,10 +46,10 @@ export const Home: React.FC = () => {
           
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-gray-300 mb-6 font-light">
-            Driven by curiosity, guided by data.
+            Turning messy data into clear decisions.
           </p>
           <p className="text-lg md:text-xl text-accent-400 mb-12 font-medium">
-            Business Analyst | Data Storytelling | Decision Science
+            Data Analyst | Product & KPI Analytics | SQL • Tableau • Python
           </p>
 
           {/* Social buttons */}

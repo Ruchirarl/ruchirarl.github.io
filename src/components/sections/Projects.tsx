@@ -9,8 +9,8 @@ const projectsData = [
     description: 'Developed an end-to-end analytics application using Python and Streamlit that automated a 200-video workflow, from API ingestion to a 1-click executive report, reducing manual analysis time by over 80%.',
     highlights: [
       'Generated actionable insights by analyzing keyword lift, sentiment, and optimal publishing windows',
-      'Improved projected views per day by 20-30% and standardized key performance indicators for strategic planning',
-      'Automated 200-video workflow with 1-click executive reporting'
+      'Automated ingestion and processing via YouTube API to analyze 200+ videos per run, reducing manual tracking 80% and enabling consistent monitoring of engagement and retention metrics.',
+      'Built an interactive Streamlit dashboard to surface content performance patterns and actionable growth levers projected to improve daily views by 30%.'
     ],
     tech: ['Python', 'Streamlit', 'YouTube API', 'Data Visualization'],
     github: 'https://github.com/Ruchirarl/ViewTube',
@@ -38,12 +38,13 @@ const projectsData = [
   },
   {
     title: 'ESynapse',
-    subtitle: 'Real-Time E-commerce Analytics Pipeline',
+    subtitle: 'Real-Time E-commerce Analytics and Dashboard',
     description: 'Architected a real-time GCP data pipeline using Python, Pub/Sub, and BigQuery, automating hourly data transformations for 5+ analytical models with dbt.',
     highlights: [
-      'Informed Go-to-Market (GTM) strategy by defining 8+ business KPIs with advanced SQL in dbt',
-      'Delivered a 30-day sales forecast using BigQuery ML, providing predictive insights via a live Tableau dashboard',
-      'Automated hourly data transformations for 5+ analytical models'
+      'Built a clickstream analytics model in BigQuery using dbt to transform raw events into analysis-ready tables for funnel drop-off analysis and product KPI reporting.',
+      'Created a Tableau dashboard tracking 20+ KPIs (conversion, funnel stages, product trends) and reduced data prep time 80% through reusable transformations and standardized metric definitions.',
+      'Delivered a 30-day sales forecast using BigQuery ML, providing predictive insights via a live Tableau dashboard.',
+      'Automated hourly data transformations for 5+ analytical models.'
     ],
     tech: ['Python', 'GCP', 'BigQuery', 'dbt', 'Pub/Sub', 'Tableau'],
     github: 'https://github.com/Ruchirarl/ESynapse',
@@ -58,8 +59,8 @@ const projectsData = [
     description: 'Engineered an end-to-end analytics pipeline using Python and dbt, automating the daily transformation of raw financial data into 7 tested analytical models and delivering 18 key metrics like Sharpe Ratio and Volatility.',
     highlights: [
       'Modeled next-day stock returns with scikit-learn by engineering 9 predictive features',
-      'Visualized historical market insights in a live 12-chart Tableau dashboard for strategic analysis',
-      'Delivered 18 key metrics including Sharpe Ratio and Volatility'
+      'Built an end-to-end analytics pipeline using SQL + dbt to transform raw portfolio data into analysis-ready tables for performance tracking, risk segmentation, and portfolio comparison.',
+      'Developed a Tableau dashboard with 18+ metrics to compare asset behavior over time, surface risk/return drivers, and support optimization insights through interactive breakdowns.'
     ],
     tech: ['Python', 'dbt', 'Scikit-learn', 'Tableau', 'Financial Analytics'],
     github: 'https://github.com/Ruchirarl/EquiTrack',

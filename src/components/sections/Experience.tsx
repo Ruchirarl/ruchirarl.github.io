@@ -51,31 +51,33 @@ const experienceData = [
   {
     company: 'De Fonte Law',
     location: 'San Francisco, CA',
-    position: 'Business Analyst (Practicum)',
+    position: 'Data Analyst (Practicum)',
     period: 'September 2024 – June 2025',
     logo: '⚖️',
     logoUrl: '/defonte-logo.png',
-    overview: 'Partnered with De Fonte Law, a San Francisco-based boutique firm, to modernize operations through analytics. The engagement integrated CRM data analysis, competitive intelligence, and BI automation to improve client intake efficiency and marketing performance.',
+    overview: 'Led a data-driven analytics engagement for a boutique law firm, improving funnel visibility, KPI reporting, and marketing performance through CRM analytics and dashboard automation.',
     achievements: [
-      'Performed a deep-dive analysis on 5+ years of CRM (Clio) data using Python, identifying three workflow bottlenecks and recommending process changes that improved client intake efficiency by 10%.',
-      'Designed and deployed interactive Tableau dashboards that automated 80+ hours of manual reporting and provided on-demand KPI tracking for firm leadership.',
-      'Built a Python script to scrape and analyze data from 12 competitor sites, informing a marketing roadmap that boosted online visibility by 30%.',
-      'Led 12+ stakeholder sessions to gather requirements and present insights, establishing a standardized reporting cadence that enhanced communication between accounting, operations, and marketing teams.'
+      'Improved client intake conversion by 10% by analyzing 5+ years of CRM (Clio) funnel data in Python, identifying drop-off drivers, and translating findings into prioritized intake workflow recommendations.',
+      'Built and automated Tableau KPI dashboards to deliver self-serve reporting, saving 80+ hours/month and standardizing visibility into conversion rate, lead response time, acquisition cost, and intake throughput.',
+      'Quantified attorney capacity imbalance by analyzing time-tracking and workload mix, uncovering 20% variance in time spent per matter and informing staffing and workflow planning decisions.',
+      'Increased website traffic by 30% through CTR-based keyword gap analysis and competitor benchmarking, converting insights into prioritized SEO and content recommendations for marketing execution.',
+      'Led 12+ stakeholder sessions across legal, operations, and marketing to define KPI definitions, align metric logic, and deliver clear performance insights to non-technical audiences.'
     ],
     techStack: ['Python (Pandas, BeautifulSoup)', 'Tableau', 'Excel', 'CRM (Clio)']
   },
   {
     company: 'Deloitte USI',
     location: 'Bangalore, India',
-    position: 'Analyst, Strategy & Analytics',
+    position: 'Data Analyst, Strategy & Analytics',
     period: 'January 2024 – May 2024',
     logo: '🏢',
     logoUrl: '/deloitte-logo.png',
-    overview: 'During Deloitte’s Analyst training program, I gained hands-on experience in enterprise data integration, warehouse development, and data validation. The focus was on creating automated data workflows that improved reporting efficiency and accuracy.',
+    overview: 'Built and optimized data workflows and validation checks to improve reporting reliability and analytics readiness across Snowflake-based reporting systems.',
     achievements: [
-      'Built a SQL-based ETL pipeline in Informatica to consolidate three source systems into Snowflake, forming the base for a centralized data warehouse.',
-      'Automated data integration workflows, reducing aggregation time by 90% in test projects and accelerating access to analytics datasets.',
-      'Developed a Python (Pandas) validation script to clean and verify a 20,000-record workforce dataset, achieving 100% data accuracy for BI reports.'
+      'Delivered reliable weekly operational reporting by integrating multi-source data into Snowflake using SQL and Informatica, reducing reporting discrepancies 12% through improved transformation logic and reconciliation checks across layers.',
+      'Improved KPI consistency by optimizing 15+ workflows, increasing data reliability 25%, and accelerating refresh cycles for recurring dashboards and business reviews.',
+      'Built Python QA validations to reconcile 20K+ records across staging and reporting layers, surfacing anomalies early and strengthening trust in reported metrics for business stakeholders.'
+
     ],
     techStack: ['Informatica', 'Snowflake', 'SQL', 'Python (Pandas)']
   },
@@ -86,11 +88,12 @@ const experienceData = [
     period: 'January 2023 – July 2023',
     logo: '🤖',
     logoUrl: '/ai4m-logo.png',
-    overview: 'Worked in an AI-for-Manufacturing startup to support digital transformation across production environments. Focused on managing analytics projects, defining KPIs, and translating data-science outputs into business-ready insights that enhanced operational efficiency and product quality.',
+    overview: 'Partnered with client and data teams at an AI-for-manufacturing startup to deliver KPI dashboards and analytics initiatives, improving production visibility and quality outcomes.',
     achievements: [
-      'Managed four analytics initiatives from requirements gathering to UAT, acting as client liaison and reducing delivery timelines by 20%.',
-      'Designed KPI dashboard prototypes in Figma (20+ metrics) and guided their implementation as desktop applications, reducing rework by 25% and cutting report generation time by 2 hours per week.',
-      'Collaborated with the data science team on a computer-vision defect detection solution, improving detection accuracy by 10% and enabling automated quality checks on manufacturing lines.'
+      'Delivered 4 analytics initiatives from requirements gathering through UAT, improving visibility into production throughput and quality KPIs, and reducing delivery timelines by 20% through clearer metric definitions and stakeholder alignment.',
+      'Partnered with operations stakeholders to define KPI logic and deploy daily dashboards for manufacturing teams, reducing rework costs by 15% by identifying bottlenecks and enabling faster, self-serve performance monitoring.',
+      'Operationalized computer vision quality signals by analyzing defect patterns in model outputs and translating insights into targeted process recommendations, improving defect detection accuracy by 10%.'
+
     ],
     techStack: ['Python', 'Figma', 'Excel', 'Computer Vision APIs']
   }
