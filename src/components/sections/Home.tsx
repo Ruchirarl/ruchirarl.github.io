@@ -1,5 +1,5 @@
 import React from 'react'
-import { Mail, Linkedin, Github, BookOpen, Download } from 'lucide-react'
+import { Mail, Linkedin, Github, BookOpen } from 'lucide-react'
 import { ParticlesBackground } from '../ParticlesBackground'
 
 export const Home: React.FC = () => {
@@ -70,21 +70,6 @@ export const Home: React.FC = () => {
                 </a>
               )
             })}
-          </div>
-
-          {/* Resume download button */}
-          <div className="animate-slide-up">
-            <a
-              href="/Ruchira_Lokhande_Resume.pdf"
-              download="Ruchira_Lokhande_Resume.pdf"
-              type="application/pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
-            >
-              <Download className="h-6 w-6" />
-              <span>Download Resume</span>
-            </a>
           </div>
         </div>
       </div>

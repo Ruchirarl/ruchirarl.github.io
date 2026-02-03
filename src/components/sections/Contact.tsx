@@ -240,16 +240,6 @@ export const Contact: React.FC = () => {
               © 2024 Ruchira Lokhande. All rights reserved.
             </p>
             <div className="flex justify-center space-x-6">
-              <a 
-                href="/Ruchira_Lokhande_Resume.pdf" 
-                download="Ruchira_Lokhande_Resume.pdf"
-                type="application/pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
-              >
-                Download Resume
-              </a>
               <a href="https://ruchirarl.github.io" className="text-gray-400 hover:text-primary-400 transition-colors duration-200">
                 Portfolio
               </a>
