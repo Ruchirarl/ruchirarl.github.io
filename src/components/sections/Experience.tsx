@@ -57,10 +57,10 @@ const experienceData = [
     logoUrl: '/defonte-logo.png',
     overview: 'Led a data-driven analytics engagement for a boutique law firm, improving funnel visibility, KPI reporting, and marketing performance through CRM analytics and dashboard automation.',
     achievements: [
-      'Rebuilt end-to-end intake funnel in Python and SQL by feature-engineering 5+ years of CRM data, applied funnel analysis to pinpoint 3 high-drop-off stages, and delivered prioritized recommendations, driving a 10% increase in client conversion rate.'
-      'Automated KPI reporting pipeline in Tableau by replacing manual Excel workflows across conversion, CAC, response time, and throughput, eliminated 80+ analyst hours/month, enabling same-day leadership decisions.'
-      'Uncovered a 20% time-per-matter variance by analyzing attorney time-tracking data across all active matters in Python, delivered a staffing reallocation model that reduced matter backlog by 15%, and improved resource utilization.'
-      'Standardized KPI definitions across 3 business units in Tableau and SQL, leading 12+ cross-functional sessions to collapse conflicting metric definitions, cutting reporting discrepancy incidents by 30%.'
+      'Rebuilt end-to-end intake funnel in Python and SQL by feature-engineering 5+ years of CRM data, applied funnel analysis to pinpoint 3 high-drop-off stages, and delivered prioritized recommendations, driving a 10% increase in client conversion rate.',
+      'Automated KPI reporting pipeline in Tableau by replacing manual Excel workflows across conversion, CAC, response time, and throughput, eliminated 80+ analyst hours/month, enabling same-day leadership decisions.',
+      'Uncovered a 20% time-per-matter variance by analyzing attorney time-tracking data across all active matters in Python, delivered a staffing reallocation model that reduced matter backlog by 15%, and improved resource utilization.',
+      'Standardized KPI definitions across 3 business units in Tableau and SQL, leading 12+ cross-functional sessions to collapse conflicting metric definitions, cutting reporting discrepancy incidents by 30%.',
       'Grew organic traffic 30% by running Python-driven CTR analysis across 10+ competitors, surfaced 15 keyword gaps in a Tableau benchmarking dashboard, and delivered a targeted content strategy.'
           ],
     techStack: ['Python (Pandas, BeautifulSoup)', 'Tableau', 'Excel', 'CRM (Clio)']
@@ -74,9 +74,9 @@ const experienceData = [
     logoUrl: '/deloitte-logo.png',
     overview: 'Built and optimized data workflows and validation checks to improve reporting reliability and analytics readiness across Snowflake-based reporting systems.',
     achievements: [
-      'Integrated 3+ enterprise data sources into a unified Snowflake schema using Informatica, applied 20+ transformation rules, and validated full-load row counts end-to-end, ensuring zero-defect data delivery for downstream reporting.'
-      'Built and optimized 15+ Informatica ETL workflows by redesigning staging-to-target transformation logic, reduced average pipeline execution time by 20%, and improved data refresh reliability across all reporting layers.'
-      'Developed a Python data validation suite across 20K+ records, automated anomaly detection, null-value checks, and duplicate flagging across 5 validation dimensions, reducing data quality errors reaching dashboards by an estimated 35%.'
+      'Integrated 3+ enterprise data sources into a unified Snowflake schema using Informatica, applied 20+ transformation rules, and validated full-load row counts end-to-end, ensuring zero-defect data delivery for downstream reporting.',
+      'Built and optimized 15+ Informatica ETL workflows by redesigning staging-to-target transformation logic, reduced average pipeline execution time by 20%, and improved data refresh reliability across all reporting layers.',
+      'Developed a Python data validation suite across 20K+ records, automated anomaly detection, null-value checks, and duplicate flagging across 5 validation dimensions, reducing data quality errors reaching dashboards by an estimated 35%.',
       'Designed advanced SQL data models using CTEs, window functions, and multi-table joins across 3+ datasets, produced Snowflake-aligned analytical tables, reducing ad hoc query turnaround time by ~40% for business reporting stakeholders.'
     ],
     techStack: ['Informatica', 'Snowflake', 'SQL', 'Python (Pandas)']
@@ -90,9 +90,9 @@ const experienceData = [
     logoUrl: '/ai4m-logo.png',
     overview: 'Partnered with client and data teams at an AI-for-manufacturing startup to deliver KPI dashboards and analytics initiatives, improving production visibility and quality outcomes.',
     achievements: [
-      'Led ML model selection for coating weight prediction by benchmarking 4 algorithms (KNN, XGBoost, Random Forest, Decision Tree), and drove architectural transition to PyTorch deep learning, achieving AUC 0.863 on live spectroscopic data.'
-      'Engineered CV training datasets across 10+ experimental setups using CVAT, producing annotation‑validated, ML‑ready datasets that enabled a 10% improvement in defect detection accuracy in metal pipe manufacturing inspection.'
-      'Designed 3 KPI reporting frameworks (lot‑wise, daily, shift‑wise) to track defect rate and coating weight, giving plant operators structured quality‑control visibility and replacing ad‑hoc manual logs across 2 production facilities.'
+      'Led ML model selection for coating weight prediction by benchmarking 4 algorithms (KNN, XGBoost, Random Forest, Decision Tree), and drove architectural transition to PyTorch deep learning, achieving AUC 0.863 on live spectroscopic data.',
+      'Engineered CV training datasets across 10+ experimental setups using CVAT, producing annotation‑validated, ML‑ready datasets that enabled a 10% improvement in defect detection accuracy in metal pipe manufacturing inspection.',
+      'Designed 3 KPI reporting frameworks (lot‑wise, daily, shift‑wise) to track defect rate and coating weight, giving plant operators structured quality‑control visibility and replacing ad‑hoc manual logs across 2 production facilities.',
       'Authored FRS and FDS documents for 4 concurrent AI/CV products, translated client manufacturing requirements into engineering-ready specs, reducing mid-sprint scope changes by an estimated 60% across all workstreams.'
 
     ],
